@@ -1,0 +1,307 @@
+.section-sell-website-homepage {
+    .section-sell-website-banner {
+        background-image: url("../images/banner.png");
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        .section-sell-website-banner-box {
+            display: flex;
+            flex-direction: column;
+            height: inherit;
+            justify-content: center;
+            animation:
+                moveUp 0.5s ease-in-out,
+                fadeInOpacity 0.5s ease-in-out;
+            .section-sell-website-banner-title {
+                padding: 20px 60px;
+                color: white;
+                font-size: 3.5rem;
+            }
+            .section-sell-website-banner-subtitle {
+                padding: 0 60px;
+                width: 65vw;
+                color: white;
+                font-size: 2.5rem;
+            }
+            .section-sell-website-banner-content {
+                padding: 0 60px;
+                width: 60vw;
+                color: white;
+                font-size: 1.5rem;
+            }
+            .section-sell-website-banner-list {
+                padding: 10px 60px;
+                width: 60vw;
+                display: flex;
+                flex-wrap: wrap;
+                color: white;
+                gap: 10px;
+                font-size: 1.3rem;
+                > div {
+                    width: 45%;
+                }
+            }
+        }
+    }
+
+    .section-sell-website-slide {
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            // background-size: cover;
+            position: relative;
+            animation: fadeInSlide 0.5s ease-in-out !important;
+        }
+
+        .selectors {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            background: rgba(0, 0, 0, 0.1);
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+
+            .selector {
+                border: 1px solid #fff;
+                background: none;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                margin: 5px 0;
+                opacity: 0.6;
+                cursor: pointer;
+                transition:
+                    background 0.3s ease-in-out,
+                    opacity 0.3s ease-in-out;
+
+                &.active,
+                &:hover {
+                    background: #fff;
+                    opacity: 0.9;
+                }
+            }
+        }
+
+        .panel {
+            /* CSS cho panel khi không active */
+            width: 40vw;
+            height: 70vh;
+            color: #fff;
+            box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+            transition: all 500ms ease-in-out;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+
+            .panel-video {
+                animation: fadeInSlide 0.5s ease-in-out;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+
+            &.active {
+                /* CSS cho panel khi active */
+                display: flex;
+
+                .panel-header,
+                .panel-info {
+                    margin: 0;
+                    padding: 1.3rem 3.5rem;
+                    animation:
+                        moveUp 0.5s ease-in-out,
+                        fadeInOpacity 0.5s ease-in-out;
+                }
+
+                .panel-header {
+                    padding-top: 2em;
+                    font-weight: normal;
+                    font-size: 2.5rem;
+                    text-transform: capitalize;
+                }
+
+                .panel-info {
+                    font-size: 1.2rem;
+                    line-height: 1.8em;
+                    opacity: 1;
+                }
+                .panel-button {
+                    width: fit-content;
+                    border-radius: 15px;
+                    margin: 1.3rem 0.5rem 1.3rem 3.5rem;
+                    padding: 0.8em 1.3em;
+                    background: none;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    transition:
+                        box-shadow 0.5s ease-in-out,
+                        color 0.5s ease-in-out;
+                    animation:
+                        moveUp 0.5s ease-in-out,
+                        fadeInOpacity 0.5s ease-in-out;
+                    &:hover {
+                        box-shadow: inset 0 0 1.5em 1.5em #fff;
+                        color: black !important;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        // color: #000;
+                    }
+                }
+            }
+        }
+
+        @keyframes moveUp {
+            from {
+                transform: translateY(40px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInOpacity {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    }
+    .section-sell-website-question {
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 0;
+        .section-sell-website-question-above {
+            .section-sell-website-question-title {
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 3rem;
+                &::after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                    width: 100%;
+                    height: 50px;
+                    background-repeat: no-repeat;
+                    background-position-x: center;
+                    background-position-y: bottom;
+                    padding-top: 0;
+                }
+            }
+            .section-sell-website-question-subtitle {
+                text-align: center;
+                padding: 10px;
+            }
+        }
+        .section-sell-website-question-below {
+            display: flex;
+            // gap:20px;
+            .section-sell-website-question-below-left {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                // padding: 0 20px 0 0;
+                .section-sell-website-question-below-left-box {
+                    display: flex;
+                    gap: 20px;
+                    .section-sell-website-question-below-left-img {
+                        img {
+                            border-radius: 15px;
+                        }
+                    }
+                    .section-sell-website-question-below-left-content {
+                        .section-sell-website-question-below-left-title {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .section-sell-website-price {
+            display: flex;
+            justify-content: center;
+            .section-sell-website-price-box {
+                cursor:pointer;
+                width:30%;
+                border: 0.5px solid #070707a1;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding:0;
+                margin:20px;
+                .section-sell-website-price-above {
+                    width: 100%;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 15px;
+                    background: #070707a1;
+                    color:white;
+                    padding:10px;
+                    .section-sell-website-price-above-title{
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                    }
+                    .section-sell-website-price-above-button{
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                    }
+                }
+                .section-sell-website-price-below {
+                    display:flex;
+                    flex-direction: column;
+                    // align-items: center;
+                    padding:10px;
+                    .section-sell-website-price-below-title{
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                    .section-sell-website-price-below-subtitle{
+                        padding:10px 0;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .section-sell-website-description{
+            
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
