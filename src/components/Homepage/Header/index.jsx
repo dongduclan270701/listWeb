@@ -1,11 +1,10 @@
 import React, { useState, useEffect, memo, useRef } from 'react'
 import 'assets/Homepage/scss/header.scss'
 import signature from 'assets/Homepage/images/logo3.svg'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Phone from 'assets/Homepage/images/phone-call-svgrepo-com.svg'
 import Zalo from 'assets/Homepage/images/zalo-svgrepo-com.svg'
 const Index = () => {
-    const formatter = new Intl.NumberFormat('en-US')
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)

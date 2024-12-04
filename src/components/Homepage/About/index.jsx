@@ -1,13 +1,10 @@
 import React, { useState, useEffect, memo } from 'react'
-import { useNavigate, useLocation } from "react-router-dom"
 import 'assets/Homepage/scss/Page.scss'
 import Sign from 'assets/Homepage/images/signature.png'
 import Avatar from 'assets/Homepage/images/avatar.jpeg'
 import Loading from 'components/Homepage/About/Loading'
 import axios from 'axios'
 const Index = () => {
-    const navigate = useNavigate()
-    const location = useLocation()
     const [activeLink, setActiveLink] = useState('home')
     const [selectedIndexes, setSelectedIndexes] = useState([])
     const [focusedInput, setFocusedInput] = useState(null)
@@ -33,107 +30,65 @@ const Index = () => {
         setSelectedIndexes(updatedIndexes)
     }
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false) // Kết thúc loading sau 2 giây
-        }, 2000)
-        if (isLoading === false) {
+        const timer = setTimeout(() => setIsLoading(false), 2000);
+
+        if (!isLoading) {
             const handleScroll = () => {
-                const sections = document.querySelectorAll('.section-content > div')
-                sections.forEach(section => {
-                    const top = section.getBoundingClientRect().top
+                document.querySelectorAll('.section-content > div').forEach((section) => {
+                    const top = section.getBoundingClientRect().top;
                     if (top >= 0 && top <= window.innerHeight) {
-                        setActiveLink(section.id)
+                        setActiveLink(section.id);
                     }
-                })
-            }
+                });
+            };
 
-            window.addEventListener('scroll', handleScroll)
-
-            const observeElements = (selector) => {
-                document.querySelectorAll(selector).forEach(card => {
-                    observer.observe(card)
-                })
-            }
-
-            const unobserveElements = (selector) => {
-                document.querySelectorAll(selector).forEach(card => {
-                    observer.unobserve(card)
-                })
-            }
-
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    const { target } = entry
-                    if (entry.isIntersecting) {
-                        if (!target.classList.contains('animation-done')) {
-                            target.classList.add('active')
-                            setTimeout(() => {
-                                if (target.classList.contains('active')) {
-                                    target.classList.remove('active')
-                                    target.classList.add('animation-done')
-                                }
-                            }, 2000)
-                        }
-                    } else {
-                        if (!target.classList.contains('animation-done')) {
-                            target.classList.remove('active')
-                        }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(({ target, isIntersecting }) => {
+                    if (isIntersecting && !target.classList.contains('animation-done')) {
+                        target.classList.add('active');
+                        setTimeout(() => {
+                            target.classList.remove('active');
+                            target.classList.add('animation-done');
+                        }, 2000);
+                    } else if (!isIntersecting && !target.classList.contains('animation-done')) {
+                        target.classList.remove('active');
                     }
-                })
-            })
+                });
+            });
 
-            observeElements('.section-content .section-content-home .section-home-title')
-            observeElements('.section-content .section-content-about .section-about-title')
-            observeElements('.section-content .section-content-about .section-about-infor .section-about-infor-left .section-about-infor-box')
-            observeElements('.section-content .section-content-about .section-about-infor .section-about-infor-right .section-about-infor-number')
-            observeElements('.section-content .section-content-about .section-about-infor .section-about-infor-right .section-about-infor-text')
-            observeElements('.section-content .section-content-about .section-about-infor .section-about-infor-right .section-about-infor-cv')
-            observeElements('.section-content .section-content-services .section-services-title')
-            observeElements('.section-content .section-content-services .section-services-content .section-services-box')
-            observeElements('.section-content .section-content-skills .section-skills-title')
-            observeElements('.section-content .section-content-skills .section-skills-infor .section-skills-infor-left .section-skills-infor-left-title')
-            observeElements('.section-content .section-content-skills .section-skills-infor .section-skills-infor-left .section-skills-infor-left-content')
-            observeElements('.section-content .section-content-skills .section-skills-infor .section-skills-infor-right .section-skills-infor-right-no')
-            observeElements('.section-content .section-content-skills .section-skills-infor .section-skills-infor-right .section-skills-infor-right-no .section-skills-infor-right-line .section-skills-infor-right-line-content .section-skills-infor-right-line-color .section-skills-infor-right-line-color2')
-            observeElements('.section-content .section-content-education .section-education-title')
-            observeElements('.section-content .section-content-education .section-education-infor .section-education-infor-box')
-            observeElements('.section-content .section-content-feedback .section-feedback-title')
-            observeElements('.section-content .section-content-feedback .section-feedback-infor .section-feedback-info-box')
-            observeElements('.section-content .section-content-contact .section-contact-title')
-            observeElements('.section-content .section-content-contact .section-contact-infor .section-contact-infor-left .section-contact-infor-left-box')
-            observeElements('.section-content .section-content-contact .section-contact-infor .section-contact-infor-left .btn-submit-contact')
-            observeElements('.section-content .section-content-contact .section-contact-infor .section-contact-infor-right .section-contact-infor-right-title')
-            observeElements('.section-content .section-content-contact .section-contact-infor .section-contact-infor-right .section-contact-infor-right-content')
+            const observeElements = (selectors) => {
+                selectors.forEach((selector) => {
+                    document.querySelectorAll(selector).forEach((el) => observer.observe(el));
+                });
+            };
+
+            const selectors = [
+                '.section-content-home .section-home-title',
+                '.section-content-about .section-about-title',
+                '.section-about-infor .section-about-infor-box',
+                '.section-about-infor .section-about-infor-number',
+                '.section-about-infor .section-about-infor-text',
+                '.section-about-infor .section-about-infor-cv',
+                '.section-content-services .section-services-title',
+                '.section-services-content .section-services-box',
+                '.section-contact-title',
+                '.section-contact-infor-left-box',
+                '.btn-submit-contact',
+                '.section-contact-infor-right-title',
+                '.section-contact-infor-right-content',
+            ];
+
+            observeElements(selectors);
+            window.addEventListener('scroll', handleScroll);
+
             return () => {
-                window.removeEventListener('scroll', handleScroll)
-                unobserveElements('.section-content .section-content-home .section-home-title')
-                unobserveElements('.section-content .section-content-about .section-about-title')
-                unobserveElements('.section-content .section-content-about .section-about-infor .section-about-infor-left .section-about-infor-box')
-                unobserveElements('.section-content .section-content-about .section-about-infor .section-about-infor-right .section-about-infor-number')
-                unobserveElements('.section-content .section-content-about .section-about-infor .section-about-infor-right .section-about-infor-text')
-                unobserveElements('.section-content .section-content-about .section-about-infor .section-about-infor-right .section-about-infor-cv')
-                unobserveElements('.section-content .section-content-services .section-services-title')
-                unobserveElements('.section-content .section-content-services .section-services-content .section-services-box')
-                unobserveElements('.section-content .section-content-skills .section-skills-title')
-                unobserveElements('.section-content .section-content-skills .section-skills-infor .section-skills-infor-left .section-skills-infor-left-title')
-                unobserveElements('.section-content .section-content-skills .section-skills-infor .section-skills-infor-left .section-skills-infor-left-content')
-                unobserveElements('.section-content .section-content-skills .section-skills-infor .section-skills-infor-right .section-skills-infor-right-no')
-                unobserveElements('.section-content .section-content-skills .section-skills-infor .section-skills-infor-right .section-skills-infor-right-no .section-skills-infor-right-line .section-skills-infor-right-line-content .section-skills-infor-right-line-color .section-skills-infor-right-line-color2')
-                unobserveElements('.section-content .section-content-education .section-education-title')
-                unobserveElements('.section-content .section-content-education .section-education-infor .section-education-infor-box')
-                unobserveElements('.section-content .section-content-feedback .section-feedback-title')
-                unobserveElements('.section-content .section-content-feedback .section-feedback-infor .section-feedback-info-box')
-                unobserveElements('.section-content .section-content-contact .section-contact-title')
-                unobserveElements('.section-content .section-content-contact .section-contact-infor .section-contact-infor-left .section-contact-infor-left-box')
-                unobserveElements('.section-content .section-content-contact .section-contact-infor .section-contact-infor-left .btn-submit-contact')
-                unobserveElements('.section-content .section-content-contact .section-contact-infor .section-contact-infor-right .section-contact-infor-right-title')
-                unobserveElements('.section-content .section-content-contact .section-contact-infor .section-contact-infor-right .section-contact-infor-right-content')
-            }
+                window.removeEventListener('scroll', handleScroll);
+                observer.disconnect();
+            };
         }
-        return () => {
-            clearTimeout(timer)
-        }
-    }, [isLoading])
+
+        return () => clearTimeout(timer);
+    }, [isLoading]);
 
     useEffect(() => {
         // const fetchPostIP = async () => {
