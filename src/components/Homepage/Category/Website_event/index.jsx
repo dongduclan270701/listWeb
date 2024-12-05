@@ -3,7 +3,7 @@ import React from 'react';
 const Index = () => {
     return (
         <div>
-            123123
+            Website event
         </div>
     );
 }

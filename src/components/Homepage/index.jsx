@@ -77,7 +77,7 @@ const Index = () => {
                         Thiết kế theo yêu cầu "Độc quyền Giao diện & tính năng"
                     </div>
                     <div className='section-sell-website-banner-content play-regular'>
-                        Dịch vụ thiết kế website với rất nhiều giá trị đi kèm và đội ngũ được đào tạo bài bản. KL Thiết kế website tự tin rằng sẽ giúp các bạn mang lại nhiều đơn hàng bằng các giải pháp để có website dành cho cá nhân hoặc doanh nghiệp. Cam kết hỗ trợ trọn đời. Thiết kế website theo yêu cầu chỉ từ 3.000.000đ / Page
+                        Dịch vụ thiết kế website với rất nhiều giá trị đi kèm và đội ngũ được đào tạo bài bản. KL Thiết kế website tự tin rằng sẽ giúp các bạn mang lại nhiều đơn hàng bằng các giải pháp để có website dành cho cá nhân hoặc doanh nghiệp. Cam kết hỗ trợ trọn đời. Thiết kế website theo yêu cầu chỉ từ 2.000.000đ / Page
                     </div>
                     <div className='section-sell-website-banner-list play-regular'>
                         <div>

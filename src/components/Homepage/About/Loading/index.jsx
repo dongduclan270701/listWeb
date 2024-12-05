@@ -3,7 +3,7 @@ import React from 'react';
 const Index = () => {
 
     return (
-        <><style dangerouslySetInnerHTML={{ __html: "\n  .absolute {\n  position: absolute;\n}\n\n.inline-block {\n  display: inline-block;\n}\n\n.loader {\n  display: flex;\n  margin: 0.25em 0;\n      height: 100vh;\n    justify-content: center;\n    align-items: center;\n}\n\n\n.dash {\n  animation: dashArray 2s ease-in-out infinite,\n    dashOffset 2s linear infinite;\n}\n\n\n@keyframes dashArray {\n  0% {\n    stroke-dasharray: 0 1 359 0;\n  }\n\n  50% {\n    stroke-dasharray: 0 359 1 0;\n  }\n\n  100% {\n    stroke-dasharray: 359 1 0 0;\n  }\n}\n\n\n@keyframes dashOffset {\n  0% {\n    stroke-dashoffset: 365;\n  }\n\n  100% {\n    stroke-dashoffset: 5;\n  }\n}\n" }} />
+        <><style dangerouslySetInnerHTML={{ __html: "\n  .absolute {\n  position: absolute;\n}\n\n.inline-block {\n  display: inline-block;\n}\n\n.loader {\n  display: flex;\n      height: 100vh;\n    justify-content: center;\n    align-items: center;\n}\n\n\n.dash {\n  animation: dashArray 2s ease-in-out infinite,\n    dashOffset 2s linear infinite;\n}\n\n\n@keyframes dashArray {\n  0% {\n    stroke-dasharray: 0 1 359 0;\n  }\n\n  50% {\n    stroke-dasharray: 0 359 1 0;\n  }\n\n  100% {\n    stroke-dasharray: 359 1 0 0;\n  }\n}\n\n\n@keyframes dashOffset {\n  0% {\n    stroke-dashoffset: 365;\n  }\n\n  100% {\n    stroke-dashoffset: 5;\n  }\n}\n" }} />
             <div className="loader">
                 <svg height={0} width={0} viewBox="0 0 64 64" className="absolute">
                     <defs className="s-xJBuHA073rTt" xmlns="http://www.w3.org/2000/svg">

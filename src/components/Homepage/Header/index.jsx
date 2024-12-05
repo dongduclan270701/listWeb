@@ -40,12 +40,12 @@ const Index = () => {
         };
         const handleCursorChange = (e) => {
             const tgt = e.target;
-                const computed = window.getComputedStyle(tgt)["cursor"]
-                if (computed === "pointer") {
-                    dpkCursorRef.current.classList.add("dpkCursor-hover");
-                } else {
-                    dpkCursorRef.current.classList.remove("dpkCursor-hover");
-                }
+            const computed = window.getComputedStyle(tgt)["cursor"]
+            if (computed === "pointer") {
+                dpkCursorRef.current.classList.add("dpkCursor-hover");
+            } else {
+                dpkCursorRef.current.classList.remove("dpkCursor-hover");
+            }
         };
         const loop = () => {
             updatePosition();
@@ -66,7 +66,7 @@ const Index = () => {
 
     return (
         <>
-        <div className={isIOS ? 'hotline-icon-one-ios' : isAndroid ? 'hotline-icon-one-android' : 'hotline-icon-one-pc'}>
+            <div className={isIOS ? 'hotline-icon-one-ios' : isAndroid ? 'hotline-icon-one-android' : 'hotline-icon-one-pc'}>
                 <a href={zaloLink} target='blank'>
                     <img src={Zalo} className='hotline-icon-svg' alt="Logo" />
                 </a>
@@ -105,7 +105,7 @@ const Index = () => {
           }
         `}
                 </style>
-                <div className={scrolled ? 'header-sell-website header-sell-website-scroll':'header-sell-website '}>
+                <div className={scrolled ? 'header-sell-website header-sell-website-scroll' : 'header-sell-website '}>
                     <nav className="navbar-sell-website play-bold">
                         <i className="hamburger-icon hamburger-btn fa-solid fa-bars" style={{ fontSize: 20 }} onClick={toggleMenu}></i>
                         <NavLink to='/' className="logo">
@@ -118,22 +118,50 @@ const Index = () => {
                             <span className="close-btn material-symbols-rounded" onClick={toggleMenu}>x</span>
 
                             <li ><NavLink to='/' onClick={toggleMenu}>Trang chủ</NavLink></li>
-                            <li className="dropdown" style={{cursor:'pointer'}}>
+                            <li className="dropdown" style={{ cursor: 'pointer' }}>
                                 <a href >Dịch vụ  <span style={{ transform: 'scaleX(1.5)', display: 'inline-block' }}>&#8744;</span></a>
                                 <ul className='dropdown-menu deactivate-portfolio-false play-bold' >
-                                    <a style={{ display: 'flex', justifyContent: 'space-between' }} href>Dịch vụ </a>
+                                    <NavLink to='/service/bao-tri-sua-chua-website' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Bảo trì/sửa chữa website
+                                    </NavLink>
+                                    <NavLink to='/service/thiet-ke-website-rieng' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Tư vấn, thiết kế website riêng
+                                    </NavLink>
+                                    <NavLink to='/service/ten-mien-website-domain' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Tên miền website (Domain)
+                                    </NavLink>
                                 </ul>
                             </li>
-                            <li className="dropdown" style={{cursor:'pointer'}}>
+                            <li className="dropdown" style={{ cursor: 'pointer' }}>
                                 <a href >Kho giao diện <span style={{ transform: 'scaleX(1.5)', display: 'inline-block' }}>&#8744;</span></a>
                                 <ul className='dropdown-menu deactivate-portfolio-false play-bold' >
-                                    <a style={{ display: 'flex', justifyContent: 'space-between', padding: '0 10px' }} href>Kho giao diện</a>
+                                    <NavLink to='/category/portfolio-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Portfolio cá nhân
+                                    </NavLink>
+                                    <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Landing Page
+                                    </NavLink>
+                                    <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Blog cá nhân
+                                    </NavLink>
+                                    <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Website tổ chức sự kiện
+                                    </NavLink>
+                                    <NavLink to='/category/website-thuong-mai-dien-tu' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Website thương mại điện tử nhỏ
+                                    </NavLink>
+                                    <NavLink to='/category/website-nha-hang-quan-ca-phe' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Website nhà hàng/quán cà phê
+                                    </NavLink>
+                                    <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Website giáo dục
+                                    </NavLink>
                                 </ul>
                             </li>
                             <li ><NavLink to={'/instalment'} onClick={toggleMenu}>Blogs</NavLink></li>
                             <li ><NavLink to={'/aboutMe'} onClick={toggleMenu}>Về tôi</NavLink></li>
                         </ul>
-                        <a href="tel:0379382992" className="login-btn" style={{textDecoration:'none', color:'white'}}>Liên hệ</a>
+                        <a href="tel:0379382992" className="login-btn" style={{ textDecoration: 'none', color: 'white' }}>Liên hệ</a>
                     </nav>
                 </div>
             </div>
