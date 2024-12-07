@@ -156,9 +156,12 @@ const Index = () => {
                                     <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Website giáo dục
                                     </NavLink>
+                                    <NavLink to='/category/website-dashboard' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Website dashboard
+                                    </NavLink>
                                 </ul>
                             </li>
-                            <li ><NavLink to={'/instalment'} onClick={toggleMenu}>Blogs</NavLink></li>
+                            {/* <li ><NavLink to={'/aboutMe'} onClick={toggleMenu}>Blogs</NavLink></li> */}
                             <li ><NavLink to={'/aboutMe'} onClick={toggleMenu}>Về tôi</NavLink></li>
                         </ul>
                         <a href="tel:0379382992" className="login-btn" style={{ textDecoration: 'none', color: 'white' }}>Liên hệ</a>

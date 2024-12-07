@@ -1,11 +1,128 @@
-
-.category-landing-page{
-    .banner-image{
-        .image{
+.category-landing-page {
+    .banner-image {
+        .image {
             height: 100vh;
             width: 100%;
             background-size: cover;
             background-position: center;
+        }
+        margin-bottom: 15px;
+    }
+
+    .part-product {
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        .title {
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .list-product {
+            .nav-link {
+                margin: 0 auto;
+                text-align: center;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                .product {
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    .image-container {
+                        width: 100%;
+                        height: 400px;
+                        overflow: hidden;
+                        position: relative;
+                        img {
+                            width: 100%;
+                            position: relative;
+                            top: 0;
+                            transition: top 5s ease; /* Hiệu ứng mượt khi hover */
+                        }
+                        &:hover img {
+                            top: -100%; /* CSS sẽ xử lý giá trị từ React */
+                        }
+                    }
+                    .product-name {
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        padding: 0 5px 15px 5px;
+                    }
+                    .product-view {
+                        text-transform: uppercase;
+                        padding: 0 5px 15px 5px;
+                    }
+                    .product-price {
+                        padding: 15px 0;
+                        color: white;
+                        font-size: 20px;
+                        background-image: linear-gradient(to right, #434343, #a7a7a7);
+                    }
+                }
+            }
+        }
+    }
+    .introduce-landing-page {
+        background-image: url("https://res.cloudinary.com/dolydpat4/image/upload/v1733573291/037-938-2992_tfiq73.png");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        padding: 30px 10px;
+        .text{
+            max-width: 1200px;
+            margin: 0 auto;
+            .title {
+                letter-spacing:2px;
+                color: white;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 2rem;
+                text-transform:uppercase
+            }
+            .content {
+                letter-spacing:1px;
+                color: white;
+                width:600px;
+                font-size: 18px;
+            }
+        }
+        
+    }
+    .type-website{
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+        .title {
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            ul{
+                li{
+                    cursor:pointer;
+                    padding:5px 0;
+                    a{
+                        text-decoration: none;
+                        color:black;
+                        &:hover{
+                            color:grey
+                        }
+                    }
+                    .active{
+                        color:red
+                    }
+                }
+            }
         }
     }
 }

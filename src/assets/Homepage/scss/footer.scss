@@ -1,0 +1,25 @@
+.footer-homepage {
+    border-top: 1px solid #97979747;
+    padding: 30px 0;
+    background-color:#97979747;
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+        
+        img{
+            filter: drop-shadow(rgb(255, 255, 255) 10px 10px 1rem);
+        }
+        .info-footer{
+            display:flex;
+            flex-direction: column;
+            gap:5px
+        }
+        .contact-footer{
+            font-weight: bold;
+            display:flex;
+            flex-direction: column;
+            gap:5px
+        }
+    }
+}

@@ -10,9 +10,9 @@ const Index = () => {
     const [product, setProduct] = useState([
         {
             id: 0,
-            img: 'https://res.cloudinary.com/dolydpat4/image/upload/v1733583375/screencapture-ktech-uw1a-onrender-2024-12-07-21_53_19_1_abimgk.png',
-            src: 'https://ktech-uw1a.onrender.com/',
-            name: 'mẫu website thương mai điện tử',
+            img: 'https://res.cloudinary.com/dolydpat4/image/upload/v1733583022/screencapture-ktech-dashboard-onrender-v2-2024-12-07-21_47_52_lf19ym.png',
+            src: 'https://ktech-dashboard.onrender.com/v2/',
+            name: 'mẫu dashboard',
             view: 6,
             price: '5.000.000 VNĐ'
         },
