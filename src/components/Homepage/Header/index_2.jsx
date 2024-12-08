@@ -124,52 +124,52 @@ const Index = () => {
                         <ul className={isMenuOpen ? "links show-menu" : "links"}>
                             <span className="close-btn material-symbols-rounded" onClick={toggleMenu}>x</span>
 
-                            <li ><NavLink to='/' onClick={toggleMenu}>Trang chủ</NavLink></li>
+                            <li ><NavLink to='/' style={{color:'black'}} onClick={toggleMenu}>Trang chủ</NavLink></li>
                             <li className="dropdown" style={{ cursor: 'pointer' }}>
-                                <a href >Dịch vụ  <span style={{ transform: 'scaleX(1.5)', display: 'inline-block' }}>&#8744;</span></a>
+                                <a href style={{color:'black'}}>Dịch vụ  <span style={{ transform: 'scaleX(1.5)', display: 'inline-block' }}>&#8744;</span></a>
                                 <ul className='dropdown-menu deactivate-portfolio-false play-bold' >
-                                    <NavLink to='/service/bao-tri-sua-chua-website' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <NavLink to='/service/bao-tri-sua-chua-website' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Bảo trì/sửa chữa website
                                     </NavLink>
-                                    <NavLink to='/service/thiet-ke-website-rieng' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <NavLink to='/service/thiet-ke-website-rieng' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Tư vấn, thiết kế website riêng
                                     </NavLink>
-                                    <NavLink to='/service/ten-mien-website-domain' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <NavLink to='/service/ten-mien-website-domain' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Tên miền website (Domain)
                                     </NavLink>
                                 </ul>
                             </li>
                             <li className="dropdown" style={{ cursor: 'pointer' }}>
-                                <a href >Kho giao diện <span style={{ transform: 'scaleX(1.5)', display: 'inline-block' }}>&#8744;</span></a>
+                                <a href style={{color:'black'}}>Kho giao diện <span style={{ transform: 'scaleX(1.5)', display: 'inline-block' }}>&#8744;</span></a>
                                 <ul className='dropdown-menu deactivate-portfolio-false play-bold' >
-                                    {/* <NavLink to='/category/portfolio-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    {/* <NavLink to='/category/portfolio-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Portfolio cá nhân
                                     </NavLink> */}
-                                    <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Landing Page
                                     </NavLink>
-                                    {/* <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    {/* <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Blog cá nhân
                                     </NavLink>
-                                    <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Website tổ chức sự kiện
                                     </NavLink> */}
-                                    <NavLink to='/category/website-thuong-mai-dien-tu' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <NavLink to='/category/website-thuong-mai-dien-tu' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Website thương mại điện tử nhỏ
                                     </NavLink>
-                                    {/* <NavLink to='/category/website-nha-hang-quan-ca-phe' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    {/* <NavLink to='/category/website-nha-hang-quan-ca-phe' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Website nhà hàng/quán cà phê
                                     </NavLink> */}
-                                    {/* <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    {/* <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Website giáo dục
                                     </NavLink> */}
-                                    <NavLink to='/category/website-dashboard' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <NavLink to='/category/website-dashboard' style={{ display: 'flex', justifyContent: 'space-between', color:'black' }}>
                                         Website dashboard
                                     </NavLink>
                                 </ul>
                             </li>
-                            <li ><NavLink to={'/blog'} onClick={toggleMenu}>Blogs</NavLink></li>
-                            <li ><NavLink to={'/aboutMe'} onClick={toggleMenu}>Về tôi</NavLink></li>
+                            <li ><NavLink to={'/blog'} style={{color:'black'}} onClick={toggleMenu}>Blogs</NavLink></li>
+                            <li ><NavLink to={'/aboutMe'} style={{color:'black'}} onClick={toggleMenu}>Về tôi</NavLink></li>
                         </ul>
                         <a href="tel:0379382992" className="login-btn" style={{ textDecoration: 'none', color: 'white' }}>Liên hệ</a>
                     </nav>

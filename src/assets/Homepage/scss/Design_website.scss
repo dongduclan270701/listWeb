@@ -1,0 +1,57 @@
+.service-design-website {
+    .part-design-website {
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 175px 0 100px 0;
+        .content {
+            img {
+                width: 100%;
+                margin: 15px 0;
+                background-size: cover;
+                background-position: center;
+            }
+            .time {
+                color: grey;
+            }
+            .title {
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .sub-title {
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .li-content {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+        .more-news {
+            .title-news {
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+            .content-news {
+                padding: 10px 0;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    img {
+                        width: 100%;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    .time {
+                        font-size: 13px;
+                        color: grey;
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}

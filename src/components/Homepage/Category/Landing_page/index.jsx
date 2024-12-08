@@ -7,6 +7,10 @@ import HeaderHomepage from 'components/Homepage/Header'
 import FooterHomepage from 'components/Homepage/Footer'
 const Index = () => {
     const [isLoading, setIsLoading] = useState(true);
+    useEffect(() => {
+        const timer = setTimeout(() => setIsLoading(false), 2000);
+        return () => clearTimeout(timer);
+    }, []);
     const [product, setProduct] = useState([
         {
             id: 0,
@@ -18,10 +22,7 @@ const Index = () => {
         },
     ]);
 
-    useEffect(() => {
-        const timer = setTimeout(() => setIsLoading(false), 2000);
-        return () => clearTimeout(timer);
-    }, []);
+
 
     const imgRefs = useRef([]); // Mảng ref cho tất cả ảnh
     const [imageStates, setImageStates] = useState(
@@ -51,45 +52,46 @@ const Index = () => {
                 <div style={{ backgroundColor: '#343434', margin: 0, padding: 0 }}>
                     <Loading />
                 </div>
-                : 
+                :
                 <>
                     <HeaderHomepage />
                     <div className='category-landing-page'>
                         <div className='banner-image'>
                             <img src={'https://res.cloudinary.com/dolydpat4/image/upload/v1733573326/Landing-page_abblkb.png'} className='image' alt="Landing-page-image" />
                         </div>
-
                         <div className='part-product'>
-                            <div className='title'>Những sản phẩm bạn có thể húng thú</div>
+                            <div className='title'>Những sản phẩm bạn có thể hứng thú</div>
                             <div className='row list-product'>
                                 {
                                     product.map((item, index) => (
-                                        <NavLink key={index} to={item.src} className='col-md-3 nav-link'>
-                                            <div className='product'>
-                                                <div
-                                                    className="image-container"
-                                                    onMouseEnter={() => handleMouseEnter(index)}
-                                                    onMouseLeave={() => handleMouseLeave(index)}
-                                                >
-                                                    <img
-                                                        ref={(el) => (imgRefs.current[index] = el)}
-                                                        src={item.img}
-                                                        alt={`Image ${index}`}
-                                                        style={{
-                                                            top: imageStates[index].hover
-                                                                ? `-${imageStates[index].imgHeight - 400}px`
-                                                                : "0px",
-                                                            position: "relative",
-                                                            transition: "top 2s ease",
-                                                        }}
-                                                    />
+                                        <div className='col-md-3'>
+                                            <a key={index} href={item.src} target="_blank" className='nav-link'>
+                                                <div className='product'>
+                                                    <div
+                                                        className="image-container"
+                                                        onMouseEnter={() => handleMouseEnter(index)}
+                                                        onMouseLeave={() => handleMouseLeave(index)}
+                                                    >
+                                                        <img
+                                                            ref={(el) => (imgRefs.current[index] = el)}
+                                                            src={item.img}
+                                                            alt={`Image ${index}`}
+                                                            style={{
+                                                                top: imageStates[index].hover
+                                                                    ? `-${imageStates[index].imgHeight - 400}px`
+                                                                    : "0px",
+                                                                position: "relative",
+                                                                transition: "top 2s ease",
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <hr style={{ width: '100%', borderTop: '2px solid #68a7ff91;' }} />
+                                                    <div className='product-name'>{item.name}</div>
+                                                    <div className='product-view'>{item.view} lượt xem</div>
+                                                    <div className='product-price'>{item.price}</div>
                                                 </div>
-                                                <hr style={{ width: '100%', borderTop: '2px solid #68a7ff91;' }} />
-                                                <div className='product-name'>{item.name}</div>
-                                                <div className='product-view'>{item.view} lượt xem</div>
-                                                <div className='product-price'>{item.price}</div>
-                                            </div>
-                                        </NavLink>
+                                            </a>
+                                        </div>
                                     ))
                                 }
                             </div>

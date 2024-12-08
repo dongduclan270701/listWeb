@@ -14,12 +14,16 @@
         margin: 0 auto;
         justify-content: space-between;
         padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         .title {
             margin: 0 auto;
             text-align: center;
             padding: 20px 0;
             font-size: 2.5rem;
             font-weight: bold;
+            text-transform: uppercase;
         }
         .list-product {
             .nav-link {
@@ -27,6 +31,7 @@
                 text-align: center;
                 padding: 15px;
                 display: flex;
+                justify-content: center;
                 flex-direction: column;
                 .product {
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -73,27 +78,26 @@
         background-size: cover;
         background-position: center;
         padding: 30px 10px;
-        .text{
+        .text {
             max-width: 1200px;
             margin: 0 auto;
             .title {
-                letter-spacing:2px;
+                letter-spacing: 2px;
                 color: white;
                 font-weight: bold;
                 font-style: italic;
                 font-size: 2rem;
-                text-transform:uppercase
+                text-transform: uppercase;
             }
             .content {
-                letter-spacing:1px;
+                letter-spacing: 1px;
                 color: white;
-                width:600px;
+                width: 600px;
                 font-size: 18px;
             }
         }
-        
     }
-    .type-website{
+    .type-website {
         max-width: 1200px;
         margin: 0 auto;
         justify-content: space-between;
@@ -104,22 +108,22 @@
             font-size: 2.5rem;
             font-weight: bold;
         }
-        .content{
+        .content {
             display: flex;
             justify-content: center;
-            ul{
-                li{
-                    cursor:pointer;
-                    padding:5px 0;
-                    a{
+            ul {
+                li {
+                    cursor: pointer;
+                    padding: 5px 0;
+                    a {
                         text-decoration: none;
-                        color:black;
-                        &:hover{
-                            color:grey
+                        color: black;
+                        &:hover {
+                            color: grey;
                         }
                     }
-                    .active{
-                        color:red
+                    .active {
+                        color: red;
                     }
                 }
             }

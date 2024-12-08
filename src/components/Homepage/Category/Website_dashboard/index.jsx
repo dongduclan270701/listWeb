@@ -56,53 +56,54 @@ const Index = () => {
                     <HeaderHomepage />
                     <div className='category-landing-page'>
                         <div className='banner-image'>
-                            <img src={'https://res.cloudinary.com/dolydpat4/image/upload/v1733573326/Landing-page_abblkb.png'} className='image' alt="Landing-page-image" />
+                            <img src={'https://res.cloudinary.com/dolydpat4/image/upload/v1733647170/dashboard_gyb9qt.png'} className='image' alt="Landing-page-image" />
                         </div>
-
                         <div className='part-product'>
-                            <div className='title'>Những sản phẩm bạn có thể húng thú</div>
+                            <div className='title'>Những sản phẩm bạn có thể hứng thú</div>
                             <div className='row list-product'>
                                 {
                                     product.map((item, index) => (
-                                        <NavLink key={index} to={item.src} className='col-md-3 nav-link'>
-                                            <div className='product'>
-                                                <div
-                                                    className="image-container"
-                                                    onMouseEnter={() => handleMouseEnter(index)}
-                                                    onMouseLeave={() => handleMouseLeave(index)}
-                                                >
-                                                    <img
-                                                        ref={(el) => (imgRefs.current[index] = el)}
-                                                        src={item.img}
-                                                        alt={`Image ${index}`}
-                                                        style={{
-                                                            top: imageStates[index].hover
-                                                                ? `-${imageStates[index].imgHeight - 400}px`
-                                                                : "0px",
-                                                            position: "relative",
-                                                            transition: "top 2s ease",
-                                                        }}
-                                                    />
+                                        <div className='col-md-3'>
+                                            <a key={index} href={item.src} target="_blank" className='nav-link'>
+                                                <div className='product'>
+                                                    <div
+                                                        className="image-container"
+                                                        onMouseEnter={() => handleMouseEnter(index)}
+                                                        onMouseLeave={() => handleMouseLeave(index)}
+                                                    >
+                                                        <img
+                                                            ref={(el) => (imgRefs.current[index] = el)}
+                                                            src={item.img}
+                                                            alt={`Image ${index}`}
+                                                            style={{
+                                                                top: imageStates[index].hover
+                                                                    ? `-${imageStates[index].imgHeight - 400}px`
+                                                                    : "0px",
+                                                                position: "relative",
+                                                                transition: "top 2s ease",
+                                                            }}
+                                                        />
+                                                    </div>
+                                                    <hr style={{ width: '100%', borderTop: '2px solid #68a7ff91;' }} />
+                                                    <div className='product-name'>{item.name}</div>
+                                                    <div className='product-view'>{item.view} lượt xem</div>
+                                                    <div className='product-price'>{item.price}</div>
                                                 </div>
-                                                <hr style={{ width: '100%', borderTop: '2px solid #68a7ff91;' }} />
-                                                <div className='product-name'>{item.name}</div>
-                                                <div className='product-view'>{item.view} lượt xem</div>
-                                                <div className='product-price'>{item.price}</div>
-                                            </div>
-                                        </NavLink>
+                                            </a>
+                                        </div>
                                     ))
                                 }
                             </div>
                         </div>
                         <div className='introduce-landing-page'>
                             <div className='text'>
-                                <div className='title'>Mẫu website Landing Page</div>
+                                <div className='title'>Mẫu website dashboard</div>
                                 <br></br>
-                                <div className='content'>Mẫu website landing page là một loại website đang rất được ưa chuộng hiện nay vì hiệu quả mà nó mang lại. <span style={{ color: 'red' }}>Giao diện landing page</span> sẽ phù hợp nhất cho những <span style={{ color: 'red' }}>website giới thiệu công ty</span> tổng quan và chuyên sâu về công ty hoặc một sản phẩm nào đó nhằm PR, quảng cáo sản phẩm, công ty đến với khách hàng một cách nhanh và thân thiện nhất. Bản chất của Landing page sẽ thể hiện tất cả thông tin về công ty hoặc sản phẩm lên trên cùng một trang web, khách hàng có thể theo dõi tất cả thông tin mà không cần chuyển đi bất cứ một trang nào khác.</div>
+                                <div className='content'>Mẫu website dashboard là Khi điều hành hoặc quản lý một dự án lớn, Dashboard này là một công cụ hữu ích để theo dõi tiến trình dự án và có thể chia sẻ được với nhóm của bạn và các bên liên quan khác. Chúng cung cấp một cái nhìn đầy đủ về tình hình dự án, thông tin chi tiết và dữ liệu chính. Chúng hữu ích cho tiếp thị, tài chính, quảng cáo, nguồn nhân lực và cả các nhóm kinh doanh khác.</div>
                                 <br></br>
-                                <div className='content'><span style={{ color: 'grey' }}>Mẫu Landing page đẹp</span> có thể sử dụng tối ưu cho tất cả các loại hình kinh doanh đặc biệt là: landing page BĐS, Landing page Mỹ phẩm, Landing page công ty xe hơi, Landing page GYM. Ngoài ra tuy chỉ trên một trang web duy nhất nhưng website tại KL vẫn được tối ưu hóa bằng thiết kế <span style={{ color: 'red' }}>chuẩn SEO, chuẩn Responsive- chuẩn di động</span>. Khách hàng khi hợp tác cùng với Mona Media hãy tin tưởng rằng chúng tôi có một đội ngũ nhân viên chuyên nghiệp, chế độ hậu đãi cực tốt và dịch vụ SEO chuyên nghiệp có thể giúp cho website của bạn đạt những vị trí cao trên các cổ máy tìm kiếm.</div>
+                                <div className='content'>Khi theo dõi hiệu suất trang web, việc tạo trang tổng quan trang web rất hữu ích. Website Dashboard theo dõi các dữ liệu quan trọng như lưu lượng truy cập tổng thể, tổng số người dùng, người dùng đang hoạt động, hoạt động thương mại điện tử, bán hàng và doanh thu.Cho dù doanh nghiệp duy trì một trang web đơn giản hay phức tạp, bảng điều khiển này đều có thể cung cấp một cái nhìn tích hợp, rõ ràng về các chỉ số.</div>
                                 <br></br>
-                                <div className='content'>Khả năng chính của chúng tôi là xây dựng landing page theo yêu cầu. Vì vậy nếu bạn cần xây dựng riêng thì đừng ngần ngại liên hệ hoặc để lại thông tin – chuyên viên của chúng tôi sẽ hỗ trợ tư vấn ngay với bạn</div>
+                                <div className='content'>Đây là Dashboard tổ chức kinh doanh sử dụng rất phổ biến: điều hành và cung cấp tổng thể về hoạt động theo ngày của doanh nghiệp. Vì vậy nếu bạn cần xây dựng riêng thì đừng ngần ngại liên hệ hoặc để lại thông tin – chuyên viên của chúng tôi sẽ hỗ trợ tư vấn ngay với bạn</div>
                             </div>
                         </div>
                         <div className='row type-website'>

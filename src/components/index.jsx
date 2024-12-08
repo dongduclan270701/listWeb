@@ -6,8 +6,11 @@ import {
 } from 'react-router-dom'
 //Homepage routes
 import Homepage from 'components/Homepage/index'
-
+import DesignWebsite from 'components/Homepage/Service/Design_Website'
+import MaintainWebsite from 'components/Homepage/Service/Maintain_Website'
+import Domain from 'components/Homepage/Service/Domain'
 import AboutHomepage from 'components/Homepage/About'
+import BlogHomepage from 'components/Homepage/Blog'
 import LandingPage from 'components/Homepage/Category/Landing_page'
 import Portfolio from 'components/Homepage/Category/Portfolio'
 import WebsiteBlog from 'components/Homepage/Category/Website_blog'
@@ -30,6 +33,10 @@ function App() {
     { path: "/category/website-nha-hang-quan-ca-phe", location: WebsiteRestaurantCoffee },
     { path: "/category/website-giao-duc", location: WebsiteEducation },
     { path: "/category/website-dashboard", location: WebsiteDashboard },
+    { path: "/service/thiet-ke-website-rieng", location: DesignWebsite },
+    { path: "/service/ten-mien-website-domain", location: Domain },
+    { path: "/service/bao-tri-sua-chua-website", location: MaintainWebsite },
+    { path: "/blog", location: BlogHomepage },
   ]
   const pageSellWebsite = [
     { path: "/website/template/KLD0512", location: KLD0512 }
