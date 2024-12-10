@@ -74,9 +74,6 @@ const Index = () => {
 
     return (
         <>
-            <FacebookProvider appId="986395326670081" chatSupport>
-                <CustomChat pageId="466756929862397" minimized={true} />
-            </FacebookProvider>
             <div className={isIOS ? 'hotline-icon-one-ios' : isAndroid ? 'hotline-icon-one-android' : 'hotline-icon-one-pc'}>
                 <a href={zaloLink} target='blank'>
                     <img src={Zalo} className='hotline-icon-svg' alt="Logo" />
