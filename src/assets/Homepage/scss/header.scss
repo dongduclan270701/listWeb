@@ -85,8 +85,11 @@
             align-items: center;
             text-decoration: none;
             img {
-                // width: 200px;
+                width: 300px;
+                height: 100px;
                 padding: 10px 0;
+                object-fit: none; /* Giữ kích thước thật của logo */
+                object-position: center; /* Lấy phần trung tâm của logo */
             }
         }
         .logo-res {
@@ -110,7 +113,7 @@
             .dropdown {
                 position: relative;
                 .dropdown-menu {
-                    cursor:default;
+                    cursor: default;
                     position: absolute;
                     background: unset;
                     border: none;
@@ -127,13 +130,16 @@
                     li a:hover {
                         // padding: 10px 20px;
                         background: unset;
-                        color: grey !important;
+                        color: #50adff !important;
                     }
                     a {
-                        cursor:pointer;
-                        color: black;
-                        padding:15px;
-                        background: white;
+                        cursor: pointer;
+                        color: white;
+                        padding: 15px;
+                        background: black;
+                        &:hover {
+                            color: #50adff !important;
+                        }
                     }
                 }
                 &:hover {
@@ -147,12 +153,11 @@
                 }
             }
             a {
-                
                 color: white;
                 text-decoration: none;
                 transition: 0.1s ease;
                 &:hover {
-                    color: #b8b9ba;
+                    color: #50adff;
                 }
             }
         }
@@ -239,7 +244,7 @@
             order: 3;
             border: none;
             outline: none;
-            background: #151515;
+            background: #50adff;
             /* opacity: 0.1; */
             color: white;
             font-size: 13px;
@@ -249,7 +254,7 @@
             cursor: pointer;
             transition: 0.15s ease;
             &:hover {
-                background: #151515a6;
+                background: #28669b;
             }
         }
         .button-portfolio-website {
@@ -260,12 +265,12 @@
         position: fixed;
         top: 0;
         left: 0;
-        background: #ffffffed;
-        box-shadow: -1px 3px 18px #888888;
+        background: rgba(0, 0, 0, 0.871);
+        box-shadow: 2px -3px 18px #888888;
         transition: all 0.5s;
         .links {
             a {
-                color: black;
+                color: white;
             }
         }
     }
@@ -314,7 +319,7 @@
 .hotline-icon-one-pc {
     z-index: 999;
     width: max-content;
-    background: rgba(46, 40, 214, 0.834);
+    background: #50adff;
     border-radius: 50%;
     padding: 10px;
     animation: pulse 1.5s infinite;
@@ -328,7 +333,7 @@
 .hotline-icon-one-ios {
     z-index: 999;
     width: max-content;
-    background: rgba(46, 40, 214, 0.834);
+    background: #50adff;
     border-radius: 50%;
     padding: 10px;
     animation: pulse 1.5s infinite;
@@ -343,7 +348,7 @@
 .hotline-icon-one-android {
     z-index: 999;
     width: max-content;
-    background: rgba(46, 40, 214, 0.834);
+    background: #50adff;
     border-radius: 50%;
     padding: 10px;
     animation: pulse 1.5s infinite;
@@ -358,7 +363,7 @@
 .hotline-icon-two {
     z-index: 999;
     width: max-content;
-    background: rgba(46, 40, 214, 0.834);
+    background: #50adff;
     border-radius: 50%;
     padding: 10px;
     animation: pulse 1.5s infinite;

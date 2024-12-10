@@ -4,6 +4,7 @@ import signature from 'assets/Homepage/images/logo3.svg'
 import { NavLink } from 'react-router-dom'
 import Phone from 'assets/Homepage/images/phone-call-svgrepo-com.svg'
 import Zalo from 'assets/Homepage/images/zalo-svgrepo-com.svg'
+import { FacebookProvider, CustomChat } from 'react-facebook';
 const Index = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const toggleMenu = () => {
@@ -41,7 +42,7 @@ const Index = () => {
         const handleCursorChange = (e) => {
             const tgt = e.target;
             const computed = window.getComputedStyle(tgt)["cursor"];
-        
+
             // Kiểm tra nếu `dpkCursorRef.current` không phải null trước khi thao tác
             if (dpkCursorRef.current) {
                 if (computed === "pointer") {
@@ -53,7 +54,7 @@ const Index = () => {
                 console.warn("dpkCursorRef.current is null");
             }
         };
-        
+
         const loop = () => {
             updatePosition();
             requestAnimationFrame(loop);
@@ -73,6 +74,9 @@ const Index = () => {
 
     return (
         <>
+            <FacebookProvider appId="421270581058355" chatSupport>
+                <CustomChat pageId="466756929862397" minimized={true} />
+            </FacebookProvider>
             <div className={isIOS ? 'hotline-icon-one-ios' : isAndroid ? 'hotline-icon-one-android' : 'hotline-icon-one-pc'}>
                 <a href={zaloLink} target='blank'>
                     <img src={Zalo} className='hotline-icon-svg' alt="Logo" />

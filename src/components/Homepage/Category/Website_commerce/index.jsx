@@ -55,9 +55,16 @@ const Index = () => {
                 <>
                     <HeaderHomepage />
                     <div className='category-landing-page'>
-                        <div className='banner-image'>
-                            <img src={'https://res.cloudinary.com/dolydpat4/image/upload/v1733645747/e-commerce_hf63du.png'} className='image' alt="Landing-page-image" />
-                        </div>
+                    <div className='row banner-image'>
+                            <div className='col-md-7 image'>
+                                <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733751653/ecommerce11_nonhjp.png' alt='' />
+                            </div>
+                            <div className='col-md-5 content'>
+                                <div>website</div>
+                                <div>e-commerce</div>
+                                <a href='tel:0379382992' className='tel' >Tư vấn thiết kế</a>
+                            </div>
+                        </div>9
                         <div className='part-product'>
                             <div className='title'>Những sản phẩm bạn có thể hứng thú</div>
                             <div className='row list-product'>
@@ -84,7 +91,7 @@ const Index = () => {
                                                             }}
                                                         />
                                                     </div>
-                                                    <hr style={{ width: '100%', borderTop: '2px solid #68a7ff91;' }} />
+                                                    {/* <hr style={{ width: '100%', borderTop: '2px solid #68a7ff91;' }} /> */}
                                                     <div className='product-name'>{item.name}</div>
                                                     <div className='product-view'>{item.view} lượt xem</div>
                                                     <div className='product-price'>{item.price}</div>
@@ -95,8 +102,8 @@ const Index = () => {
                                 }
                             </div>
                         </div>
-                        <div className='introduce-landing-page'>
-                            <div className='text'>
+                        <div className='row introduce-landing-page'>
+                            <div className='col-md-6 text'>
                                 <div className='title'>Mẫu website E-commerce (Thương mại điện tử)</div>
                                 <br></br>
                                 <div className='content'>Website bán hàng online, website thương mại điện tử (TMĐT) chắc là không còn cần phải giới thiệu dài dòng nữa. Mẫu website bán hàng đẹp – TMĐT của KL Website cực kì phù hợp với nhu cầu của người Việt:</div>
@@ -115,6 +122,9 @@ const Index = () => {
                                 </div>
                                 <br></br>
                                 <div className='content'>Với mẫu website bán hàng trực tuyến đẹp bạn sẽ hoàn toàn làm chủ cuộc chơi thương trường của mình. Dễ dàng thực hiện các chiến lược kinh doanh, quảng bá và marketing cho sản phẩm. Với những mẫu bên dưới, KL hy vọng sẽ giúp bạn tìm được những mẫu ưng ý hoặc có thể nảy ra được ý tưởng cho trang web của bạn. Nếu bạn cần thiết kế website bán hàng theo yêu cầu, hãy liên hệ với KL theo hotline: 037 938 2992. Chúc bạn thành công!</div>
+                            </div>
+                            <div className='col-md-6 image-intro'>
+                                <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733756969/11111_rcy8u6.png' alt='' />
                             </div>
                         </div>
                         <div className='row type-website'>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import HeaderHomepage from 'components/Homepage/Header/index_2'
+import HeaderHomepage from 'components/Homepage/Header'
 import FooterHomepage from 'components/Homepage/Footer'
 import Loading from 'components/Homepage/About/Loading';
 import 'assets/Homepage/scss/Blog.scss'
@@ -20,6 +20,7 @@ const Index = () => {
                 :
                 <>
                     <HeaderHomepage />
+                    <div className='blog-website'>
                     <div className='list-blog-website'>
                         <div className='title'>
                             Blog
@@ -102,6 +103,7 @@ const Index = () => {
                                 </ul>
                             </div>
                         </div>
+                    </div>
                     </div>
                     <FooterHomepage />
                 </>

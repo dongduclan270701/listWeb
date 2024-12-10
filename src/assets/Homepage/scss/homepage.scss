@@ -1,10 +1,128 @@
+@-webkit-keyframes snowflakes-fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+@-webkit-keyframes snowflakes-shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px);
+    }
+}
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+@keyframes snowflakes-shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(80px);
+    }
+}
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+}
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s;
+}
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s;
+}
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, 0.5s;
+    animation-delay: 6s, 0.5s;
+}
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s;
+}
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s;
+}
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s;
+}
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s;
+}
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s;
+}
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s;
+}
+.snowflake:nth-of-type(10) {
+    left: 25%;
+    -webkit-animation-delay: 2s, 0s;
+    animation-delay: 2s, 0s;
+}
+.snowflake:nth-of-type(11) {
+    left: 65%;
+    -webkit-animation-delay: 4s, 2.5s;
+    animation-delay: 4s, 2.5s;
+}
+
 .section-sell-website-homepage {
+    background-color: black;
     .section-sell-website-banner {
-        background-image: url("../images/banner.png");
-        height: 100vh;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
+        padding: 150px;
         .section-sell-website-banner-box {
             display: flex;
             flex-direction: column;
@@ -14,25 +132,18 @@
                 moveUp 0.5s ease-in-out,
                 fadeInOpacity 0.5s ease-in-out;
             .section-sell-website-banner-title {
-                padding: 20px 60px;
                 color: white;
-                font-size: 3.5rem;
+                font-size: 2rem;
             }
             .section-sell-website-banner-subtitle {
-                padding: 0 60px;
-                width: 65vw;
-                color: white;
-                font-size: 2.5rem;
+                color: #50adff;
+                font-size: 3.5rem;
             }
             .section-sell-website-banner-content {
-                padding: 0 60px;
-                width: 60vw;
                 color: white;
                 font-size: 1.5rem;
             }
             .section-sell-website-banner-list {
-                padding: 10px 60px;
-                width: 60vw;
                 display: flex;
                 flex-wrap: wrap;
                 color: white;
@@ -43,8 +154,184 @@
                 }
             }
         }
+        .section-sell-website-banner-anime3d {
+            display: flex;
+            justify-content: flex-end;
+            img {
+                animation: bounce 2s infinite ease-in-out;
+                width: 500px;
+                height: 700px;
+                background-size: cover; /* Đảm bảo ảnh vừa khít khung */
+                background-position: center; /* Căn giữa ảnh */
+                background-repeat: no-repeat; /* Không lặp ảnh */
+            }
+            @keyframes bounce {
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-20px);
+                }
+            }
+        }
     }
+    .section-sell-website-service {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 30px 150px;
+        color: white;
+        align-items: center;
+        gap: 20px;
+        .title {
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+        .content {
+            width: 100%;
+            flex-wrap: wrap;
+            .part-service {
+                padding: 15px 12px;
+                align-items: stretch;
+                display: flex;
+                .single-part {
+                    border-radius: 15px;
+                    border: 1px solid #50adff;
+                    padding: 20px;
+                    display: flex;
+                    gap: 20px;
+                    .left {
+                        font-size: 1.5rem;
+                    }
+                    .right {
+                        .above {
+                            font-size: 1.5rem;
+                            text-transform: uppercase;
+                        }
+                        .down {
+                            color: grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-sell-website-price {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 30px 250px;
+        color: white;
+        align-items: center;
+        gap: 20px;
+        .title {
+            text-transform: uppercase;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .list-price {
+            width: 100%;
+            .content {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                padding: 10px 30px;
+                .price {
+                    border-radius: 15px;
+                    border: 1px solid #50adff;
+                    width: 100%;
 
+                    .price-above {
+                        padding: 30px;
+                        .title-price {
+                            text-transform: uppercase;
+                            font-size: 1.5rem;
+                        }
+                        .sub-title-price {
+                            color: #50adff;
+                        }
+                    }
+                    .price-down {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        padding: 30px;
+                        border-radius: 0 0 15px 15px;
+                        background-color: rgba(38, 38, 38, 0.639);
+                        a {
+                            text-decoration: none;
+                            color: #50adff;
+                            padding: 10px;
+                            border: 1px solid #50adff;
+                            border-radius: 10px;
+                            text-align: center;
+                            background-color: black;
+                            transition:
+                                box-shadow 0.5s ease-in-out,
+                                color 0.5s ease-in-out;
+                            &:hover {
+                                box-shadow: inset 0 0 1.5em 1.5em #50adff;
+                                color: white !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-sell-website-blog {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 30px 250px;
+        color: white;
+        align-items: center;
+        gap: 20px;
+        .title {
+            text-transform: uppercase;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .list-blog {
+            width: 100%;
+            .content {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                padding: 10px 30px;
+                text-decoration: none;
+                .part-blog{
+                    img{
+                        width:100%;
+                        height: 200px;
+                        border-radius:15px;
+                    }
+                    .time{
+                        color:grey;
+                        font-size:16px;
+                        padding:10px 0;
+                    }
+                    .title{
+                        font-size:1.2rem;
+                        text-align: left;
+                        color:white;
+                    }
+                }
+            }
+        }
+        .btn-more-blog{
+            text-decoration: none;
+            color:white;
+            background-color: #50adff;
+            padding:10px;
+            border-radius:15px;
+            text-transform: uppercase;
+            &:hover{
+                background-color: #28669b
+            }
+        }
+    }
     .section-sell-website-slide {
         .wrapper {
             width: 100%;
@@ -53,22 +340,23 @@
             position: relative;
             animation: fadeInSlide 0.5s ease-in-out !important;
         }
-
         .selectors {
             position: absolute;
             top: 0;
             left: 0;
-            width: 30px;
+            width: 40vw;
+            padding: 10px;
             background: rgba(0, 0, 0, 0.1);
             height: inherit;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            z-index: 1;
+            z-index: 5;
+            align-items: flex-start;
 
             .selector {
-                border: 1px solid #fff;
+                border: 1px solid #50adff;
                 background: none;
                 width: 11px;
                 height: 11px;
@@ -82,7 +370,7 @@
 
                 &.active,
                 &:hover {
-                    background: #fff;
+                    background: #50adff;
                     opacity: 0.9;
                 }
             }
@@ -98,6 +386,7 @@
             display: none;
             flex-direction: column;
             justify-content: center;
+            z-index: 3;
 
             .panel-video {
                 animation: fadeInSlide 0.5s ease-in-out;
@@ -107,7 +396,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                z-index: -1;
+                z-index: 1;
             }
 
             &.active {
@@ -118,6 +407,7 @@
                 .panel-info {
                     margin: 0;
                     padding: 1.3rem 3.5rem;
+                    z-index: 2;
                     animation:
                         moveUp 0.5s ease-in-out,
                         fadeInOpacity 0.5s ease-in-out;
@@ -136,12 +426,14 @@
                     opacity: 1;
                 }
                 .panel-button {
+                    z-index: 6;
+                    position: absolute;
                     width: fit-content;
                     border-radius: 15px;
                     margin: 1.3rem 0.5rem 1.3rem 3.5rem;
                     padding: 0.8em 1.3em;
                     background: none;
-                    border: 1px solid #fff;
+                    border: 1px solid #50adff;
                     color: #fff;
                     cursor: pointer;
                     font-size: 0.8rem;
@@ -154,8 +446,8 @@
                         moveUp 0.5s ease-in-out,
                         fadeInOpacity 0.5s ease-in-out;
                     &:hover {
-                        box-shadow: inset 0 0 1.5em 1.5em #fff;
-                        color: black !important;
+                        box-shadow: inset 0 0 1.5em 1.5em #50adff;
+                        color: white !important;
                     }
 
                     &:focus {
@@ -186,14 +478,22 @@
     }
     .section-sell-website-question {
         align-items: center;
-        max-width: 1200px;
         margin: 0 auto;
-        padding: 30px 0;
+        margin: 100px 150px 100px 150px;
+        padding: 30px 150px;
+        color: white;
+        border: 1px solid rgb(29, 29, 29);
+        border-radius: 30px;
+        background: rgb(29, 29, 29);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .section-sell-website-question-above {
             .section-sell-website-question-title {
                 text-transform: uppercase;
                 text-align: center;
-                font-size: 3rem;
+                font-size: 2rem;
+                font-style: italic;
                 &::after {
                     content: "";
                     display: table;
@@ -212,16 +512,15 @@
             }
         }
         .section-sell-website-question-below {
-            display: flex;
-            // gap:20px;
+            width: 100%;
+            justify-content: center;
             .section-sell-website-question-below-left {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
-                // padding: 0 20px 0 0;
                 .section-sell-website-question-below-left-box {
-                    display: flex;
-                    gap: 20px;
+                    // display: flex;
+                    // gap: 20px;
                     .section-sell-website-question-below-left-img {
                         img {
                             border-radius: 15px;
@@ -234,57 +533,86 @@
                     }
                 }
             }
+            .info {
+                margin-top: 20px;
+                padding: 15px 10px;
+                text-align: center;
+                border: 1px solid #50adff;
+                border-radius: 15px;
+                display: flex;
+                justify-content: space-around;
+                background: black;
+                .gmail {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: start;
+                        .first {
+                            font-size: 13px;
+                            color: grey;
+                        }
+                    }
+                    .icon {
+                        background-color: #50adff;
+                        width: max-content;
+                        padding: 10px;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
         .section-sell-website-price {
             display: flex;
             justify-content: center;
             .section-sell-website-price-box {
-                cursor:pointer;
-                width:30%;
+                cursor: pointer;
+                width: 30%;
                 border: 0.5px solid #070707a1;
                 border-radius: 15px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding:0;
-                margin:20px;
+                padding: 0;
+                margin: 20px;
                 .section-sell-website-price-above {
                     width: 100%;
-                    display:flex;
+                    display: flex;
                     flex-direction: column;
                     align-items: center;
                     border-radius: 15px;
                     background: #070707a1;
-                    color:white;
-                    padding:10px;
-                    .section-sell-website-price-above-title{
+                    color: white;
+                    padding: 10px;
+                    .section-sell-website-price-above-title {
                         font-size: 2rem;
                         text-transform: uppercase;
                     }
-                    .section-sell-website-price-above-button{
+                    .section-sell-website-price-above-button {
                         font-size: 1rem;
                         text-transform: uppercase;
                     }
                 }
                 .section-sell-website-price-below {
-                    display:flex;
+                    display: flex;
                     flex-direction: column;
                     // align-items: center;
-                    padding:10px;
-                    .section-sell-website-price-below-title{
+                    padding: 10px;
+                    .section-sell-website-price-below-title {
                         font-size: 1.5rem;
                         text-transform: uppercase;
                         text-align: center;
                     }
-                    .section-sell-website-price-below-subtitle{
-                        padding:10px 0;
+                    .section-sell-website-price-below-subtitle {
+                        padding: 10px 0;
                         font-size: 1rem;
                     }
                 }
             }
         }
-        .section-sell-website-description{
-            
+        .section-sell-website-description {
         }
     }
 }

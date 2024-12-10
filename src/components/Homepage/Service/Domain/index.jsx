@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import HeaderHomepage from 'components/Homepage/Header/index_2'
+import HeaderHomepage from 'components/Homepage/Header/index'
 import FooterHomepage from 'components/Homepage/Footer'
 import Loading from 'components/Homepage/About/Loading';
 import 'assets/Homepage/scss/Design_website.scss'
@@ -44,33 +44,33 @@ const Index = () => {
                                 <br />
                                 <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733658502/what-is-domain1_gl5l7a.png' className='' alt='' />
                                 <br />
-                                <div className='sub-title'>Domain là gì?</div>
+                                <div className='sub-title'>1. Domain là gì?</div>
                                 <br />
                                 <div>Dưới đây là một số ví dụ về tên miền trong ngôn ngữ Việt Nam:</div>
                                 <br />
-                                <li>www.google.com.vn: Tên miền này đại diện cho công cụ tìm kiếm Google tại Việt Nam. Phần tên "google" đề cập đến tên của công ty, trong khi ".com.vn" là phần mở rộng quốc gia cho Việt Nam.</li>
-                                <li>www.vietnamairlines.vn: Đây là tên miền của hãng hàng không Vietnam Airlines. Phần tên "vietnamairlines" chỉ định rõ tên của hãng, trong khi ".vn" là phần mở rộng quốc gia cho Việt Nam.</li>
-                                <li>www.nganluong.vn: Đây là tên miền của dịch vụ thanh toán trực tuyến Ngân Lượng. Phần tên "nganluong" thể hiện tên của dịch vụ, trong khi ".vn" là phần mở rộng quốc gia cho Việt Nam.</li>
-                                <li>www.vietcombank.com.vn: Tên miền này đại diện cho Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank). Phần tên "vietcombank" chỉ định tên ngân hàng, trong khi ".com.vn" là phần mở rộng quốc gia cho Việt Nam.</li>
-                                <li>www.tuoitre.vn: Đây là tên miền của tờ báo Tuổi Trẻ, một tờ báo điện tử nổi tiếng tại Việt Nam. Phần tên "tuoitre" đề cập đến tên của báo, trong khi ".vn" là phần mở rộng quốc gia cho Việt Nam.</li>
+                                <li><b style={{color:'#50adff'}}>www.google.com.vn</b>: Tên miền này đại diện cho công cụ tìm kiếm Google tại Việt Nam. Phần tên "google" đề cập đến tên của công ty, trong khi ".com.vn" là phần mở rộng quốc gia cho Việt Nam.</li>
+                                <li><b style={{color:'#50adff'}}>www.vietnamairlines.vn</b>: Đây là tên miền của hãng hàng không Vietnam Airlines. Phần tên "vietnamairlines" chỉ định rõ tên của hãng, trong khi ".vn" là phần mở rộng quốc gia cho Việt Nam.</li>
+                                <li><b style={{color:'#50adff'}}>www.nganluong.vn</b>: Đây là tên miền của dịch vụ thanh toán trực tuyến Ngân Lượng. Phần tên "nganluong" thể hiện tên của dịch vụ, trong khi ".vn" là phần mở rộng quốc gia cho Việt Nam.</li>
+                                <li><b style={{color:'#50adff'}}>www.vietcombank.com.vn</b>: Tên miền này đại diện cho Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank). Phần tên "vietcombank" chỉ định tên ngân hàng, trong khi ".com.vn" là phần mở rộng quốc gia cho Việt Nam.</li>
+                                <li><b style={{color:'#50adff'}}>www.tuoitre.vn</b>: Đây là tên miền của tờ báo Tuổi Trẻ, một tờ báo điện tử nổi tiếng tại Việt Nam. Phần tên "tuoitre" đề cập đến tên của báo, trong khi ".vn" là phần mở rộng quốc gia cho Việt Nam.</li>
                                 <br />
                                 <div>Các ví dụ trên là những tên miền thực tế được sử dụng trong ngôn ngữ Việt Nam, và chúng chỉ là một số ví dụ đơn giản. Có rất nhiều tên miền khác có thể được tạo ra với sự kết hợp của các từ và phần mở rộng khác nhau.</div>
                                 <br />
-                                <div className='sub-title'>Cách hoạt động của tên miền</div>
+                                <div className='sub-title'>2. Cách hoạt động của tên miền</div>
                                 <br />
                                 <div>Tên miền hoạt động như một địa chỉ độc đáo trên Internet, giúp xác định và truy cập vào các trang web cụ thể. Cách hoạt động của tên miền có các bước sau:</div>
                                 <br />
-                                <li>Đăng ký tên miền: Đầu tiên, người sử dụng hoặc tổ chức cần đăng ký tên miền của mình thông qua một nhà đăng ký tên miền (domain registrar). Nhà đăng ký này là một tổ chức được phép đăng ký và quản lý các tên miền. Người dùng cung cấp thông tin liên lạc và chọn tên miền mà họ muốn đăng ký.</li>
-                                <li>Phân giải tên miền: Khi tên miền được đăng ký, thông tin về tên miền và máy chủ DNS (Domain Name System) của người sở hữu được ghi lại trong hệ thống DNS. DNS là một hệ thống phân giải địa chỉ IP và tên miền, giúp ánh xạ tên miền thành địa chỉ IP tương ứng.</li>
-                                <li>Cập nhật máy chủ DNS: Người sở hữu tên miền cần cung cấp địa chỉ IP của máy chủ mà trang web của họ được lưu trữ. Thông tin này được cập nhật trong máy chủ DNS của nhà đăng ký tên miền. Khi người dùng truy cập vào tên miền đó trên trình duyệt web, trình duyệt gửi yêu cầu đến máy chủ DNS.</li>
-                                <li>Giải quyết tên miền: Máy chủ DNS nhận yêu cầu từ trình duyệt web và tìm kiếm thông tin về tên miền tương ứng trong hệ thống DNS. Nếu tìm thấy, máy chủ DNS sẽ trả về địa chỉ IP của máy chủ lưu trữ trang web tương ứng.</li>
-                                <li>Truy cập trang web: Sau khi máy chủ DNS trả về địa chỉ IP, trình duyệt web sẽ sử dụng địa chỉ IP này để truy cập vào máy chủ lưu trữ trang web. Kết nối được thiết lập và nội dung của trang web được tải xuống và hiển thị trên trình duyệt.</li>
+                                <li><b style={{color:'#50adff'}}>Đăng ký tên miền</b>: Đầu tiên, người sử dụng hoặc tổ chức cần đăng ký tên miền của mình thông qua một nhà đăng ký tên miền (domain registrar). Nhà đăng ký này là một tổ chức được phép đăng ký và quản lý các tên miền. Người dùng cung cấp thông tin liên lạc và chọn tên miền mà họ muốn đăng ký.</li>
+                                <li><b style={{color:'#50adff'}}>Phân giải tên miền</b>: Khi tên miền được đăng ký, thông tin về tên miền và máy chủ DNS (Domain Name System) của người sở hữu được ghi lại trong hệ thống DNS. DNS là một hệ thống phân giải địa chỉ IP và tên miền, giúp ánh xạ tên miền thành địa chỉ IP tương ứng.</li>
+                                <li><b style={{color:'#50adff'}}>Cập nhật máy chủ DNS</b>: Người sở hữu tên miền cần cung cấp địa chỉ IP của máy chủ mà trang web của họ được lưu trữ. Thông tin này được cập nhật trong máy chủ DNS của nhà đăng ký tên miền. Khi người dùng truy cập vào tên miền đó trên trình duyệt web, trình duyệt gửi yêu cầu đến máy chủ DNS.</li>
+                                <li><b style={{color:'#50adff'}}>Giải quyết tên miền</b>: Máy chủ DNS nhận yêu cầu từ trình duyệt web và tìm kiếm thông tin về tên miền tương ứng trong hệ thống DNS. Nếu tìm thấy, máy chủ DNS sẽ trả về địa chỉ IP của máy chủ lưu trữ trang web tương ứng.</li>
+                                <li><b style={{color:'#50adff'}}>Truy cập trang web</b>: Sau khi máy chủ DNS trả về địa chỉ IP, trình duyệt web sẽ sử dụng địa chỉ IP này để truy cập vào máy chủ lưu trữ trang web. Kết nối được thiết lập và nội dung của trang web được tải xuống và hiển thị trên trình duyệt.</li>
                                 <br />
                                 <div>Tóm lại, tên miền hoạt động bằng cách sử dụng hệ thống DNS để ánh xạ tên miền thành địa chỉ IP tương ứng của máy chủ lưu trữ trang web. Quá trình này cho phép người dùng truy cập vào trang web bằng cách nhập tên miền vào trình duyệt, trong khi hệ thống DNS đảm bảo địa chỉ IP chính xác được gán cho tên miền đó.</div>
                                 <br />
                                 <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733658826/domain-la-gi-3_aizbuu.png' className='' alt='' />
                                 <br />
-                                <div className='sub-title'>Phân loại tên miền</div>
+                                <div className='sub-title'>3. Phân loại tên miền</div>
                                 <br />
                                 <div>Tên miền có thể được phân loại thành ba loại chính dựa trên phần mở rộng (top-level domain) của chúng. Dưới đây là các loại tên miền phổ biến:</div>
                                 <br />
@@ -78,39 +78,39 @@ const Index = () => {
                                     Top-level domain quốc tế (gTLD): Đây là các phần mở rộng tên miền không giới hạn bởi quốc gia. Các phần mở rộng gTLD phổ biến bao gồm ".com" (thương mại), ".org" (tổ chức phi lợi nhuận), ".net" (mạng lưới), ".edu" (giáo dục), ".gov" (chính phủ), ".mil" (quân đội), và ".int" (tổ chức quốc tế).
                                     Top-level domain cấp cao (sTLD): Đây là các phần mở rộng tên miền được tạo ra với mục đích đặc biệt. Ví dụ, ".travel" (du lịch), ".mobi" (di động), ".aero" (hàng không), ".coop" (hợp tác), ".jobs" (việc làm). Các phần mở rộng sTLD này thường được sử dụng để chỉ rõ ngành nghề, lĩnh vực hoặc mục tiêu đặc biệt.</div>
                                 <br />
-                                <div className='sub-title'>Tại sao cần có một tên miền?</div>
+                                <div className='sub-title'>4. Tại sao cần có một tên miền?</div>
                                 <br />
                                 <div>Một tên miền là cần thiết để có một địa chỉ độc nhất và dễ nhận diện trên Internet. Dưới đây là một số lý do quan trọng về tại sao cần có một tên miền:</div>
                                 <br />
-                                <li>Định danh trực tuyến: Tên miền là một phần quan trọng của việc xác định và định danh trực tuyến cho một tổ chức, doanh nghiệp hoặc cá nhân. Nó cho phép bạn có một địa chỉ duy nhất trên Internet để mọi người có thể tìm kiếm, truy cập và giao tiếp với bạn.</li>
-                                <li>Xây dựng thương hiệu: Tên miền có thể là một yếu tố quan trọng trong việc xây dựng thương hiệu trực tuyến. Bằng cách chọn một tên miền phù hợp với tên hoặc lĩnh vực hoạt động của bạn, bạn có thể tạo ra một sự nhất quán và dễ nhận diện cho khách hàng và người dùng của bạn. Nó có thể truyền tải thông điệp về giá trị và tính chuyên nghiệp của bạn.</li>
-                                <li>Giao tiếp và tiếp cận khách hàng: Tên miền cung cấp một cách thức thuận tiện và dễ nhớ để khách hàng tiếp cận và tương tác với bạn trên Internet. Thay vì nhớ địa chỉ IP dài và phức tạp của máy chủ, khách hàng chỉ cần nhập tên miền vào trình duyệt để truy cập trang web của bạn.</li>
-                                <li>Email chuyên nghiệp: Tên miền cung cấp khả năng tạo địa chỉ email chuyên nghiệp dựa trên tên miền của bạn. Thay vì sử dụng dịch vụ email miễn phí với tên miền của nhà cung cấp, bạn có thể có địa chỉ email như contact@yourdomain.com, tạo sự tin tưởng và chuyên nghiệp trong giao tiếp.</li>
-                                <li>Quyền kiểm soát và bảo vệ: Khi bạn sở hữu tên miền, bạn có quyền kiểm soát và bảo vệ nó khỏi việc sử dụng trái phép hoặc lạm dụng. Bạn có thể thiết lập các cấu hình bảo mật, chuyển hướng và quản lý nội dung trên trang web của mình.</li>
+                                <li><b style={{color:'#50adff'}}>Định danh trực tuyến</b>: Tên miền là một phần quan trọng của việc xác định và định danh trực tuyến cho một tổ chức, doanh nghiệp hoặc cá nhân. Nó cho phép bạn có một địa chỉ duy nhất trên Internet để mọi người có thể tìm kiếm, truy cập và giao tiếp với bạn.</li>
+                                <li><b style={{color:'#50adff'}}>Xây dựng thương hiệu</b>: Tên miền có thể là một yếu tố quan trọng trong việc xây dựng thương hiệu trực tuyến. Bằng cách chọn một tên miền phù hợp với tên hoặc lĩnh vực hoạt động của bạn, bạn có thể tạo ra một sự nhất quán và dễ nhận diện cho khách hàng và người dùng của bạn. Nó có thể truyền tải thông điệp về giá trị và tính chuyên nghiệp của bạn.</li>
+                                <li><b style={{color:'#50adff'}}>Giao tiếp và tiếp cận khách hàng</b>: Tên miền cung cấp một cách thức thuận tiện và dễ nhớ để khách hàng tiếp cận và tương tác với bạn trên Internet. Thay vì nhớ địa chỉ IP dài và phức tạp của máy chủ, khách hàng chỉ cần nhập tên miền vào trình duyệt để truy cập trang web của bạn.</li>
+                                <li><b style={{color:'#50adff'}}>Email chuyên nghiệp</b>: Tên miền cung cấp khả năng tạo địa chỉ email chuyên nghiệp dựa trên tên miền của bạn. Thay vì sử dụng dịch vụ email miễn phí với tên miền của nhà cung cấp, bạn có thể có địa chỉ email như contact@yourdomain.com, tạo sự tin tưởng và chuyên nghiệp trong giao tiếp.</li>
+                                <li><b style={{color:'#50adff'}}>Quyền kiểm soát và bảo vệ</b>: Khi bạn sở hữu tên miền, bạn có quyền kiểm soát và bảo vệ nó khỏi việc sử dụng trái phép hoặc lạm dụng. Bạn có thể thiết lập các cấu hình bảo mật, chuyển hướng và quản lý nội dung trên trang web của mình.</li>
                                 <br />
                                 <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733659027/domain_iqyro6.png' className='' alt='' />
                                 <br />
-                                <div className='sub-title'>Các tiêu chí lựa chọn domain tốt là gì?</div>
+                                <div className='sub-title'>5. Các tiêu chí lựa chọn domain tốt là gì?</div>
                                 <br />
                                 <div>Khi lựa chọn một tên miền tốt, có một số tiêu chí quan trọng cần xem xét. Dưới đây là các tiêu chí mà bạn nên cân nhắc khi lựa chọn một tên miền:</div>
                                 <br />
-                                <li>Dễ nhớ: Một tên miền nên dễ nhớ để người dùng có thể dễ dàng ghi nhớ và truy cập vào trang web của bạn. Hãy tìm một tên ngắn, đơn giản và không quá phức tạp, tránh sử dụng các ký tự đặc biệt hoặc cấu trúc phức tạp.</li>
-                                <li>Liên quan đến lĩnh vực hoạt động: Tên miền nên phản ánh hoặc liên quan đến lĩnh vực hoạt động của bạn. Điều này giúp khách hàng hoặc người dùng dễ dàng nhận biết và hiểu được mục đích và nội dung của trang web.</li>
-                                <li>Không gây nhầm lẫn: Tránh sử dụng các tên miền tương tự hoặc gần giống với các trang web khác để tránh tình trạng nhầm lẫn và đánh mất người dùng. Kiểm tra kỹ trước để đảm bảo tên miền bạn chọn không trùng lặp hoặc gây nhầm lẫn với các tên miền khác.</li>
-                                <li>Thương hiệu cá nhân hoặc doanh nghiệp: Lựa chọn tên miền có thể phản ánh thương hiệu cá nhân hoặc doanh nghiệp của bạn. Nếu có thể, hãy sử dụng tên riêng của bạn hoặc tên công ty để tạo sự nhất quán và tăng tính nhận diện.</li>
-                                <li>Tương thích SEO: Nếu bạn quan tâm đến việc tối ưu hóa công cụ tìm kiếm (SEO), hãy lựa chọn một tên miền có liên quan đến từ khóa hoặc từ ngữ quan trọng trong lĩnh vực của bạn. Điều này có thể giúp tăng khả năng xuất hiện trên các kết quả tìm kiếm.</li>
-                                <li>TLD phù hợp: Chọn phần mở rộng tên miền (TLD) phù hợp với mục đích sử dụng. TLD có thể là ccTLD của quốc gia (ví dụ: ".vn" cho Việt Nam) hoặc gTLD phổ biến như ".com", ".net", hoặc ".org".</li>
-                                <li>Bảo vệ và pháp lý: Kiểm tra tính khả dụng và bảo vệ pháp lý của tên miền. Đảm bảo rằng tên miền không vi phạm quyền sở hữu trí tuệ, không gây tranh chấp và tuân thủ các quy định liên quan đến tên miền.</li>
+                                <li><b style={{color:'#50adff'}}>Dễ nhớ</b>: Một tên miền nên dễ nhớ để người dùng có thể dễ dàng ghi nhớ và truy cập vào trang web của bạn. Hãy tìm một tên ngắn, đơn giản và không quá phức tạp, tránh sử dụng các ký tự đặc biệt hoặc cấu trúc phức tạp.</li>
+                                <li><b style={{color:'#50adff'}}>Liên quan đến lĩnh vực hoạt động</b>: Tên miền nên phản ánh hoặc liên quan đến lĩnh vực hoạt động của bạn. Điều này giúp khách hàng hoặc người dùng dễ dàng nhận biết và hiểu được mục đích và nội dung của trang web.</li>
+                                <li><b style={{color:'#50adff'}}>Không gây nhầm lẫn</b>: Tránh sử dụng các tên miền tương tự hoặc gần giống với các trang web khác để tránh tình trạng nhầm lẫn và đánh mất người dùng. Kiểm tra kỹ trước để đảm bảo tên miền bạn chọn không trùng lặp hoặc gây nhầm lẫn với các tên miền khác.</li>
+                                <li><b style={{color:'#50adff'}}>Thương hiệu cá nhân hoặc doanh nghiệp</b>: Lựa chọn tên miền có thể phản ánh thương hiệu cá nhân hoặc doanh nghiệp của bạn. Nếu có thể, hãy sử dụng tên riêng của bạn hoặc tên công ty để tạo sự nhất quán và tăng tính nhận diện.</li>
+                                <li><b style={{color:'#50adff'}}>Tương thích SEO</b>: Nếu bạn quan tâm đến việc tối ưu hóa công cụ tìm kiếm (SEO), hãy lựa chọn một tên miền có liên quan đến từ khóa hoặc từ ngữ quan trọng trong lĩnh vực của bạn. Điều này có thể giúp tăng khả năng xuất hiện trên các kết quả tìm kiếm.</li>
+                                <li><b style={{color:'#50adff'}}>TLD phù hợp</b>: Chọn phần mở rộng tên miền (TLD) phù hợp với mục đích sử dụng. TLD có thể là ccTLD của quốc gia (ví dụ: ".vn" cho Việt Nam) hoặc gTLD phổ biến như ".com", ".net", hoặc ".org".</li>
+                                <li><b style={{color:'#50adff'}}>Bảo vệ và pháp lý</b>: Kiểm tra tính khả dụng và bảo vệ pháp lý của tên miền. Đảm bảo rằng tên miền không vi phạm quyền sở hữu trí tuệ, không gây tranh chấp và tuân thủ các quy định liên quan đến tên miền.</li>
                                 <br />
-                                <div className='sub-title'>Một số lý do bạn nên đăng ký tên miền</div>
+                                <div className='sub-title'>6. ột số lý do bạn nên đăng ký tên miền</div>
                                 <br />
                                 <div>Đăng ký tên miền đem lại nhiều lợi ích quan trọng. Dưới đây là một số lý do nên đăng ký tên miền:</div>
                                 <br />
-                                <li>Định danh trực tuyến: Đăng ký tên miền cho phép bạn có một địa chỉ duy nhất trên Internet để xác định và định danh trực tuyến cho cá nhân, tổ chức hoặc doanh nghiệp của bạn. Nó giúp người dùng dễ dàng tìm thấy bạn và truy cập vào trang web của bạn.</li>
-                                <li>Xây dựng thương hiệu: Tên miền là một yếu tố quan trọng trong việc xây dựng thương hiệu trực tuyến. Bằng cách đăng ký tên miền phù hợp với tên hoặc lĩnh vực hoạt động của bạn, bạn có thể tạo ra một sự nhất quán và dễ nhận diện cho khách hàng và người dùng của bạn. Nó góp phần xây dựng lòng tin và tạo nên hình ảnh chuyên nghiệp của bạn.</li>
-                                <li>Giao tiếp chuyên nghiệp: Sở hữu tên miền riêng giúp bạn tạo ra địa chỉ email chuyên nghiệp dựa trên tên miền của bạn. Thay vì sử dụng dịch vụ email miễn phí với tên miền của nhà cung cấp, bạn có thể có địa chỉ email như contact@yourdomain.com. Điều này tạo ra ấn tượng chuyên nghiệp và tin cậy trong giao tiếp với khách hàng, đối tác và người dùng.</li>
-                                <li>Bảo vệ và quyền kiểm soát: Khi đăng ký tên miền, bạn có quyền kiểm soát và bảo vệ nó khỏi việc sử dụng trái phép hoặc lạm dụng. Bạn trở thành chủ sở hữu hợp pháp và có quyền quyết định về cấu hình bảo mật, chuyển hướng và quản lý nội dung trên trang web của mình.</li>
-                                <li>Tối ưu hóa công cụ tìm kiếm (SEO): Một tên miền phù hợp và tối ưu hóa có thể cung cấp lợi ích SEO. Bằng cách lựa chọn tên miền chứa từ khóa liên quan đến lĩnh vực của bạn, bạn có thể cải thiện khả năng xuất hiện trên các kết quả tìm kiếm và thu hút lưu lượng truy cập từ người tìm kiếm.
+                                <li><b style={{color:'#50adff'}}>Định danh trực tuyến</b>: Đăng ký tên miền cho phép bạn có một địa chỉ duy nhất trên Internet để xác định và định danh trực tuyến cho cá nhân, tổ chức hoặc doanh nghiệp của bạn. Nó giúp người dùng dễ dàng tìm thấy bạn và truy cập vào trang web của bạn.</li>
+                                <li><b style={{color:'#50adff'}}>Xây dựng thương hiệu</b>: Tên miền là một yếu tố quan trọng trong việc xây dựng thương hiệu trực tuyến. Bằng cách đăng ký tên miền phù hợp với tên hoặc lĩnh vực hoạt động của bạn, bạn có thể tạo ra một sự nhất quán và dễ nhận diện cho khách hàng và người dùng của bạn. Nó góp phần xây dựng lòng tin và tạo nên hình ảnh chuyên nghiệp của bạn.</li>
+                                <li><b style={{color:'#50adff'}}>Giao tiếp chuyên nghiệp</b>: Sở hữu tên miền riêng giúp bạn tạo ra địa chỉ email chuyên nghiệp dựa trên tên miền của bạn. Thay vì sử dụng dịch vụ email miễn phí với tên miền của nhà cung cấp, bạn có thể có địa chỉ email như contact@yourdomain.com. Điều này tạo ra ấn tượng chuyên nghiệp và tin cậy trong giao tiếp với khách hàng, đối tác và người dùng.</li>
+                                <li><b style={{color:'#50adff'}}>Bảo vệ và quyền kiểm soát</b>: Khi đăng ký tên miền, bạn có quyền kiểm soát và bảo vệ nó khỏi việc sử dụng trái phép hoặc lạm dụng. Bạn trở thành chủ sở hữu hợp pháp và có quyền quyết định về cấu hình bảo mật, chuyển hướng và quản lý nội dung trên trang web của mình.</li>
+                                <li><b style={{color:'#50adff'}}>Tối ưu hóa công cụ tìm kiếm (SEO)</b>: Một tên miền phù hợp và tối ưu hóa có thể cung cấp lợi ích SEO. Bằng cách lựa chọn tên miền chứa từ khóa liên quan đến lĩnh vực của bạn, bạn có thể cải thiện khả năng xuất hiện trên các kết quả tìm kiếm và thu hút lưu lượng truy cập từ người tìm kiếm.
                                     Mở rộng hoạt động kinh doanh: Đăng ký tên miền cung cấp cơ hội mở rộng hoạt động kinh doanh của bạn trên mạng. Bạn có thể tạo ra trang web, cung cấp dịch vụ trực tuyến, tiếp cận khách hàng toàn cầu và mở rộng tầm ảnh hưởng của bạn.</li>
                                 <br />
                                 <div className='sub-title'>Kết luận</div>

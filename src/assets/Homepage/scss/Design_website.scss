@@ -1,4 +1,6 @@
 .service-design-website {
+    background-color: black;
+    color:white;
     .part-design-website {
         max-width: 1200px;
         margin: 0 auto;
@@ -37,9 +39,10 @@
             }
             .content-news {
                 padding: 10px 0;
+                
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: white;
                     img {
                         width: 100%;
                         background-size: cover;

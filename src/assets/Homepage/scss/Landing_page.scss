@@ -1,12 +1,49 @@
 .category-landing-page {
+    background-color: black;
+    color: white;
     .banner-image {
-        .image {
-            height: 100vh;
+        padding: 150px;
+        img {
+            animation: bounce 2s infinite ease-in-out;
             width: 100%;
-            background-size: cover;
-            background-position: center;
+            background-size: cover; /* Đảm bảo ảnh vừa khít khung */
+            background-position: center; /* Căn giữa ảnh */
+            background-repeat: no-repeat; /* Không lặp ảnh */
         }
-        margin-bottom: 15px;
+        @keyframes bounce {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            font-size: 5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            .tel {
+                font-size: 16px;
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                border: 1px solid #50adff;
+                border-radius: 15px;
+                transition:
+                    box-shadow 0.5s ease-in-out,
+                    color 0.5s ease-in-out;
+                &:hover {
+                    box-shadow: inset 0 0 1.5em 1.5em #50adff;
+                    color: white !important;
+                }
+            }
+        }
     }
 
     .part-product {
@@ -17,6 +54,12 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        .sub-title {
+            margin: 0 auto;
+            text-align: center;
+            color: grey;
+            font-size: 18px;
+        }
         .title {
             margin: 0 auto;
             text-align: center;
@@ -34,14 +77,18 @@
                 justify-content: center;
                 flex-direction: column;
                 .product {
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    border: 1px solid #50adff;
+                    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     border-radius: 15px;
                     overflow: hidden;
+                    background-color: #212121ac;
+                    color: white;
                     .image-container {
                         width: 100%;
                         height: 400px;
                         overflow: hidden;
                         position: relative;
+
                         img {
                             width: 100%;
                             position: relative;
@@ -55,7 +102,8 @@
                     .product-name {
                         text-transform: uppercase;
                         font-size: 18px;
-                        padding: 0 5px 15px 5px;
+                        padding: 15px 5px;
+                        font-weight: bold;
                     }
                     .product-view {
                         text-transform: uppercase;
@@ -63,21 +111,30 @@
                     }
                     .product-price {
                         padding: 15px 0;
+                        border-top: 1px solid #50adff;
                         color: white;
                         font-size: 20px;
-                        background-image: linear-gradient(to right, #434343, #a7a7a7);
+                        transition:
+                            box-shadow 0.5s ease-in-out,
+                            color 0.5s ease-in-out;
+                    }
+                    &:hover {
+                        .product-price {
+                                box-shadow: inset 0 0 1.5em 1.5em #50adff;
+                                color: white !important;
+                            
+                        }
                     }
                 }
             }
         }
     }
     .introduce-landing-page {
-        background-image: url("https://res.cloudinary.com/dolydpat4/image/upload/v1733573291/037-938-2992_tfiq73.png");
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        padding: 30px 10px;
+        border-radius: 15px;
+        background-color: #3736367a;
+        margin: 30px 150px;
+        padding:30px;
+        align-items: center;
         .text {
             max-width: 1200px;
             margin: 0 auto;
@@ -96,11 +153,30 @@
                 font-size: 18px;
             }
         }
+        .image-intro{
+            img {
+                animation: bounce 2s infinite ease-in-out;
+                width: 100%;
+                background-size: cover; /* Đảm bảo ảnh vừa khít khung */
+                background-position: center; /* Căn giữa ảnh */
+                background-repeat: no-repeat; /* Không lặp ảnh */
+            }
+            @keyframes bounce {
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-20px);
+                }
+            }
+        }
     }
     .type-website {
         max-width: 1200px;
         margin: 0 auto;
         justify-content: space-between;
+
         .title {
             margin: 0 auto;
             text-align: center;
@@ -111,19 +187,21 @@
         .content {
             display: flex;
             justify-content: center;
+
             ul {
                 li {
                     cursor: pointer;
+
                     padding: 5px 0;
                     a {
                         text-decoration: none;
-                        color: black;
+                        color: white;
                         &:hover {
-                            color: grey;
+                            color: #3a87cb;
                         }
                     }
                     .active {
-                        color: red;
+                        color: #50adff;
                     }
                 }
             }

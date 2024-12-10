@@ -55,10 +55,18 @@ const Index = () => {
                 <>
                     <HeaderHomepage />
                     <div className='category-landing-page'>
-                        <div className='banner-image'>
-                            <img src={'https://res.cloudinary.com/dolydpat4/image/upload/v1733647170/dashboard_gyb9qt.png'} className='image' alt="Landing-page-image" />
+                        <div className='row banner-image'>
+                            <div className='col-md-7 image'>
+                                <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733748355/qqq_ikjfpa.png' alt='' />
+                            </div>
+                            <div className='col-md-5 content'>
+                                <div>Website</div>
+                                <div>Dashboard</div>
+                                <a href='tel:0379382992' className='tel' >Tư vấn thiết kế</a>
+                            </div>
                         </div>
                         <div className='part-product'>
+                            <div className='sub-title'>Danh sách sản phẩm</div>
                             <div className='title'>Những sản phẩm bạn có thể hứng thú</div>
                             <div className='row list-product'>
                                 {
@@ -84,7 +92,7 @@ const Index = () => {
                                                             }}
                                                         />
                                                     </div>
-                                                    <hr style={{ width: '100%', borderTop: '2px solid #68a7ff91;' }} />
+                                                    {/* <hr style={{ width: '100%', borderTop: '2px solid #68a7ff91;' }} /> */}
                                                     <div className='product-name'>{item.name}</div>
                                                     <div className='product-view'>{item.view} lượt xem</div>
                                                     <div className='product-price'>{item.price}</div>
@@ -95,8 +103,8 @@ const Index = () => {
                                 }
                             </div>
                         </div>
-                        <div className='introduce-landing-page'>
-                            <div className='text'>
+                        <div className='row introduce-landing-page'>
+                            <div className='col-md-6 text'>
                                 <div className='title'>Mẫu website dashboard</div>
                                 <br></br>
                                 <div className='content'>Mẫu website dashboard là Khi điều hành hoặc quản lý một dự án lớn, Dashboard này là một công cụ hữu ích để theo dõi tiến trình dự án và có thể chia sẻ được với nhóm của bạn và các bên liên quan khác. Chúng cung cấp một cái nhìn đầy đủ về tình hình dự án, thông tin chi tiết và dữ liệu chính. Chúng hữu ích cho tiếp thị, tài chính, quảng cáo, nguồn nhân lực và cả các nhóm kinh doanh khác.</div>
@@ -104,6 +112,9 @@ const Index = () => {
                                 <div className='content'>Khi theo dõi hiệu suất trang web, việc tạo trang tổng quan trang web rất hữu ích. Website Dashboard theo dõi các dữ liệu quan trọng như lưu lượng truy cập tổng thể, tổng số người dùng, người dùng đang hoạt động, hoạt động thương mại điện tử, bán hàng và doanh thu.Cho dù doanh nghiệp duy trì một trang web đơn giản hay phức tạp, bảng điều khiển này đều có thể cung cấp một cái nhìn tích hợp, rõ ràng về các chỉ số.</div>
                                 <br></br>
                                 <div className='content'>Đây là Dashboard tổ chức kinh doanh sử dụng rất phổ biến: điều hành và cung cấp tổng thể về hoạt động theo ngày của doanh nghiệp. Vì vậy nếu bạn cần xây dựng riêng thì đừng ngần ngại liên hệ hoặc để lại thông tin – chuyên viên của chúng tôi sẽ hỗ trợ tư vấn ngay với bạn</div>
+                            </div>
+                            <div className='col-md-6 image-intro'>
+                                <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733756969/11111_rcy8u6.png' alt='' />
                             </div>
                         </div>
                         <div className='row type-website'>
