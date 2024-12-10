@@ -60,11 +60,14 @@ const Index = () => {
                                 <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733748355/qqq_ikjfpa.png' alt='' />
                             </div>
                             <div className='col-md-5 content'>
-                                <div>Website</div>
-                                <div>Dashboard</div>
+                                <div className='text'>
+                                    <div>Website</div>
+                                    <div>Dashboard</div>
+                                </div>
                                 <a href='tel:0379382992' className='tel' >Tư vấn thiết kế</a>
                             </div>
                         </div>
+                        
                         <div className='part-product'>
                             <div className='sub-title'>Danh sách sản phẩm</div>
                             <div className='title'>Những sản phẩm bạn có thể hứng thú</div>

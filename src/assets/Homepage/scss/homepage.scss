@@ -123,6 +123,7 @@
     background-color: black;
     .section-sell-website-banner {
         padding: 150px;
+        margin: 0;
         .section-sell-website-banner-box {
             display: flex;
             flex-direction: column;
@@ -301,34 +302,34 @@
                 flex-direction: column;
                 padding: 10px 30px;
                 text-decoration: none;
-                .part-blog{
-                    img{
-                        width:100%;
+                .part-blog {
+                    img {
+                        width: 100%;
                         height: 200px;
-                        border-radius:15px;
+                        border-radius: 15px;
                     }
-                    .time{
-                        color:grey;
-                        font-size:16px;
-                        padding:10px 0;
+                    .time {
+                        color: grey;
+                        font-size: 16px;
+                        padding: 10px 0;
                     }
-                    .title{
-                        font-size:1.2rem;
+                    .title {
+                        font-size: 1.2rem;
                         text-align: left;
-                        color:white;
+                        color: white;
                     }
                 }
             }
         }
-        .btn-more-blog{
+        .btn-more-blog {
             text-decoration: none;
-            color:white;
+            color: white;
             background-color: #50adff;
-            padding:10px;
-            border-radius:15px;
+            padding: 10px;
+            border-radius: 15px;
             text-transform: uppercase;
-            &:hover{
-                background-color: #28669b
+            &:hover {
+                background-color: #28669b;
             }
         }
     }
@@ -340,20 +341,19 @@
             position: relative;
             animation: fadeInSlide 0.5s ease-in-out !important;
         }
+
         .selectors {
             position: absolute;
             top: 0;
             left: 0;
-            width: 40vw;
-            padding: 10px;
+            width: 30px;
             background: rgba(0, 0, 0, 0.1);
             height: inherit;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            z-index: 5;
-            align-items: flex-start;
+            z-index: 3;
 
             .selector {
                 border: 1px solid #50adff;
@@ -379,14 +379,11 @@
         .panel {
             /* CSS cho panel khi không active */
             width: 40vw;
-            height: 70vh;
+            height: 500px;
             color: #fff;
-            box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
             transition: all 500ms ease-in-out;
             display: none;
             flex-direction: column;
-            justify-content: center;
-            z-index: 3;
 
             .panel-video {
                 animation: fadeInSlide 0.5s ease-in-out;
@@ -401,13 +398,17 @@
 
             &.active {
                 /* CSS cho panel khi active */
+                top: 0;
+                left: 0;
                 display: flex;
-
+                z-index: 2;
+                position: revert;
                 .panel-header,
                 .panel-info {
+                    background-color: rgba(0, 0, 0, 0.24);
+                    z-index: 2;
                     margin: 0;
                     padding: 1.3rem 3.5rem;
-                    z-index: 2;
                     animation:
                         moveUp 0.5s ease-in-out,
                         fadeInOpacity 0.5s ease-in-out;
@@ -426,33 +427,38 @@
                     opacity: 1;
                 }
                 .panel-button {
-                    z-index: 6;
-                    position: absolute;
-                    width: fit-content;
-                    border-radius: 15px;
-                    margin: 1.3rem 0.5rem 1.3rem 3.5rem;
-                    padding: 0.8em 1.3em;
-                    background: none;
-                    border: 1px solid #50adff;
+                    background-color: rgba(0, 0, 0, 0.24);
+                    height: 100%;
+                    // width: 100%;
+                    z-index: 2;
+                    
                     color: #fff;
                     cursor: pointer;
                     font-size: 0.8rem;
                     font-weight: 700;
                     text-transform: uppercase;
-                    transition:
+                    
+
+                    a {
+                        border-radius: 15px;
+                        margin: 0.5rem 0.5rem 1.3rem 3.5rem;
+                        padding: 1em 1.3em;
+                        background: #50adff;
+                        transition:
                         box-shadow 0.5s ease-in-out,
                         color 0.5s ease-in-out;
                     animation:
                         moveUp 0.5s ease-in-out,
                         fadeInOpacity 0.5s ease-in-out;
-                    &:hover {
-                        box-shadow: inset 0 0 1.5em 1.5em #50adff;
-                        color: white !important;
-                    }
+                        &:hover {
+                            box-shadow: inset 0 0 1.5em 1.5em #fff;
+                            color: black !important;
+                        }
 
-                    &:focus {
-                        outline: none;
-                        // color: #000;
+                        &:focus {
+                            outline: none;
+                            // color: #000;
+                        }
                     }
                 }
             }
@@ -616,7 +622,134 @@
         }
     }
 }
+@media (max-width: 950px) {
+    .section-sell-website-homepage {
+        margin: 0;
+        .section-sell-website-banner {
+            padding: 150px 10px 0 10px;
+            margin: 0;
+            .section-sell-website-banner-box {
+                order: 1;
+                .section-sell-website-banner-title {
+                    font-size: 1.5rem;
+                }
+                .section-sell-website-banner-subtitle {
+                    font-size: 1.8rem;
+                }
+                .section-sell-website-banner-content {
+                    font-size: 1.3rem;
+                }
+                .section-sell-website-banner-list {
+                    display: flex;
+                    flex-direction: column;
+                    div {
+                        width: 100%;
+                    }
+                }
+            }
+            .section-sell-website-banner-anime3d {
+                justify-content: center;
+                img {
+                    width: 300px;
+                    height: 400px;
+                }
+            }
+        }
+        .section-sell-website-question {
+            margin: 100px 0;
+            border-radius: 0;
+            padding: 30px 10px;
+            .section-sell-website-question-above {
+                .section-sell-website-question-title {
+                    font-size: 1.5rem;
+                }
+            }
+            .section-sell-website-question-below {
+                .section-sell-website-question-below-left {
+                    padding: 0 10px 20px 10px;
+                    .section-sell-website-question-below-left-box {
+                        .section-sell-website-question-below-left-content {
+                            .section-sell-website-question-below-left-title {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 20px 30px;
+                    // align-items: center;
+                }
+            }
+        }
+        .section-sell-website-service {
+            padding: 30px 10px;
+            text-align: center;
+            .title {
+                font-size: 1.3rem;
+            }
+            .content {
+                gap: 20px;
+            }
+        }
+        .section-sell-website-slide {
+            .panel {
+                height: 300px;
+                width:100%;
+                // height: 80vh;
+                &.active {
+                    /* CSS cho panel khi active */
+                    display: flex;
 
+                    .panel-header,
+                    .panel-info {
+                        margin: 0;
+                        padding: 20px 3.5rem !important;
+                        animation:
+                            moveUp 0.5s ease-in-out,
+                            fadeInOpacity 0.5s ease-in-out;
+                    }
+
+                    .panel-header {
+                        font-size: 1.6rem !important;
+                    }
+
+                    .panel-info {
+                        font-size: 0.8rem !important;
+                        // line-height: 1.8em;
+                        opacity: 1;
+                    }
+                    .panel-button {
+                        a{
+                            margin:0
+                        }
+                        padding: 1.3rem 0.5rem 1.3rem 3.5rem !important;
+                    }
+                }
+            }
+        }
+        .section-sell-website-price {
+            padding: 30px 10px;
+            .title {
+                font-size: 1.3rem;
+            }
+            .list-price {
+                gap: 20px;
+            }
+        }
+        .section-sell-website-blog {
+            padding: 30px 10px;
+            .title {
+                font-size: 1.3rem;
+            }
+            .list-blog {
+                gap: 20px;
+            }
+        }
+    }
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;

@@ -14,7 +14,7 @@ const Index = () => {
                     <div><span style={{color:'#50adff'}}>HOẠT ĐỘNG</span>: TỪ 7h ĐẾN 22h HẰNG NGÀY</div>
                 </div>
                 <div className='col-md-4 info-footer' style={{paddingBottom:15}}>
-                    <div style={{fontWeight:'bold', textTransform:'uppercase', fontSize:18, letterSpacing:1, color:'#50adff'}}>kho mẫu website của KL Website</div>
+                    <div style={{fontWeight:'bold', textTransform:'uppercase', fontSize:18, letterSpacing:1, color:'#50adff'}}>kho mẫu website của DUC LAN Website</div>
                     <div>Tất cả nẫu website sử dụng đều được chủ nhân của website này thiết kế và lập trình riêng.</div>
                 </div>
                 

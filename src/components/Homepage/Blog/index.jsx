@@ -37,14 +37,14 @@ const Index = () => {
                                 <NavLink to={'/service//thiet-ke-website-rieng'}>
                                     <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733655842/banner_hjzwnv.png' alt='' />
                                     <div className='time' >March 31, 2022</div>
-                                    <div className='name'>Thiết kế website theo yêu cầu – độc quyền – chuyên nghiệp tại KL WEBSITE</div>
+                                    <div className='name'>Thiết kế website theo yêu cầu – độc quyền – chuyên nghiệp tại DUC LAN WEBSITE</div>
                                 </NavLink>
                             </div>
                             <div className='col-md-4 content'>
                                 <NavLink to={'/service/ten-mien-website-domain'}>
                                     <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733658826/domain-la-gi-3_aizbuu.png' alt='' />
                                     <div className='time' >March 31, 2022</div>
-                                    <div className='name'>Domain là gì? Dịch vụ domain của KL Website</div>
+                                    <div className='name'>Domain là gì? Dịch vụ domain của DUC LAN Website</div>
                                 </NavLink>
                             </div>
                         </div>

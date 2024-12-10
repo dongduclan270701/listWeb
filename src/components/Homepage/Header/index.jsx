@@ -4,6 +4,7 @@ import signature from 'assets/Homepage/images/logo3.svg'
 import { NavLink } from 'react-router-dom'
 import Phone from 'assets/Homepage/images/phone-call-svgrepo-com.svg'
 import Zalo from 'assets/Homepage/images/zalo-svgrepo-com.svg'
+import Logo from 'assets/Homepage/images/logooo.svg'
 const Index = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const toggleMenu = () => {
@@ -173,6 +174,11 @@ const Index = () => {
                         </ul>
                         <a href="tel:0379382992" className="login-btn" style={{ textDecoration: 'none', color: 'white' }}>Liên hệ</a>
                     </nav>
+                </div>
+                <div className='row mobile-header'>
+                    <div className='col-4 icon-menu'>☰</div>
+                    <div className='col-4 logo-mobile'><img src={Logo} alt='logo' /></div>
+                    <div className='col-4 hotline'><div className='ele'>Liên hệ</div></div>
                 </div>
             </div>
         </>

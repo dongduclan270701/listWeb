@@ -2,13 +2,20 @@
     background-color: black;
     color: white;
     .banner-image {
+        margin:0;
         padding: 150px;
+        align-items: center;
         img {
             animation: bounce 2s infinite ease-in-out;
             width: 100%;
             background-size: cover; /* Đảm bảo ảnh vừa khít khung */
             background-position: center; /* Căn giữa ảnh */
             background-repeat: no-repeat; /* Không lặp ảnh */
+        }
+        .content{
+            display:flex;
+            flex-direction: column;
+            align-items: flex-end;
         }
         @keyframes bounce {
             0%,
@@ -20,14 +27,16 @@
             }
         }
         .content {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: center;
-            font-size: 5rem;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-transform: uppercase;
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                font-size: 5rem;
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
             .tel {
                 font-size: 16px;
                 color: white;
@@ -69,8 +78,8 @@
             text-transform: uppercase;
         }
         .list-product {
+            margin:0;
             .nav-link {
-                margin: 0 auto;
                 text-align: center;
                 padding: 15px;
                 display: flex;
@@ -120,9 +129,8 @@
                     }
                     &:hover {
                         .product-price {
-                                box-shadow: inset 0 0 1.5em 1.5em #50adff;
-                                color: white !important;
-                            
+                            box-shadow: inset 0 0 1.5em 1.5em #50adff;
+                            color: white !important;
                         }
                     }
                 }
@@ -133,7 +141,7 @@
         border-radius: 15px;
         background-color: #3736367a;
         margin: 30px 150px;
-        padding:30px;
+        padding: 30px;
         align-items: center;
         .text {
             max-width: 1200px;
@@ -153,7 +161,7 @@
                 font-size: 18px;
             }
         }
-        .image-intro{
+        .image-intro {
             img {
                 animation: bounce 2s infinite ease-in-out;
                 width: 100%;
@@ -204,6 +212,59 @@
                         color: #50adff;
                     }
                 }
+            }
+        }
+    }
+}
+@media (max-width: 950px) {
+    .category-landing-page {
+        .banner-image {
+            
+            padding: 150px 10px 100px 10px;
+            .image {
+                text-align: center;
+                img {
+                    width: 350px;
+                    height: 250px;
+                }
+            }
+            .content {margin:0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .text {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    font-size: 2rem;
+                    gap: 10px;
+                }
+            }
+        }
+        .part-product {
+            
+            .title {
+                font-size: 1.4rem;
+            }
+        }
+        .introduce-landing-page {
+            margin: 0;
+            padding: 30px 10px;
+            .text {
+                order:1;
+                .title {
+                    font-size: 1.3rem;
+                }
+                .content {
+                    width:100%;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .type-website .content {
+            justify-content: normal;
+            ul {
+                margin: 0;
             }
         }
     }

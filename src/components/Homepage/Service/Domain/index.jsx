@@ -25,7 +25,7 @@ const Index = () => {
                             <div className='col-md-8 content'>
                                 <div className='time'>April 16, 2019</div>
                                 <div className='title'>
-                                    Domain là gì? Dịch vụ domain của KL Website
+                                    Domain là gì? Dịch vụ domain của DUC LAN WEBSITE
                                 </div>
                                 <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733658242/url-domain-types_rca6bg.png' className='' alt='' />
                                 <div>Để có một địa chỉ độc nhất trên Internet và tạo ra sự nhất quán, dễ nhận diện cho mục đích truy cập và giao tiếp, việc đăng ký tên miền (Domain) là vô cùng quan trọng. Tên miền không chỉ định danh trực tuyến, mà còn góp phần xây dựng thương hiệu, tạo sự chuyên nghiệp trong giao tiếp và mở rộng hoạt động kinh doanh trên mạng.</div>
@@ -138,14 +138,14 @@ const Index = () => {
                                     <NavLink to={'/service/thiet-ke-website-rieng'}>
                                         <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733655842/banner_hjzwnv.png' className='' alt='' />
                                         <div className='time'>April 16, 2019</div>
-                                        <div>Thiết kế website theo yêu cầu – độc quyền – chuyên nghiệp tại KL WEBSITE</div>
+                                        <div>Thiết kế website theo yêu cầu – độc quyền – chuyên nghiệp tại DUC LAN WEBSITE</div>
                                     </NavLink>
                                 </div>
                                 <div className='content-news'>
                                     <NavLink to={'/service/ten-mien-website-domain'}>
                                         <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733658242/url-domain-types_rca6bg.png' className='' alt='' />
                                         <div className='time'>April 16, 2019</div>
-                                        <div>Domain là gì? Dịch vụ domain của KL Website</div>
+                                        <div>Domain là gì? Dịch vụ domain của DUC LAN WEBSITE</div>
                                     </NavLink>
                                 </div>
                             </div>

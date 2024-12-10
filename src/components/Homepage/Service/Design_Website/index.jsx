@@ -25,7 +25,7 @@ const Index = () => {
                             <div className='col-md-8 content'>
                                 <div className='time'>April 16, 2019</div>
                                 <div className='title'>
-                                    Thiết kế website theo yêu cầu – độc quyền – chuyên nghiệp tại KL WEBSITE
+                                    Thiết kế website theo yêu cầu – độc quyền – chuyên nghiệp tại DUC LAN WEBSITE
                                 </div>
                                 <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733655842/banner_hjzwnv.png' className='' alt='' />
                                 <div>Bất cứ một công ty kinh doanh nào cũng cần có một website để quảng bá sản phẩm, xây dựng thương hiệu trên Internet. Tuy nhiên, sự phát triển rầm rộ của Markting Online đã tạo nên hiện tượng đồng bộ và tương tự nhau giữa các website. Đặc biệt là khi trang web không được tối ưu như trang web đối thủ. Điều đó đang gián tiếp làm cho doanh nghiệp mất đi một lượng khách hàng rất lớn. Marketing là không ngừng sáng tạo. Chính vì vậy, muốn có một trang web thực sự nổi bật để có thể bước chân được vào cuộc cạnh tranh khốc liệt thì điều bạn cần là có một trang web thiết kế độc – lạ hoặc <b style={{color:'#50adff'}}>thiết kế website theo yêu cầu – độc quyền</b>.</div>
@@ -124,14 +124,14 @@ const Index = () => {
                                     <NavLink to={'/service/thiet-ke-website-rieng'}>
                                         <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733655842/banner_hjzwnv.png' className='' alt='' />
                                         <div className='time'>April 16, 2019</div>
-                                        <div>Thiết kế website theo yêu cầu – độc quyền – chuyên nghiệp tại KL WEBSITE</div>
+                                        <div>Thiết kế website theo yêu cầu – độc quyền – chuyên nghiệp tại DUC LAN WEBSITE</div>
                                     </NavLink>
                                 </div>
                                 <div className='content-news'>
                                     <NavLink to={'/service/ten-mien-website-domain'}>
                                         <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733658242/url-domain-types_rca6bg.png' className='' alt='' />
                                         <div className='time'>April 16, 2019</div>
-                                        <div>Domain là gì? Dịch vụ domain của KL Website</div>
+                                        <div>Domain là gì? Dịch vụ domain của DUC LAN WEBSITE</div>
                                     </NavLink>
                                 </div>
                             </div>

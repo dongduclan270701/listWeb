@@ -275,7 +275,9 @@
         }
     }
 }
-
+.mobile-header {
+    display: none;
+}
 /* Keyframes cho animation */
 @keyframes fade-in {
     from {
@@ -292,28 +294,53 @@
 }
 
 @media (max-width: 950px) {
-    .navbar-sell-website {
-        padding: 0 10px;
+    .header-sell-website {
+        display: none;
     }
-
-    .navbar-sell-website :is(.hamburger-btn, .close-btn) {
-        display: block;
-    }
-
-    .navbar-sell-website :is(.hamburger-btn, .back-btn) {
-        display: block;
-    }
-
-    .navbar-sell-website .links .dropdown:hover .dropdown-menu {
-        animation: unset;
-    }
-
-    .navbar-sell-website .links .dropdown .dropdown-menu li:hover {
-        background: unset;
-    }
-
-    .navbar-sell-website .links .dropdown .dropdown-menu li a {
-        background: unset;
+    .mobile-header {
+        margin:0;
+        display: flex;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        color: white;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.871);
+        box-shadow: 2px -3px 18px #888888;
+        transition: all 0.5s;
+        .links {
+            a {
+                color: white;
+            }
+        }
+        .logo-mobile {
+            text-align: center;
+            img {
+                width: 100px;
+            }
+        }
+        .icon-menu {
+            width: 100px;
+            font-size:2rem;
+            // padding:0;
+        }
+        .hotline {
+            display: flex;
+            flex-direction: row-reverse;
+            padding:0;
+            .ele {
+                border: 1px solid #50adff;
+                width: 100px;
+                border-radius: 15px;
+                padding: 10px 0;
+                text-align: center;
+            }
+        }
     }
 }
 .hotline-icon-one-pc {
@@ -325,6 +352,7 @@
     animation: pulse 1.5s infinite;
     .hotline-icon-svg {
         width: 50px;
+        // animation: rotate 1.5s infinite;
     }
     position: fixed;
     bottom: 50px;
@@ -339,6 +367,7 @@
     animation: pulse 1.5s infinite;
     .hotline-icon-svg {
         width: 50px;
+        // animation: rotate 1.5s infinite;
     }
     position: fixed;
     bottom: 50px;
@@ -354,6 +383,7 @@
     animation: pulse 1.5s infinite;
     .hotline-icon-svg {
         width: 50px;
+        // animation: rotate 1.5s infinite;
     }
     position: fixed;
     bottom: 50px;
@@ -369,6 +399,7 @@
     animation: pulse 1.5s infinite;
     .hotline-icon-svg {
         width: 50px;
+        // animation: rotate 1.5s infinite;
     }
     position: fixed;
     bottom: 150px;
@@ -381,5 +412,16 @@
     }
     50% {
         transform: scale(1.2);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .hotline-icon-one-pc {
+        display: flex;
+    }
+    .hotline-icon-one-ios {
+        display: flex;
+    }
+    .hotline-icon-one-android {
+        display: flex;
     }
 }
