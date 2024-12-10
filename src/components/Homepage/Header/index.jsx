@@ -4,7 +4,6 @@ import signature from 'assets/Homepage/images/logo3.svg'
 import { NavLink } from 'react-router-dom'
 import Phone from 'assets/Homepage/images/phone-call-svgrepo-com.svg'
 import Zalo from 'assets/Homepage/images/zalo-svgrepo-com.svg'
-import { FacebookProvider, CustomChat } from 'react-facebook';
 const Index = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const toggleMenu = () => {
