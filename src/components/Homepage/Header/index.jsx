@@ -152,27 +152,27 @@ const Index = () => {
                             <li className="dropdown" style={{ cursor: 'pointer' }}>
                                 <a href >Kho giao diện <span style={{ transform: 'scaleX(1.5)', display: 'inline-block' }}>&#8744;</span></a>
                                 <ul className='dropdown-menu deactivate-portfolio-false play-bold' >
-                                    {/* <NavLink to='/category/portfolio-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <NavLink to='/category/portfolio-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Portfolio cá nhân
-                                    </NavLink> */}
+                                    </NavLink>
                                     <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Landing Page
                                     </NavLink>
-                                    {/* <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Blog cá nhân
                                     </NavLink>
                                     <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Website tổ chức sự kiện
-                                    </NavLink> */}
+                                    </NavLink>
                                     <NavLink to='/category/website-thuong-mai-dien-tu' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Website thương mại điện tử nhỏ
                                     </NavLink>
-                                    {/* <NavLink to='/category/website-nha-hang-quan-ca-phe' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <NavLink to='/category/website-nha-hang-quan-ca-phe' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Website nhà hàng/quán cà phê
-                                    </NavLink> */}
-                                    {/* <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    </NavLink>
+                                    <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Website giáo dục
-                                    </NavLink> */}
+                                    </NavLink>
                                     <NavLink to='/category/website-dashboard' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Website dashboard
                                     </NavLink>
