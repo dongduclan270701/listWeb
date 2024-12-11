@@ -5,11 +5,19 @@ import { NavLink } from 'react-router-dom'
 import Phone from 'assets/Homepage/images/phone-call-svgrepo-com.svg'
 import Zalo from 'assets/Homepage/images/zalo-svgrepo-com.svg'
 import Logo from 'assets/Homepage/images/logooo.svg'
+import ArrowRight from 'assets/Homepage/images/right-arrow-svgrepo-com.svg'
+import Homepage from 'assets/Homepage/images/homepage-icon.svg'
+import Library from 'assets/Homepage/images/library-icon.svg'
+import Blog from 'assets/Homepage/images/blog-icon.svg'
+import Service from 'assets/Homepage/images/service-icon.svg'
+import About from 'assets/Homepage/images/about-icon.svg'
 const Index = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
     }
+    const [isSelectService, setIsSelectService] = useState(false)
+    const [isSelectLibrary, setIsSelectLibrary] = useState(false)
     const dpkCursorRef = useRef(null);
     const dpkCursorMouse = useRef({ x: -100, y: -100 });
     const dpkCursorPos = useRef({ x: 0, y: 0 });
@@ -176,9 +184,45 @@ const Index = () => {
                     </nav>
                 </div>
                 <div className='row mobile-header'>
-                    <div className='col-4 icon-menu'>☰</div>
+                    <div className='col-4 icon-menu'>
+                        <div id="checkbox2" className={isMenuOpen ? 'checked' : ''}></div>
+                        <label class="toggle toggle2" for="checkbox2" onClick={toggleMenu} style={{ color: 'white' }} >
+                            <div id="bar4" class="bars"></div>
+                            <div id="bar5" class="bars"></div>
+                            <div id="bar6" class="bars"></div>
+                        </label>
+                    </div>
                     <div className='col-4 logo-mobile'><img src={Logo} alt='logo' /></div>
                     <div className='col-4 hotline'><div className='ele'>Liên hệ</div></div>
+                </div>
+                <div className={isMenuOpen ? 'mobile-menu select-menu' : 'mobile-menu'}>
+                    <div className='nav-mobile'>
+                        <NavLink to={'/'}><img src={Homepage} alt=''/>Trang chủ</NavLink>
+                        <div>
+                            <div style={{display:'flex', justifyContent:'space-between' }} onClick={() => setIsSelectService(!isSelectService)}>
+                                <div style={{display:'flex', alignItems:'center', gap:20}}><img style={{width:24}} src={Service} alt=''/>Dịch vụ</div>
+                                <div><img src={ArrowRight} alt='' className={isSelectService ? 'rotate-icon-menu' : 'rotate-icon-menu-reverse'} /></div>
+                            </div>
+                            <ul className={isSelectService ? 'select-service' : 'back-select-service'}>
+                                <NavLink to={'/service/bao-tri-sua-chua-website'} ><li>Bảo trì/sửa chữa website</li></NavLink>
+                                <NavLink to={'/service/thiet-ke-website-rieng'} ><li>Tư vấn thiết kế website riêng</li></NavLink>
+                                <NavLink to={'/service/ten-mien-website-domain'} ><li>Tên miền website(Domain)</li></NavLink>
+                            </ul>
+                        </div>
+                        <div>
+                            <div style={{display:'flex', justifyContent:'space-between' }} onClick={() => setIsSelectLibrary(!isSelectLibrary)}>
+                                <div style={{display:'flex', alignItems:'center', gap:20}}><img style={{width:24}} src={Library} alt=''/>Kho giao diện</div>
+                                <div><img src={ArrowRight} alt='' className={isSelectLibrary ? 'rotate-icon-menu' : 'rotate-icon-menu-reverse'} /></div>
+                            </div>
+                            <ul className={isSelectLibrary ? 'select-library' : 'back-select-library'}>
+                                <NavLink to={'/category/landing-page'} ><li>Landing page</li></NavLink>
+                                <NavLink to={'/category/website-thuong-mai-dien-tu'} ><li>Website thương mại điện tử nhỏ</li></NavLink>
+                                <NavLink to={'/category/website-dashboard'} ><li>Website dashboard</li></NavLink>
+                            </ul>
+                        </div>
+                        <NavLink to={'/blog'}><img src={Blog} alt=''/>Blogs</NavLink>
+                        <NavLink to={'/aboutMe'}><img src={About} alt=''/>Về tôi</NavLink>
+                    </div>
                 </div>
             </div>
         </>

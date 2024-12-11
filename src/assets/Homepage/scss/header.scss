@@ -278,6 +278,14 @@
 .mobile-header {
     display: none;
 }
+.mobile-menu,
+.select-menu {
+    display: none !important;
+    ul {
+        margin: 0;
+        display: none;
+    }
+}
 /* Keyframes cho animation */
 @keyframes fade-in {
     from {
@@ -294,11 +302,136 @@
 }
 
 @media (max-width: 950px) {
+    .dpkCursor-hover {
+        display: none;
+    }
+    .dpkCursor {
+        display: none;
+    }
     .header-sell-website {
         display: none;
     }
+    .select-library {
+        padding-top: 10px;
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+        overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
+        animation: onClickIconDropMenuLi 0.5s forwards;
+    }
+    .select-service {
+        padding-top: 10px;
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+        overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
+        animation: onClickIconDropMenuLi 0.5s forwards;
+    }
+
+    @keyframes onClickIconDropMenuLi {
+        from {
+            max-height: 0;
+        }
+        to {
+            max-height: 300px; /* Đặt giá trị cố định */
+        }
+    }
+
+    .back-select-service {
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+        overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
+        animation: onClickBackIconDropMenuLi 0.2s forwards;
+    }
+    .back-select-library { 
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+        overflow: hidden;/* Ẩn nội dung vượt quá chiều cao */
+        animation: onClickBackIconDropMenuLi 0.2s forwards;
+    }
+
+    @keyframes onClickBackIconDropMenuLi {
+        from {
+            max-height: 300px;
+        }
+        to {
+            max-height: 0; /* Đặt giá trị cố định */
+        }
+    }
+
+    .select-menu {
+        display: flex !important;
+        z-index: 10;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.929);
+        padding: 100px 20px;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.5s;
+        animation: onClickMenu 0.5s forwards;
+        @keyframes onClickMenu {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        .nav-mobile {
+            width: 100%;
+            padding: 20px;
+            color: white;
+            font-size: 1.3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            a {
+                display:flex;
+                align-items: center;
+                gap:20px;
+                img{
+                    width:24px;
+                }
+                text-decoration: none;
+                color: white;
+            }
+            img {
+                width: 16px;
+                transition: all 0.5s;
+            }
+
+            .rotate-icon-menu {
+                animation: onClickIconDropMenu 0.5s forwards;
+            }
+
+            .rotate-icon-menu-reverse {
+                animation: onClickIconDropMenuReverse 0.5s forwards;
+            }
+
+            @keyframes onClickIconDropMenu {
+                from {
+                    rotate: 0deg;
+                }
+                to {
+                    rotate: 90deg;
+                }
+            }
+
+            @keyframes onClickIconDropMenuReverse {
+                from {
+                    rotate: 90deg;
+                }
+                to {
+                    rotate: 0deg;
+                }
+            }
+        }
+    }
     .mobile-header {
-        margin:0;
+        margin: 0;
         display: flex;
         position: absolute;
         width: 100%;
@@ -326,13 +459,67 @@
         }
         .icon-menu {
             width: 100px;
-            font-size:2rem;
+            font-size: 2rem;
             // padding:0;
+            #checkbox2 {
+                display: none;
+                &.checked + .toggle2 .bars {
+                    position: absolute;
+                    transition-duration: 0.5s;
+                }
+                &.checked + .toggle2 #bar5 {
+                    transform: scaleX(0);
+                    transition-duration: 0.5s;
+                }
+                &.checked + .toggle2 #bar4 {
+                    width: 100%;
+                    transform: rotate(45deg);
+                    transition-duration: 0.5s;
+                }
+                &.checked + .toggle2 #bar6 {
+                    width: 100%;
+                    transform: rotate(-45deg);
+                    transition-duration: 0.5s;
+                }
+                &.checked + .toggle2 {
+                    transition-duration: 0.5s;
+                    transform: rotate(180deg);
+                }
+            }
+
+            .toggle2 {
+                position: relative;
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                transition-duration: 0.5s;
+                margin: 0;
+                .bars {
+                    width: 100%;
+                    height: 3px;
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 6px;
+                }
+
+                #bar5 {
+                    transition-duration: 0.8s;
+                }
+
+                #bar4,
+                #bar6 {
+                    width: 80%;
+                }
+            }
         }
         .hotline {
             display: flex;
             flex-direction: row-reverse;
-            padding:0;
+            padding: 0;
             .ele {
                 border: 1px solid #50adff;
                 width: 100px;
