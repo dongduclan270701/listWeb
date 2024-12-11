@@ -282,7 +282,6 @@
 .select-menu {
     display: none !important;
     ul {
-        margin: 0;
         display: none;
     }
 }
@@ -312,52 +311,89 @@
         display: none;
     }
     .select-library {
-        padding-top: 10px;
         display: flex !important;
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
+        justify-content: center;
+        li{
+            list-style: none;
+            padding:0 10px;
+        }
+        margin:0;
         overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
         animation: onClickIconDropMenuLi 0.5s forwards;
     }
     .select-service {
-        padding-top: 10px;
         display: flex !important;
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
+        justify-content: center;
+        li{
+            list-style: none;
+            padding:0 10px;
+        }
+        margin:0;
         overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
-        animation: onClickIconDropMenuLi 0.5s forwards;
+        animation: onClickIconDropMenuLiService 0.5s forwards;
     }
 
-    @keyframes onClickIconDropMenuLi {
+    @keyframes onClickIconDropMenuLiService {
         from {
-            max-height: 0;
+            height: 0;
         }
         to {
-            max-height: 300px; /* Đặt giá trị cố định */
+            height: 200px; /* Đặt giá trị cố định */
+        }
+    }
+    @keyframes onClickIconDropMenuLi {
+        from {
+            height: 0;
+        }
+        to {
+            height: 500px; /* Đặt giá trị cố định */
         }
     }
 
     .back-select-service {
         display: flex !important;
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
+        margin:0;
+        justify-content: center;
+        li{
+            list-style: none;
+            padding:0 10px;
+        }
         overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
-        animation: onClickBackIconDropMenuLi 0.2s forwards;
+        animation: onClickBackIconDropMenuLiService 0.2s forwards;
     }
     .back-select-library { 
         display: flex !important;
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
+        justify-content: center;
+        li{
+            list-style: none;
+            padding:0 10px;
+        }
+        margin:0;
         overflow: hidden;/* Ẩn nội dung vượt quá chiều cao */
         animation: onClickBackIconDropMenuLi 0.2s forwards;
     }
-
-    @keyframes onClickBackIconDropMenuLi {
+    @keyframes onClickBackIconDropMenuLiService {
         from {
-            max-height: 300px;
+            height: 200px;
         }
         to {
-            max-height: 0; /* Đặt giá trị cố định */
+            height: 0; /* Đặt giá trị cố định */
+        }
+    }
+    @keyframes onClickBackIconDropMenuLi {
+        from {
+            height: 500px;
+        }
+        to {
+            height: 0; /* Đặt giá trị cố định */
         }
     }
 
@@ -394,6 +430,9 @@
                 gap:20px;
                 img{
                     width:24px;
+                }
+                li{
+                    font-size:1.2rem
                 }
                 text-decoration: none;
                 color: white;

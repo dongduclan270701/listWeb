@@ -11,6 +11,7 @@ import Library from 'assets/Homepage/images/library-icon.svg'
 import Blog from 'assets/Homepage/images/blog-icon.svg'
 import Service from 'assets/Homepage/images/service-icon.svg'
 import About from 'assets/Homepage/images/about-icon.svg'
+import Li from 'assets/Homepage/images/li-icon.svg'
 const Index = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const toggleMenu = () => {
@@ -197,10 +198,10 @@ const Index = () => {
                 </div>
                 <div className={isMenuOpen ? 'mobile-menu select-menu' : 'mobile-menu'}>
                     <div className='nav-mobile'>
-                        <NavLink to={'/'}><img src={Homepage} alt=''/>Trang chủ</NavLink>
+                        <NavLink to={'/'}><img src={Homepage} alt='' />Trang chủ</NavLink>
                         <div>
-                            <div style={{display:'flex', justifyContent:'space-between' }} onClick={() => setIsSelectService(!isSelectService)}>
-                                <div style={{display:'flex', alignItems:'center', gap:20}}><img style={{width:24}} src={Service} alt=''/>Dịch vụ</div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between' }} onClick={() => setIsSelectService(!isSelectService)}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}><img style={{ width: 24 }} src={Service} alt='' />Dịch vụ</div>
                                 <div><img src={ArrowRight} alt='' className={isSelectService ? 'rotate-icon-menu' : 'rotate-icon-menu-reverse'} /></div>
                             </div>
                             <ul className={isSelectService ? 'select-service' : 'back-select-service'}>
@@ -210,18 +211,23 @@ const Index = () => {
                             </ul>
                         </div>
                         <div>
-                            <div style={{display:'flex', justifyContent:'space-between' }} onClick={() => setIsSelectLibrary(!isSelectLibrary)}>
-                                <div style={{display:'flex', alignItems:'center', gap:20}}><img style={{width:24}} src={Library} alt=''/>Kho giao diện</div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between' }} onClick={() => setIsSelectLibrary(!isSelectLibrary)}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}><img style={{ width: 24 }} src={Library} alt='' />Kho giao diện</div>
                                 <div><img src={ArrowRight} alt='' className={isSelectLibrary ? 'rotate-icon-menu' : 'rotate-icon-menu-reverse'} /></div>
                             </div>
                             <ul className={isSelectLibrary ? 'select-library' : 'back-select-library'}>
                                 <NavLink to={'/category/landing-page'} ><li>Landing page</li></NavLink>
                                 <NavLink to={'/category/website-thuong-mai-dien-tu'} ><li>Website thương mại điện tử nhỏ</li></NavLink>
                                 <NavLink to={'/category/website-dashboard'} ><li>Website dashboard</li></NavLink>
+                                <NavLink to={'/category/portfolio-ca-nhan'} ><li>Portfolio Cá Nhân</li></NavLink>
+                                <NavLink to={'/category/blog-ca-nhan'} ><li>Blog Cá Nhân</li></NavLink>
+                                <NavLink to={'/category/website-to-chuc-su-kien'} ><li>Website Tổ Chức Sự Kiện</li></NavLink>
+                                <NavLink to={'/category/website-nha-hang-quan-ca-phe'} ><li>Website Nhà Hàng - Quán Cà Phê</li></NavLink>
+                                <NavLink to={'/category/website-giao-duc'} ><li>Website Giáo Dục</li></NavLink>
                             </ul>
                         </div>
-                        <NavLink to={'/blog'}><img src={Blog} alt=''/>Blogs</NavLink>
-                        <NavLink to={'/aboutMe'}><img src={About} alt=''/>Về tôi</NavLink>
+                        <NavLink to={'/blog'}><img src={Blog} alt='' />Blogs</NavLink>
+                        <NavLink to={'/aboutMe'}><img src={About} alt='' />Về tôi</NavLink>
                     </div>
                 </div>
             </div>
