@@ -63,7 +63,7 @@ const Index = () => {
                             <div className='col-md-5 content'>
                                 <div className='text'>
                                     <div>Portfolio</div>
-                                    <div>Cá Nhân</div>
+                                    <div>Giới Thiệu</div>
                                 </div>
                                 <a href='tel:0379382992' className='tel' >Tư vấn thiết kế</a>
                             </div>
@@ -107,13 +107,21 @@ const Index = () => {
                         </div>
                         <div className='row introduce-landing-page'>
                             <div className='col-md-6 text'>
-                                <div className='title'>Mẫu website Landing Page</div>
+                                <div className='title'>Mẫu website giới thiệu </div>
                                 <br></br>
-                                <div className='content'>Mẫu website landing page là một loại website đang rất được ưa chuộng hiện nay vì hiệu quả mà nó mang lại. <span style={{ color: '#50adff' }}>Giao diện landing page</span> sẽ phù hợp nhất cho những <span style={{ color: '#50adff' }}>website giới thiệu công ty</span> tổng quan và chuyên sâu về công ty hoặc một sản phẩm nào đó nhằm PR, quảng cáo sản phẩm, công ty đến với khách hàng một cách nhanh và thân thiện nhất. Bản chất của Landing page sẽ thể hiện tất cả thông tin về công ty hoặc sản phẩm lên trên cùng một trang web, khách hàng có thể theo dõi tất cả thông tin mà không cần chuyển đi bất cứ một trang nào khác.</div>
+                                <div className='content'>Bạn là một doanh nghiệp lớn? Bạn có những sản phẩm nổi bậc muốn được nhanh chóng giới thiệu đến mọi người? Bạn kinh doanh những sản phẩm dịch vụ? <span style={{ color: '#50adff' }}>Mẫu website giới thiệu doanh nghiệp</span> tại <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> là giải pháp tốt nhất cho các doanh nghiệp muốn phát triển thương hiệu. Với gần 10 năm kinh nghiệm trong ngành <span style={{ color: '#50adff' }}>thiết kế website</span>, chúng tôi luôn cập nhật những công nghệ mới nhất cho các <span style={{ color: '#50adff' }}>thiết kế website doanh nghiệp</span> của khách hàng như <span style={{ color: '#50adff' }}>HTML5/ CSS3</span> giúp cho website của khách hàng luôn trong tình trạng tối ưu về tốc độ load và độ mượt mà khi hiển thị trên tất cả các phương tiện di động như Smartphone và máy tính bảng. <span style={{ color: '#50adff' }}>Một thiết kế website </span>giới thiệu mang đến cho doanh nghiệp bạn những gì?</div>
                                 <br></br>
-                                <div className='content'><span style={{ color: 'grey' }}>Mẫu Landing page đẹp</span> có thể sử dụng tối ưu cho tất cả các loại hình kinh doanh đặc biệt là: landing page BĐS, Landing page Mỹ phẩm, Landing page công ty xe hơi, Landing page GYM. Ngoài ra tuy chỉ trên một trang web duy nhất nhưng website tại DUC LAN WEBSITE vẫn được tối ưu hóa bằng thiết kế <span style={{ color: '#50adff' }}>chuẩn SEO, chuẩn Responsive- chuẩn di động</span>. Khách hàng khi hợp tác cùng với Mona Media hãy tin tưởng rằng chúng tôi có một đội ngũ nhân viên chuyên nghiệp, chế độ hậu đãi cực tốt và dịch vụ SEO chuyên nghiệp có thể giúp cho website của bạn đạt những vị trí cao trên các cổ máy tìm kiếm.</div>
+                                <div className='content'>
+                                    <ul>
+                                        <li>Một kênh liên lạc uy tín cho các nhà đầu tư và các đối tác kinh doanh</li>
+                                        <li><span style={{ color: '#50adff' }}>Giảm thiểu chi phí</span> cho việc Marketing quảng bá thương hiệu.</li>
+                                        <li>Kênh liên lạc trực tiếp của khách hàng với doanh nghiệp.</li>
+                                        <li><span style={{ color: '#50adff' }}>Khai thác tối đa khách hàng</span> online trên Internet.</li>
+                                        <li>Quảng bá thương hiệu một cách nhanh nhất thông qua internet.</li>
+                                    </ul>
+                                </div>
                                 <br></br>
-                                <div className='content'>Khả năng chính của chúng tôi là xây dựng landing page theo yêu cầu. Vì vậy nếu bạn cần xây dựng riêng thì đừng ngần ngại liên hệ hoặc để lại thông tin – chuyên viên của chúng tôi sẽ hỗ trợ tư vấn ngay với bạn</div>
+                                <div className='content'>Hãy mang đến bộ mặt thương hiệu chuyên nghiệp, uy tín trước mặt khách hàng của bạn. Tham khảo những mẫu <span style={{ color: '#50adff' }}>website giới thiệu</span> của <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> bên dưới để có ý tưởng độc báo bạn nhé! Chúc bạn thành công!</div>
                             </div>
                             <div className='col-md-6 image-intro'>
                                 <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733756969/11111_rcy8u6.png' alt='' />
@@ -124,8 +132,8 @@ const Index = () => {
                             <div className='col-md-4 content'>
                                 <ul>
                                     <li>
-                                        <NavLink to='/category/portfolio-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Portfolio Cá Nhân
+                                        <NavLink to='/category/portfolio-gioi-thieu' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            Portfolio Giới Thiệu
                                         </NavLink>
                                     </li>
                                     <li>

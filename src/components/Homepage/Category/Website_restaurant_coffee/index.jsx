@@ -58,18 +58,18 @@ const Index = () => {
                     <div className='category-landing-page'>
                         <div className='row banner-image'>
                             <div className='col-md-7 image'>
-                            <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733751652/landingpage_xu4ais.png' alt='' />
+                                <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733751652/landingpage_xu4ais.png' alt='' />
                             </div>
-                            <div className='col-md-5 content' style={{alignItems:'center'}} >
+                            <div className='col-md-5 content' style={{ alignItems: 'center' }} >
                                 <div className='text'>
-                                    <div style={{textAlign:'center'}}>Website Nhà hàng - Quán Cà Phê</div>
-                                    <div style={{textAlign:'end'}}></div>
+                                    <div style={{ textAlign: 'center' }}>Website Nhà hàng - Quán Cà Phê</div>
+                                    <div style={{ textAlign: 'end' }}></div>
                                 </div>
                                 <a href='tel:0379382992' className='tel' >Tư vấn thiết kế</a>
                             </div>
                         </div>
                         <div className='part-product'>
-                            <div className='title'>Những sản phẩm bạn có thể <span style={{color:'#50adff'}}>hứng thú</span></div>
+                            <div className='title'>Những sản phẩm bạn có thể <span style={{ color: '#50adff' }}>hứng thú</span></div>
                             <div className='row list-product'>
                                 {
                                     product.map((item, index) => (
@@ -107,13 +107,24 @@ const Index = () => {
                         </div>
                         <div className='row introduce-landing-page'>
                             <div className='col-md-6 text'>
-                                <div className='title'>Mẫu website Landing Page</div>
+                                <div className='title'>Mẫu website nhà hàng - quán cà phê</div>
                                 <br></br>
-                                <div className='content'>Mẫu website landing page là một loại website đang rất được ưa chuộng hiện nay vì hiệu quả mà nó mang lại. <span style={{ color: '#50adff' }}>Giao diện landing page</span> sẽ phù hợp nhất cho những <span style={{ color: '#50adff' }}>website giới thiệu công ty</span> tổng quan và chuyên sâu về công ty hoặc một sản phẩm nào đó nhằm PR, quảng cáo sản phẩm, công ty đến với khách hàng một cách nhanh và thân thiện nhất. Bản chất của Landing page sẽ thể hiện tất cả thông tin về công ty hoặc sản phẩm lên trên cùng một trang web, khách hàng có thể theo dõi tất cả thông tin mà không cần chuyển đi bất cứ một trang nào khác.</div>
+                                <div className='content'><span style={{ color: '#50adff' }}>Mẫu website nhà hàng – khách sạn – quán cà phê</span> tại <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> là những mẫu website được thiết kế với mục đích: giới thiệu nhà hàng – khách sạn, đặt phòng – đặt tiệc online, giúp khách sạn – nhà hàng xây dựng được hình ảnh thương hiệu của mình và tối ưu trong việc tiếp cận khách hàng tiềm năng.</div>
                                 <br></br>
-                                <div className='content'><span style={{ color: 'grey' }}>Mẫu Landing page đẹp</span> có thể sử dụng tối ưu cho tất cả các loại hình kinh doanh đặc biệt là: landing page BĐS, Landing page Mỹ phẩm, Landing page công ty xe hơi, Landing page GYM. Ngoài ra tuy chỉ trên một trang web duy nhất nhưng website tại DUC LAN WEBSITE vẫn được tối ưu hóa bằng thiết kế <span style={{ color: '#50adff' }}>chuẩn SEO, chuẩn Responsive- chuẩn di động</span>. Khách hàng khi hợp tác cùng với Mona Media hãy tin tưởng rằng chúng tôi có một đội ngũ nhân viên chuyên nghiệp, chế độ hậu đãi cực tốt và dịch vụ SEO chuyên nghiệp có thể giúp cho website của bạn đạt những vị trí cao trên các cổ máy tìm kiếm.</div>
+                                <div className='content'>Tất cả <span style={{ color: '#50adff' }}>mẫu website khách sạn – nhà hàng – quán cà phê</span> tại <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> được thiết kế một cách chuyên nghiệp và chau truốt đến từng chi tiết nhỏ nhất. Thêm vào đó là sự kiểm tra 2 lớp trước khi tung ra bản demo cho khách hàng trải nghiệm.</div>
                                 <br></br>
-                                <div className='content'>Khả năng chính của chúng tôi là xây dựng landing page theo yêu cầu. Vì vậy nếu bạn cần xây dựng riêng thì đừng ngần ngại liên hệ hoặc để lại thông tin – chuyên viên của chúng tôi sẽ hỗ trợ tư vấn ngay với bạn</div>
+                                <div className='content'>Những tính năng vô cùng quan trọng và đặc biệt của <span style={{ color: '#50adff' }}>mẫu website nhà hàng – villa </span>mà ít nơi nào có được bao gồm:</div>
+                                <br></br>
+                                <div className='content'>
+                                    <ul>
+                                        <li>Giao diện của <span style={{ color: '#50adff' }}>thiết kế website khách sạn – quán cà phê</span> được thiết kế chuẩn SEO – gia tăng hiệu quả và khả năng tiếp cận khách hàng mục tiêu</li>
+                                        <li>Đa nền tảng – <span style={{ color: '#50adff' }}>thiết kế chuẩn responsive</span>: gia tăng trải nghiệm người dùng với khả năng truy cập trên mọi thiết bị di động, Ipad…</li>
+                                        <li><span style={{ color: '#50adff' }}>Chuẩn UI/UX</span> – là khả năng mang lại trải nghiệm tốt nhất cho người dùng từ giao diện hình ảnh đến tính năng, hiệu ứng của website. Đặc biệt là tốc độ tải trang chỉ vỏn vẹn trong 2 giây – không khách hàng nào phải chờ đợi</li>
+                                        <li>Tính năng đặt phòng – đặt tiệc Online vô cùng dễ dàng cho người sử dụng cũng như người quản lý website. Việc đặt phòng – đặt tiệc sẽ nhanh chóng và thuận tiện cả khi sử dụng điện thoại hoặc máy tính</li>
+                                    </ul>
+                                </div>
+                                <br></br>
+                                <div className='content'>Mời bạn tham khảo những mẫu <span style={{ color: '#50adff' }}>website khách sạn – nhà hàng – quán cà phê</span> đẹp nhất và chuyên nghiệp nhất của <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> bên dưới để có được sự lựa chọn hoặc ý tưởng độc đáo cho <span style={{ color: '#50adff' }}>thiết kế website nhà hàng</span> của mình! Chúc bạn thành công!</div>
                             </div>
                             <div className='col-md-6 image-intro'>
                                 <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733756969/11111_rcy8u6.png' alt='' />
@@ -124,8 +135,8 @@ const Index = () => {
                             <div className='col-md-4 content'>
                                 <ul>
                                     <li>
-                                        <NavLink to='/category/portfolio-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Portfolio Cá Nhân
+                                        <NavLink to='/category/portfolio-gioi-thieu' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            Portfolio Giới Thiệu
                                         </NavLink>
                                     </li>
                                     <li>

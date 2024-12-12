@@ -25,7 +25,7 @@ import KLD0512 from 'components/List_Website/Landing_page/KLD0512/index'
 function App() {
   const page = [
     { path: "/", location: Homepage },
-    { path: "/category/portfolio-ca-nhan", location: Portfolio },
+    { path: "/category/portfolio-gioi-thieu", location: Portfolio },
     { path: "/category/landing-page", location: LandingPage },
     { path: "/category/blog-ca-nhan", location: WebsiteBlog },
     { path: "/category/website-to-chuc-su-kien", location: WebsiteEvent },

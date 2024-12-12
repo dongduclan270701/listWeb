@@ -107,13 +107,13 @@ const Index = () => {
                         </div>
                         <div className='row introduce-landing-page'>
                             <div className='col-md-6 text'>
-                                <div className='title'>Mẫu website Landing Page</div>
+                                <div className='title'>Mẫu website giáo dục - trường học</div>
                                 <br></br>
-                                <div className='content'>Mẫu website landing page là một loại website đang rất được ưa chuộng hiện nay vì hiệu quả mà nó mang lại. <span style={{ color: '#50adff' }}>Giao diện landing page</span> sẽ phù hợp nhất cho những <span style={{ color: '#50adff' }}>website giới thiệu công ty</span> tổng quan và chuyên sâu về công ty hoặc một sản phẩm nào đó nhằm PR, quảng cáo sản phẩm, công ty đến với khách hàng một cách nhanh và thân thiện nhất. Bản chất của Landing page sẽ thể hiện tất cả thông tin về công ty hoặc sản phẩm lên trên cùng một trang web, khách hàng có thể theo dõi tất cả thông tin mà không cần chuyển đi bất cứ một trang nào khác.</div>
+                                <div className='content'>Giáo dục là một trong những ngành đặc thù. Chính vì vậy các mẫu <span style={{ color: '#50adff' }}>website trường học – giáo dục</span> đều phải có sự khác biệt so với các lĩnh vực khác. Do đặc trưng của ngành nên các website phải thật nhã nhặn, nghiêm chỉnh mà phải không kém phần hiện đại.</div>
                                 <br></br>
-                                <div className='content'><span style={{ color: 'grey' }}>Mẫu Landing page đẹp</span> có thể sử dụng tối ưu cho tất cả các loại hình kinh doanh đặc biệt là: landing page BĐS, Landing page Mỹ phẩm, Landing page công ty xe hơi, Landing page GYM. Ngoài ra tuy chỉ trên một trang web duy nhất nhưng website tại DUC LAN WEBSITE vẫn được tối ưu hóa bằng thiết kế <span style={{ color: '#50adff' }}>chuẩn SEO, chuẩn Responsive- chuẩn di động</span>. Khách hàng khi hợp tác cùng với Mona Media hãy tin tưởng rằng chúng tôi có một đội ngũ nhân viên chuyên nghiệp, chế độ hậu đãi cực tốt và dịch vụ SEO chuyên nghiệp có thể giúp cho website của bạn đạt những vị trí cao trên các cổ máy tìm kiếm.</div>
+                                <div className='content'><span style={{ color: '#50adff' }}>Mẫu website giáo dục – trường học</span> giành cho các đợn vị trường học từ <span style={{ color: '#50adff' }}>mẫu web mầm non</span> đến <span style={{ color: '#50adff' }}>mẫu website đại học</span>, các <span style={{ color: '#50adff' }}>trang web trung tâm ngoại ngữ</span>, trung tâm đào tạo kỹ năng, trung tâm lái xe, trung tâm tư vấn visa du học Hàn Quốc… Mỗi một đơn vị khác nhau lại có những quy cách cũng như phong cách về website khác nhau. Tại đây, <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> xin hân hạnh cung cấp cho bạn các <span style={{ color: '#50adff' }}>mẫu thiết kế website giáo dục – trường học</span> mới nhất, hiện đại và phù hợp với những lĩnh vực mà các bạn đang giảng dạy.</div>
                                 <br></br>
-                                <div className='content'>Khả năng chính của chúng tôi là xây dựng landing page theo yêu cầu. Vì vậy nếu bạn cần xây dựng riêng thì đừng ngần ngại liên hệ hoặc để lại thông tin – chuyên viên của chúng tôi sẽ hỗ trợ tư vấn ngay với bạn</div>
+                                <div className='content'>Sở hữu một mẫu website giới thiệu trường học giá rẻ và chất lượng là điều mọi khách hàng đều mong muốn. Hãy đến với Mona để sở hữu cho mình <span style={{ color: '#50adff' }}>mẫu website trường học độc quyền, rẻ, đẹp và chất lượng</span> để mang lại cho ngôi trường, trung tâm của bạn một sự uy tín và chất lượng đến từng chi tiết.</div>
                             </div>
                             <div className='col-md-6 image-intro'>
                                 <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733756969/11111_rcy8u6.png' alt='' />
@@ -124,8 +124,8 @@ const Index = () => {
                             <div className='col-md-4 content'>
                                 <ul>
                                     <li>
-                                        <NavLink to='/category/portfolio-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Portfolio Cá Nhân
+                                        <NavLink to='/category/portfolio-gioi-thieu' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            Portfolio Giới Thiệu
                                         </NavLink>
                                     </li>
                                     <li>

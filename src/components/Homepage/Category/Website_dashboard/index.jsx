@@ -124,8 +124,8 @@ const Index = () => {
                             <div className='col-md-4 content'>
                                 <ul>
                                     <li>
-                                        <NavLink to='/category/portfolio-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Portfolio Cá Nhân
+                                        <NavLink to='/category/portfolio-gioi-thieu' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            Portfolio Giới Thiệu
                                         </NavLink>
                                     </li>
                                     <li>

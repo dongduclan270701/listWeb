@@ -107,13 +107,11 @@ const Index = () => {
                         </div>
                         <div className='row introduce-landing-page'>
                             <div className='col-md-6 text'>
-                                <div className='title'>Mẫu website Landing Page</div>
+                                <div className='title'>Mẫu website blog</div>
                                 <br></br>
-                                <div className='content'>Mẫu website landing page là một loại website đang rất được ưa chuộng hiện nay vì hiệu quả mà nó mang lại. <span style={{ color: '#50adff' }}>Giao diện landing page</span> sẽ phù hợp nhất cho những <span style={{ color: '#50adff' }}>website giới thiệu công ty</span> tổng quan và chuyên sâu về công ty hoặc một sản phẩm nào đó nhằm PR, quảng cáo sản phẩm, công ty đến với khách hàng một cách nhanh và thân thiện nhất. Bản chất của Landing page sẽ thể hiện tất cả thông tin về công ty hoặc sản phẩm lên trên cùng một trang web, khách hàng có thể theo dõi tất cả thông tin mà không cần chuyển đi bất cứ một trang nào khác.</div>
+                                <div className='content'><span style={{ color: '#50adff' }}>Mẫu website tin tức</span> là mẫu website được thiết kế nhằm đăng tải những tin tức về những mảng thông tin nhất định như: tin tức kinh tế, công nghệ, máy tính, tin tức về lập trình, phần mềm, tin tức về mẹ và bé,… Những ai có mong muốn sở hữu một website về tin tức để có thể phục vụ cho công việc một cách tốt nhất thì hãy nhanh tay liên lạc với DUC LAN WEBSITE để có thể nhận được sự tư vấn cụ thể và trực tiếp nhất vì chính những lời tư vấn từ nhân viên của chúng tôi sẽ giúp cho các bạn có thêm nhiều ý tưởng cho một website tin tức giá rẻ của mình nhé.</div>
                                 <br></br>
-                                <div className='content'><span style={{ color: 'grey' }}>Mẫu Landing page đẹp</span> có thể sử dụng tối ưu cho tất cả các loại hình kinh doanh đặc biệt là: landing page BĐS, Landing page Mỹ phẩm, Landing page công ty xe hơi, Landing page GYM. Ngoài ra tuy chỉ trên một trang web duy nhất nhưng website tại DUC LAN WEBSITE vẫn được tối ưu hóa bằng thiết kế <span style={{ color: '#50adff' }}>chuẩn SEO, chuẩn Responsive- chuẩn di động</span>. Khách hàng khi hợp tác cùng với Mona Media hãy tin tưởng rằng chúng tôi có một đội ngũ nhân viên chuyên nghiệp, chế độ hậu đãi cực tốt và dịch vụ SEO chuyên nghiệp có thể giúp cho website của bạn đạt những vị trí cao trên các cổ máy tìm kiếm.</div>
-                                <br></br>
-                                <div className='content'>Khả năng chính của chúng tôi là xây dựng landing page theo yêu cầu. Vì vậy nếu bạn cần xây dựng riêng thì đừng ngần ngại liên hệ hoặc để lại thông tin – chuyên viên của chúng tôi sẽ hỗ trợ tư vấn ngay với bạn</div>
+                                <div className='content'>Tuy là một <span style={{ color: '#50adff' }}>website tin tức giá rẻ</span>, nhưng website tại <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> luôn được chăm chút về mặt chất lượng, <span style={{ color: '#50adff' }}>thiết kế website chuẩn SEO</span> và hướng tới người dùng, <span style={{ color: '#50adff' }}>thiết kế website responsive – chuẩn di dộng – đa nền tảng</span> giúp cho website có thể hoạt động tối ưu trên các phương tiện di động như điện thoại di động và máy tính bảng.</div>
                             </div>
                             <div className='col-md-6 image-intro'>
                                 <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733756969/11111_rcy8u6.png' alt='' />
@@ -124,8 +122,8 @@ const Index = () => {
                             <div className='col-md-4 content'>
                                 <ul>
                                     <li>
-                                        <NavLink to='/category/portfolio-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Portfolio Cá Nhân
+                                        <NavLink to='/category/portfolio-gioi-thieu' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            Portfolio Giới Thiệu
                                         </NavLink>
                                     </li>
                                     <li>
