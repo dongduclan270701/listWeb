@@ -22,6 +22,11 @@ import WebsiteRestaurantCoffee from 'components/Homepage/Category/Website_restau
 
 // KLD0512's website
 import KLD0512 from 'components/List_Website/Landing_page/KLD0512/index'
+
+// KLD0512's website
+import KLD1312 from 'components/List_Website/Website_education/KLD1312/index'
+import HeaderKLD1312 from 'components/List_Website/Website_education/KLD1312/Header'
+import FooterKLD1312 from 'components/List_Website/Website_education/KLD1312/Footer'
 function App() {
   const page = [
     { path: "/", location: Homepage },
@@ -38,8 +43,11 @@ function App() {
     { path: "/service/bao-tri-sua-chua-website", location: MaintainWebsite },
     { path: "/blog", location: BlogHomepage },
   ]
-  const pageSellWebsite = [
-    { path: "/website/template/KLD0512", location: KLD0512 }
+  const websiteKLD0512 = [
+    { path: "/website/template/KLD0512", location: KLD0512 },
+  ]
+  const websiteKLD1312 = [
+    { path: "/website/template/KLD1312", location: KLD1312 }
   ]
   return (
     <Router>
@@ -50,9 +58,14 @@ function App() {
           />
         })}
         <Route path={'/aboutMe'} element={<><AboutHomepage/></>}/>
-        {pageSellWebsite.map((item, index) => {
+        {websiteKLD0512.map((item, index) => {
           const TagName1 = item.location
           return <Route key={index} path={item.path} element={<><TagName1 /></>}
+          />
+        })}
+        {websiteKLD1312.map((item, index) => {
+          const TagName1 = item.location
+          return <Route key={index} path={item.path} element={<><HeaderKLD1312/><TagName1 /><FooterKLD1312/></>}
           />
         })}
       </Routes>
