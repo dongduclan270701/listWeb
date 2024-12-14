@@ -29,6 +29,11 @@
             text-transform: uppercase;
             .nav-item {
                 padding: 40px 0;
+                color:white;
+                text-decoration: none;
+                &:hover {
+                        color: #40a9ff;
+                    }
             }
             .dropdown {
                 position: relative; /* Định vị tương đối để submenu được định vị dựa trên dropdown */
@@ -83,8 +88,8 @@
                         background-color: rgb(19 55 95);
                         letter-spacing: 2px;
                         &:hover {
-                            background-color: #f0f0f0;
-                            color: #1890ff;
+                            background-color: #50adff;
+                            color: white;
                         }
                     }
 
@@ -100,8 +105,8 @@
                             top: 0;
                             left: 100%; /* Đặt submenu ngay bên phải submenu cha */
                             margin-left: 0; /* Loại bỏ khoảng cách giữa submenu cha và submenu con */
-                            min-width: 160px;
-                            background-color: black;
+                            min-width: 250px;
+                            background-color: rgb(19 55 95);
                             box-shadow:
                                 0 3px 6px rgba(0, 0, 0, 0.16),
                                 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -116,11 +121,11 @@
                                 color: white;
                                 font-size: 14px;
                                 cursor: pointer;
-                                background-color: black;
+                                background-color: rgb(19 55 95);
 
                                 &:hover {
-                                    background-color: #f0f0f0;
-                                    color: #1890ff;
+                                    background-color: #50adff;
+                                    color: white;
                                 }
                             }
                         }

@@ -27,6 +27,11 @@ import KLD0512 from 'components/List_Website/Landing_page/KLD0512/index'
 import KLD1312 from 'components/List_Website/Website_education/KLD1312/index'
 import HeaderKLD1312 from 'components/List_Website/Website_education/KLD1312/Header'
 import FooterKLD1312 from 'components/List_Website/Website_education/KLD1312/Footer'
+import ContactKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Contact'
+import AboutKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/About'
+import BlogKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Blog'
+import BlogDetailKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Blog/Blog_detail'
+import CourseKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Course'
 function App() {
   const page = [
     { path: "/", location: Homepage },
@@ -47,7 +52,12 @@ function App() {
     { path: "/website/template/KLD0512", location: KLD0512 },
   ]
   const websiteKLD1312 = [
-    { path: "/website/template/KLD1312", location: KLD1312 }
+    { path: "/website/template/KLD1312", location: KLD1312 },
+    { path: "/website/template/KLD1312/contact", location: ContactKLD1312 },
+    { path: "/website/template/KLD1312/about", location: AboutKLD1312 },
+    { path: "/website/template/KLD1312/blog", location: BlogKLD1312 },
+    { path: "/website/template/KLD1312/blog-detail", location: BlogDetailKLD1312 },
+    { path: "/website/template/KLD1312/course", location: CourseKLD1312 }
   ]
   return (
     <Router>

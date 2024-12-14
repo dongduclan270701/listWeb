@@ -1,0 +1,151 @@
+.about-kld1312 {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    .section-1 {
+        padding: 104px 0;
+        img {
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+            position: absolute;
+            z-index: 1;
+        }
+        .title {
+            justify-content: end;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 100px 10px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            z-index: 2;
+            .title-above {
+                color: white;
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+            }
+            .title-below {
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 3rem;
+            }
+        }
+    }
+    .section-2 {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px 100px 20px;
+        .e1st {
+            font-size: 2rem;
+            font-weight: bold;
+            p {
+                border-bottom: 4px solid #50adff;
+                width: fit-content;
+            }
+        }
+        .e2nd, .e3rd {
+            color: grey;
+            font-size: 1.1rem;
+        }
+    }
+    .section-3 {
+        background-color: rgb(19 55 95);
+        padding: 150px 0;
+        .content {
+            width: 1200px;
+            margin: 0 auto;
+            color: white;
+            .box {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                img {
+                    width: 50px;
+                }
+                .title {
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+                .sub-title {
+                    letter-spacing: 1px;
+                }
+                a {
+                    font-weight: bold;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    font-size: 1.2rem;
+                    color: white;
+                }
+            }
+        }
+    }
+    .section-4{
+        .e1st, .e2nd{
+            padding:0;
+            display: flex;
+        }
+        .e1st{
+            .left{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left:250px;
+                padding-right: 40px;
+                gap:30px;
+                img{
+                    width: 75px;
+                }
+                .title{
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                .text{
+                    color:grey;
+                    font-size: 1.1rem;
+                }
+            }
+            .right{
+                padding:0
+            }
+        }
+        .e2nd{
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-right:250px;
+                padding-left: 60px;
+                gap:30px;
+                img{
+                    width: 75px;
+                }
+                .title{
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                .text{
+                    color:grey;
+                    font-size: 1.1rem;
+                }
+            }
+            .left{
+                padding:0
+            }
+        }
+    }
+    .section-5{
+        background-color: rgb(8, 35, 65);
+        padding:50px;
+        .row{
+            width: 1200px;
+            margin: 0 auto;
+            color:white;
+        }
+    }
+}

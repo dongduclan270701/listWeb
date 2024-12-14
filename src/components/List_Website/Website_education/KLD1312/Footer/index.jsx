@@ -4,6 +4,20 @@ import Logo from 'assets/List_Website/KLD1312/images/logo_education.svg'
 const Index = () => {
     return (
         <div className='footer-kld1312'>
+            <div className='section-9'>
+                <div className='row'>
+                    <div className='col-md-6 left'>
+                        <div className='title'>Subscribe new and go premium for one month</div>
+                        <div className='sub-title'>Subscribe to our newsletter.
+                            <br />Get updates to news and events.
+                        </div>
+                    </div>
+                    <div className='col-md-6 right'>
+                        <input type='text' className='col-8 input' placeholder='Your email address' colorP />
+                        <div className='col-4 submit'>subscribe</div>
+                    </div>
+                </div>
+            </div>
             <div className='row section'>
                 <div className='col-md-4 section-1'>
                     <img src={Logo} alt='' />
@@ -27,9 +41,10 @@ const Index = () => {
                         <div className='col-6'>Courses</div>
                     </div>
                 </div>
+                <hr />
+                <div style={{ textAlign: 'center' }}>Website created by Kass ( Đồng Đức Lân ) - Gmail: dongduclan277@gmail.com - Hotline: 0379382992</div>
             </div>
-            <hr/>
-            <div style={{textAlign:'center'}}>Website created by Kass ( Đồng Đức Lân ) - Gmail: dongduclan277@gmail.com - Hotline: 0379382992</div>
+
         </div>
     );
 }

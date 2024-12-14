@@ -1,0 +1,117 @@
+.blog-detail-kld1312 {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    .section-1 {
+        padding: 104px 0 0 0;
+        .banner {
+            animation: fadeInSlide 0.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            z-index: 1;
+            top: 100px;
+        }
+        .text-banner {
+            height: 396px;
+            justify-content: center;
+            z-index: 2;
+            position: relative;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 0 250px;
+            .number-title {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 2px;
+                border-bottom: 3px solid white;
+                width: max-content;
+            }
+            .title {
+                font-size: 2rem;
+                text-transform: uppercase;
+                padding: 20px 0;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            .sub-title {
+                font-size: 20px;
+                color: rgb(169, 169, 169);
+            }
+        }
+    }
+    .section-2 {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+        gap: 30px;
+        img {
+            border-radius: 15px;
+        }
+        .text {
+            color: grey;
+            font-size: 1.1rem;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+        }
+        .quote {
+            border: none;
+            background-color: rgb(240, 240, 240);
+            padding: 40px;
+            font-size: 1.1rem;
+            color: grey;
+            letter-spacing: 1px;
+            font-style: italic;
+        }
+        ul {
+            li {
+                font-size: 1.1rem;
+                color: grey;
+            }
+        }
+    }
+    .section-3 {
+        width: 800px;
+        margin: 0 auto;
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        hr {
+            width: 900px;
+            color: rgb(167, 167, 167);
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            text-align: center;
+        }
+        .title {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .auth {
+            color: rgb(167, 167, 167);
+        }
+        .sub-title {
+            color: grey;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    }
+}

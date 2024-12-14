@@ -1,0 +1,129 @@
+.course-kld1312 {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    .section-1 {
+        padding: 104px 0 0 0;
+        .banner {
+            animation: fadeInSlide 0.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            z-index: 1;
+            top: 100px;
+        }
+        .text-banner {
+            background-color: rgba(0, 0, 0, 0.517);
+            height: 396px;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            .title {
+                font-size: 3rem;
+                text-transform: uppercase;
+                width: 60%;
+                text-align: center;
+                padding: 20px 0;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            .sub-title {
+                font-size: 20px;
+            }
+        }
+    }
+    .section-2 {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 100px 10px;
+
+        .col-md-4 {
+            padding: 20px;
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            .course {
+                text-decoration: none;
+                border: 1px solid rgb(233, 232, 232);
+                border-radius: 15px;
+                .detail {
+                    padding: 30px;
+                    .price {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .number-price {
+                            font-size: 2rem;
+                            color: #50adff;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+                        .fa-bookmark-o:before {
+                            content: "\f097";
+                        }
+                        .fa {
+                            color: #50adff;
+                            border-color: white; // Thêm border để border-color hoạt động
+                            display: inline-block;
+                            font: normal normal normal 14px / 1 FontAwesome;
+                            font-size: inherit;
+                            text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            cursor: pointer;
+                        }
+                    }
+                    .member-course {
+                        padding: 20px 0;
+                        display: flex;
+                        gap: 20px;
+                        .left {
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            color:grey
+                        }
+                        .right {
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            color:grey
+                        }
+                    }
+                    .review {
+                        display: flex;
+                        justify-content: space-between;
+                        .type-course {
+                            font-size: 1rem;
+                            color: #50adff;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    .name-course {
+                        font-size: 2rem;
+                        font-weight: 600;
+                        padding: 10px 0;
+                        color:black
+                    }
+                    .text-course {
+                        color: grey;
+                        padding: 20px 0;
+                    }
+                }
+            }
+        }
+        img {
+            padding: 0;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}

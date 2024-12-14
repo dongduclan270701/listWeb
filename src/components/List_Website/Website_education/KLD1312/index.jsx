@@ -305,20 +305,7 @@ const Index = () => {
                 </div>
                 <div className='latest-news'>Latest news</div>
             </div>
-            <div className='section-9'>
-                <div className='row'>
-                    <div className='col-md-6 left'>
-                        <div className='title'>Subscribe new and go premium for one month</div>
-                        <div className='sub-title'>Subscribe to our newsletter.
-                            <br/>Get updates to news and events.
-                        </div>
-                    </div>
-                    <div className='col-md-6 right'>
-                        <input type='text' className='col-8 input' placeholder='Your email address' colorP />
-                        <div className='col-4 submit'>subscribe</div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     );
 }

@@ -541,55 +541,5 @@
             border-radius: 15px;
         }
     }
-    .section-9 {
-        background-color: rgb(19 55 95);
-        color: white;
-        .row {
-            padding: 100px 0;
-            width: 1200px;
-            margin: 0 auto;
-            align-items: center;
-            .left {
-                .title {
-                    // text-transform: uppercase;
-                    color: #50adff;
-                    letter-spacing: 1px;
-                }
-                .sub-title {
-                    font-size: 2rem;
-                    letter-spacing: 1px;
-                }
-            }
-            .right {
-                display: flex;
-                height: fit-content;
-                .input {
-                    padding: 20px;
-                    background-color: #597a9f3b;
-                    color: white;
-                    border: none;
-                    border-radius: 15px 0 0 15px;
-                    &::placeholder {
-                        color: rgb(175, 175, 175);
-                    }
-                }
-                .submit {
-                    padding: 20px;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    letter-spacing: 1px;
-                    background-color: #ececec;
-                    color: rgb(20 97 182);
-                    border-radius: 0 15px 15px 0;
-                    text-align: center;
-                    cursor: pointer;
-                    transition: all 0.2s ease-in-out;
-                    &:hover {
-                        background-color: #50adff;
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
+    
 }
