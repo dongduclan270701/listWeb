@@ -9,7 +9,7 @@ import LazyLoad from 'react-lazy-load';
 const Index = () => {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
-        const timer = setTimeout(() => setIsLoading(false), 2000);
+        const timer = setTimeout(() => setIsLoading(false), 500);
         return () => clearTimeout(timer);
     }, []);
     const [product, setProduct] = useState([

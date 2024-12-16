@@ -30,7 +30,7 @@ const Index = () => {
         setSelectedIndexes(updatedIndexes)
     }
     useEffect(() => {
-        const timer = setTimeout(() => setIsLoading(false), 2000);
+        const timer = setTimeout(() => setIsLoading(false), 500);
 
         if (!isLoading) {
             const handleScroll = () => {

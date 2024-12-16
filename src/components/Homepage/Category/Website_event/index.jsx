@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 const Index = () => {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
-        const timer = setTimeout(() => setIsLoading(false), 2000);
+        const timer = setTimeout(() => setIsLoading(false), 500);
         return () => clearTimeout(timer);
     }, []);
     const [product, setProduct] = useState([
