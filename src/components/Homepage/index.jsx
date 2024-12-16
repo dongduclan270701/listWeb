@@ -3,7 +3,6 @@ import 'assets/Homepage/scss/homepage.scss'
 import HeaderHomepage from 'components/Homepage/Header'
 import FooterHomepage from 'components/Homepage/Footer'
 import Loading from 'components/Homepage/About/Loading';
-import Anime3d from 'assets/Homepage/images/anime-avatar.png'
 import { NavLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import LazyLoad from 'react-lazy-load';
@@ -18,35 +17,35 @@ const Index = () => {
             header: 'TÊN MIỀN',
             body: 'Tên miền quốc gia Việt Nam, tên miền Quốc tế đăng ký thông tin chủ thể đầy đủ. Tên miền có giá bán hợp lý, phí duy trì hàng năm theo quy định của Nhà nước. Hỗ trợ tư vấn và xử lý các vấn đề kỹ thuật 24/7.',
             colour: '#00000090',
-            video: process.env.PUBLIC_URL + 'slide-1.mp4'
+            video: 'https://res.cloudinary.com/dolydpat4/video/upload/v1734372252/slide-1_xgyjfg.mp4'
         },
         {
             id: 1,
             header: 'THIẾT KẾ WEBSITE',
             body: 'Giao diện đẹp, thiết kế chuyên nghiệp, khoa học, đảm bảo chất lượng. Website chuẩn SEO giá rẻ, giao diện hiển thị máy tính, điện thoại. Tốc độ load siêu nhanh. Miễn phí hosting, tên miền quốc tế. Bảo hành vĩnh viễn.',
             colour: '#2c2c2c90',
-            video: process.env.PUBLIC_URL + 'slide-2.mp4'
+            video: 'https://res.cloudinary.com/dolydpat4/video/upload/v1734372251/slide-2_cadhhx.mp4'
         },
         {
             id: 2,
             header: 'CHĂM SÓC WEBSITE CHUYÊN NGHIỆP',
             body: 'Rất nhiều cá nhân hay doanh nghiệp khi đầu tư xây dựng 1 website thường mắc một sai lầm đầu tư về hình thức không đầu tư về nội dung và sự vận hành.',
             colour: '#00000090',
-            video: process.env.PUBLIC_URL + 'slide-3.mp4'
+            video: 'https://res.cloudinary.com/dolydpat4/video/upload/v1734372247/slide-3_ykn4sy.mp4'
         },
         {
             id: 3,
             header: 'XÂY DỰNG NỘI DUNG CHẤT LƯỢNG',
             body: 'Sử dụng các tiêu chuẩn để viết bài theo chuẩn SEO. Xây dựng các liên kết đang và sẽ tiếp tục là một thành phần rất quan trọng của Search Engine Optimization (SEO).',
             colour: '#2c2c2c90',
-            video: process.env.PUBLIC_URL + 'slide-4.mp4'
+            video: 'https://res.cloudinary.com/dolydpat4/video/upload/v1734372250/slide-4_qiywkd.mp4'
         },
         {
             id: 4,
             header: 'LUÔN HỖ TRỢ 24/7',
             body: 'Hỗ trợ bạn mọi lúc, mọi nơi. Bảo trì website, thiết kế, vận hàng, mong muốn sở hữu website riêng dành cho danh nghiện hoặc cá nhân.',
             colour: '#00000090',
-            video: process.env.PUBLIC_URL + 'slide-5.mp4'
+            video: 'https://res.cloudinary.com/dolydpat4/video/upload/v1734372250/slide-5_emffgp.mp4'
         }
     ];
     const [initialLoad, setInitialLoad] = useState(true)
@@ -131,7 +130,7 @@ const Index = () => {
                                 </div>
                             </div>
                             <div className='col-md-5 section-sell-website-banner-anime3d'>
-                            <LazyLoad><img src={Anime3d} alt='' className="bounce-effect" /></LazyLoad>
+                            <LazyLoad><img src={'https://res.cloudinary.com/dolydpat4/image/upload/v1734372010/anime-avatar_yofmky.png'} alt='' className="bounce-effect" /></LazyLoad>
                             </div>
                         </div>
                         <div className='section-sell-website-question'>
