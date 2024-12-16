@@ -1,0 +1,227 @@
+.payment-kld1312 {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    .section-1 {
+        padding: 104px 0 0 0;
+        .banner {
+            animation: fadeInSlide 0.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            z-index: 1;
+            top: 100px;
+        }
+        .text-banner {
+            background-color: rgba(0, 0, 0, 0.517);
+            height: 396px;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            .title {
+                font-size: 3rem;
+                text-transform: uppercase;
+                width: 60%;
+                text-align: center;
+                padding: 20px 0;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            .sub-title {
+                font-size: 20px;
+            }
+        }
+    }
+    .section-2 {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+        padding: 50px 10px;
+        a {
+            text-decoration: none;
+        }
+    }
+    .section-3 {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px 50px 10px;
+        .left {
+            animation: ChangeForm 1s forwards;
+            @keyframes ChangeForm {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            .label-left{
+                padding:10px 0;
+            }
+            .title {
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 20px 0;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                span {
+                    font-size: 1rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: grey;
+                }
+            }
+            .select-payment-type {
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+                .paypal {
+                    display: flex;
+                    gap: 20px;
+                    padding: 20px;
+                    border-radius: 15px;
+                    border: 1px solid #c2daef;
+                    background-color: #c2daef;
+                    input {
+                        width: max-content;
+                    }
+                }
+                .cod {
+                    display: flex;
+                    gap: 20px;
+                    padding: 20px;
+                    border-radius: 15px;
+                    border: 1px solid #e6e6e6;
+                    background-color: #e6e6e6;
+                    input {
+                        width: max-content;
+                    }
+                }
+            }
+            .btn-pay {
+                padding: 10px;
+                width: 100%;
+                border: none;
+                background-color: rgb(19 55 95);
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+                margin-top: 50px;
+                border-radius: 15px;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    background-color: #50adff;
+                }
+            }
+            input {
+                width: 100%;
+                padding: 10px;
+                border-radius: 15px;
+                border: 1px solid rgba(208, 206, 206);
+            }
+            .text {
+                padding: 20px 0;
+                a {
+                    text-decoration: none;
+                    color: #50adff;
+                    cursor: pointer;
+                }
+            }
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border-radius: 15px;
+                border: 1px solid rgba(208, 206, 206);
+            }
+        }
+        .right {
+            .title {
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 20px 0;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            .table-cart{
+                display: flex;
+                justify-content: space-between;
+                padding:10px 20px;
+                border: 1px solid #f5f5f5;
+                border-radius: 15px 15px 0 0;
+                background-color: #f5f5f5;
+                align-items: center;
+                .name{
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                .price{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color:#50adff
+                }
+            }
+            .total{
+                display: flex;
+                justify-content: space-between;
+                padding:10px 20px;
+                border: 1px solid #f5f5f5;
+                background-color: #f5f5f5;
+                align-items: center;
+                border-radius: 0 0 15px 15px;
+                .name{
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                .price{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color:#50adff
+                }
+            }
+            .sub-total{
+                display: flex;
+                justify-content: space-between;
+                padding:10px 20px;
+                border: 1px solid #f5f5f5;
+                background-color: #f5f5f5;
+                align-items: center;
+                .name{
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                .price{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color:#50adff
+                }
+            }
+        }
+    }
+}

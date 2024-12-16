@@ -118,60 +118,56 @@ const Index = () => {
                             </div>
                         </div>
                         <div className='row type-website'>
-                            <div className='title'>Danh Mục</div>
-                            <div className='col-md-4 content'>
-                                <ul>
-                                    <li>
-                                        <NavLink to='/category/portfolio-gioi-thieu' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Portfolio Giới Thiệu
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Landing Page
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Blog Cá Nhân
-                                        </NavLink>
-                                    </li>
-                                </ul>
+                                <div className='title'>Danh Mục</div>
+                                <div className='col-md-4 content'>
+                                    <ul>
+                                        <li>
+                                            <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                                Landing Page
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                                Blog & Portfolio Cá Nhân
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                                Website Tổ Chức Sự Kiện
+                                            </NavLink>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className='col-md-4 content'>
+                                    <ul>
+
+                                        <li>
+                                            <NavLink to='/category/website-thuong-mai-dien-tu' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                                Website Thương Mại Điện Tử Nhỏ
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to='/category/website-dashboard' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                                Website Dashboard
+                                            </NavLink>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className='col-md-4 content'>
+                                    <ul>
+                                        <li>
+                                            <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                                Website Giáo Dục
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to='/category/website-nha-hang-quan-ca-phe' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                                Website Nhà Hàng - Quán Cà Phê
+                                            </NavLink>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div className='col-md-4 content'>
-                                <ul>
-                                    <li>
-                                        <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Website Tổ Chức Sự Kiện
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='/category/website-thuong-mai-dien-tu' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Website Thương Mại Điện Tử Nhỏ
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='/category/website-dashboard' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Website Dashboard
-                                        </NavLink>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className='col-md-4 content'>
-                                <ul>
-                                    <li>
-                                        <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Website Giáo Dục
-                                        </NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to='/category/website-nha-hang-quan-ca-phe' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                            Website Nhà Hàng - Quán Cà Phê
-                                        </NavLink>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                     <FooterHomepage />
                 </>

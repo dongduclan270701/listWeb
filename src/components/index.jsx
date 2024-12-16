@@ -12,8 +12,7 @@ import Domain from 'components/Homepage/Service/Domain'
 import AboutHomepage from 'components/Homepage/About'
 import BlogHomepage from 'components/Homepage/Blog'
 import LandingPage from 'components/Homepage/Category/Landing_page'
-import Portfolio from 'components/Homepage/Category/Portfolio'
-import WebsiteBlog from 'components/Homepage/Category/Website_blog'
+import WebsiteBlog from 'components/Homepage/Category/Website_blog_portfolio'
 import WebsiteCommerce from 'components/Homepage/Category/Website_commerce'
 import WebsiteEducation from 'components/Homepage/Category/Website_education'
 import WebsiteEvent from 'components/Homepage/Category/Website_event'
@@ -32,10 +31,13 @@ import AboutKLD1312 from 'components/List_Website/Website_education/KLD1312/Page
 import BlogKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Blog'
 import BlogDetailKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Blog/Blog_detail'
 import CourseKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Course'
+import CourseDetailKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Course/Course_detail'
+import PaymentKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Payment'
+import AccountKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Account'
+
 function App() {
   const page = [
     { path: "/", location: Homepage },
-    { path: "/category/portfolio-gioi-thieu", location: Portfolio },
     { path: "/category/landing-page", location: LandingPage },
     { path: "/category/blog-ca-nhan", location: WebsiteBlog },
     { path: "/category/website-to-chuc-su-kien", location: WebsiteEvent },
@@ -57,7 +59,10 @@ function App() {
     { path: "/website/template/KLD1312/about", location: AboutKLD1312 },
     { path: "/website/template/KLD1312/blog", location: BlogKLD1312 },
     { path: "/website/template/KLD1312/blog-detail", location: BlogDetailKLD1312 },
-    { path: "/website/template/KLD1312/course", location: CourseKLD1312 }
+    { path: "/website/template/KLD1312/course", location: CourseKLD1312 },
+    { path: "/website/template/KLD1312/course/detail/:idCourse", location: CourseDetailKLD1312 },
+    { path: "/website/template/KLD1312/payment", location: PaymentKLD1312 },
+    { path: "/website/template/KLD1312/account", location: AccountKLD1312 }
   ]
   return (
     <Router>

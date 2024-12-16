@@ -16,7 +16,7 @@ const Index = () => {
             </div>
             <div className='row section-2'>
                 <div className='col-md-4'>
-                    <NavLink to={'/website/template/KLD1312/course/detail'} className='course'>
+                    <NavLink to={'/website/template/KLD1312/course/detail/1001'} className='course'>
                         <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802-400x245.jpg" alt="" />
                         <div className='detail'>
                             <div className='price'>
@@ -45,7 +45,7 @@ const Index = () => {
                     </NavLink>
                 </div>
                 <div className='col-md-4'>
-                    <NavLink to={'/website/template/KLD1312/course/detail'} className='course'>
+                    <NavLink to={'/website/template/KLD1312/course/detail/1001'} className='course'>
                         <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1152820865-400x245.jpg" alt="" />
                         <div className='detail'>
                             <div className='price'>
@@ -74,7 +74,7 @@ const Index = () => {
                     </NavLink>
                 </div>
                 <div className='col-md-4'>
-                    <NavLink to={'/website/template/KLD1312/course/detail'} className='course'>
+                    <NavLink to={'/website/template/KLD1312/course/detail/1001'} className='course'>
                         <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-638855738-400x245.jpg" alt="" />
                         <div className='detail'>
                             <div className='price'>
@@ -103,7 +103,7 @@ const Index = () => {
                     </NavLink>
                 </div>
                 <div className='col-md-4'>
-                    <NavLink to={'/website/template/KLD1312/course/detail'} className='course'>
+                    <NavLink to={'/website/template/KLD1312/course/detail/1001'} className='course'>
                         <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1072035598-400x245.jpg" alt="" />
                         <div className='detail'>
                             <div className='price'>
@@ -132,7 +132,7 @@ const Index = () => {
                     </NavLink>
                 </div>
                 <div className='col-md-4'>
-                    <NavLink to={'/website/template/KLD1312/course/detail'} className='course'>
+                    <NavLink to={'/website/template/KLD1312/course/detail/1001'} className='course'>
                         <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-996082438-400x245.jpg" alt="" />
                         <div className='detail'>
                             <div className='price'>
@@ -161,7 +161,7 @@ const Index = () => {
                     </NavLink>
                 </div>
                 <div className='col-md-4'>
-                    <NavLink to={'/website/template/KLD1312/course/detail'} className='course'>
+                    <NavLink to={'/website/template/KLD1312/course/detail/1001'} className='course'>
                         <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/shutterstock_393673021-400x245.jpg" alt="" />
                         <div className='detail'>
                             <div className='price'>
@@ -190,7 +190,7 @@ const Index = () => {
                     </NavLink>
                 </div>
                 <div className='col-md-4'>
-                    <NavLink to={'/website/template/KLD1312/course/detail'} className='course'>
+                    <NavLink to={'/website/template/KLD1312/course/detail/1001'} className='course'>
                         <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/shutterstock_393673021-400x245.jpg" alt="" />
                         <div className='detail'>
                             <div className='price'>
@@ -219,7 +219,7 @@ const Index = () => {
                     </NavLink>
                 </div>
                 <div className='col-md-4'>
-                    <NavLink to={'/website/template/KLD1312/course/detail'} className='course'>
+                    <NavLink to={'/website/template/KLD1312/course/detail/1001'} className='course'>
                         <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-820609122-400x245.jpg" alt="" />
                         <div className='detail'>
                             <div className='price'>
@@ -248,7 +248,7 @@ const Index = () => {
                     </NavLink>
                 </div>
                 <div className='col-md-4'>
-                    <NavLink to={'/website/template/KLD1312/course/detail'} className='course'>
+                    <NavLink to={'/website/template/KLD1312/course/detail/1001'} className='course'>
                         <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1135306875-400x245.jpg" alt="" />
                         <div className='detail'>
                             <div className='price'>

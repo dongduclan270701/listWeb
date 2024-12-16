@@ -1,0 +1,274 @@
+.account-kld1312 {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    .section-1 {
+        padding: 104px 0 0 0;
+        .banner {
+            animation: fadeInSlide 0.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            z-index: 1;
+            top: 100px;
+        }
+        .text-banner {
+            background-color: rgba(0, 0, 0, 0.517);
+            height: 196px;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            position: relative;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            .title {
+                font-size: 3rem;
+                text-transform: uppercase;
+                width: 60%;
+                text-align: center;
+                padding: 20px 0;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            .sub-title {
+                font-size: 20px;
+            }
+        }
+    }
+    .section-2 {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 50px 0;
+        .left {
+            padding: 20px;
+            .nav-account {
+                display: flex;
+                gap: 20px;
+                color: grey;
+                padding: 20px;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                background-color: rgb(246, 246, 246);
+                &:hover {
+                    background-color: #50adff;
+                    color: white;
+                }
+                &:first-child {
+                    border-radius: 15px 15px 0 0;
+                }
+                &:last-child {
+                    border-radius: 0 0 15px 15px;
+                }
+            }
+            .active {
+                background-color: rgb(19 55 95);
+                color: white;
+            }
+        }
+        .right {
+            padding: 20px;
+            .my-course {
+                display: flex;
+                animation: clickActive 1s forwards;
+                @keyframes clickActive {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+                .list-progress {
+                    padding-bottom: 20px;
+                    .detail-progress {
+                        padding: 20px;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #eae9e9;
+                        border-radius: 15px;
+                        gap: 20px;
+                        i {
+                            padding: 20px;
+                            border-radius: 50%;
+                            background-color: #f7f7f7;
+                            color: rgb(19 55 95);
+                            font-size: 1.2rem;
+                        }
+                        span {
+                            .title {
+                                color: grey;
+                            }
+                            .number {
+                                font-size: 1.5rem;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                color: rgb(19 55 95);
+                            }
+                        }
+                    }
+                }
+            }
+            .list-status-progress {
+                width: 100%;
+                margin: 0 auto;
+                animation: clickActive 1s forwards;
+                @keyframes clickActive {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+                .status-progress {
+                    text-align: center;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    padding: 10px 0;
+                    cursor: pointer;
+                    &:hover {
+                        border-bottom: 2px solid #50adff;
+                    }
+                }
+                .active {
+                    border-bottom: 2px solid #50adff;
+                }
+            }
+            .title-course-progress {
+                padding: 50px 10px;
+                animation: clickActive 1s forwards;
+                @keyframes clickActive {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+                .title {
+                    border-radius: 15px 15px 0 0;
+                    padding: 30px;
+                    background-color: rgb(19 55 95);
+                    text-align: center;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+                .course-detail {
+                    background-color: rgb(246, 246, 246);
+                    border-bottom: 1px solid rgb(234, 233, 233);
+                    img {
+                        padding: 10px;
+                    }
+                    div {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        justify-content: center;
+                        color: grey;
+                        border-right: 1px solid rgb(234, 233, 233);
+                    }
+                }
+                .name-general {
+                    padding: 20px 10px;
+                    gap: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    input,
+                    textarea {
+                        padding: 10px;
+                        border: none;
+                        background-color: rgb(246, 246, 246);
+                        width: 100%;
+                        border-radius: 15px;
+                    }
+
+                    .image-upload-wrap {
+                        border: 4px dashed rgb(19 55 95);
+                        position: relative;
+                        height: 150px;
+                        border-radius: 15px;
+                        .file-upload-input {
+                            position: absolute;
+                            margin: 0;
+                            padding: 0;
+                            width: 100%;
+                            height: 100%;
+                            outline: none;
+                            opacity: 0;
+                            cursor: pointer;
+                        }
+                        .drag-text {
+                            text-align: center;
+                            h3 {
+                                font-weight: 100;
+                                text-transform: uppercase;
+                                color: rgb(19 55 95);
+                                padding: 60px 0;
+                            }
+                        }
+                    }
+                }
+                .btn-general {
+                    padding: 20px;
+                    width: max-content;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin: 0 auto;
+                    border: none;
+                    background-color: rgb(19 55 95);
+                    border-radius: 15px;
+                    color: white;
+                    transition: all 0.2s ease-in-out;
+                    &:hover {
+                        background-color: #50adff;
+                    }
+                }
+            }
+            .key-submit {
+                .title-key {
+                    color: grey;
+                    font-size: 1.3rem;
+                }
+                .text-key {
+                    color: grey;
+                    font-size: 1rem;
+                    font-style: italic;
+                    padding: 10px 0;
+                }
+                .input-key {
+                    width: 100%;
+                    display: flex;
+                    input {
+                        padding: 10px;
+                        width: 100%;
+                        border-radius: 15px 0 0 15px;
+                        border: none;
+                        background-color: #f7f7f7;
+                    }
+                    button {
+                        border: none;
+                        border-radius: 0 15px 15px 0;
+                        background-color: rgb(19 55 95);
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        transition: all 0.2s ease-in-out;
+                        &:hover {
+                            background-color: #50adff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

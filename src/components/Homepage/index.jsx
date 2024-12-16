@@ -104,7 +104,7 @@ const Index = () => {
                                 </div>
                                 <br />
                                 <div className='section-sell-website-banner-content play-regular'>
-                                    Tôi cung cấp dịch vụ thiết kế website với rất nhiều giá trị. Tôi tự tin rằng sẽ giúp các bạn mang lại nhiều đơn hàng bằng các giải pháp để có website dành cho cá nhân hoặc doanh nghiệp. Cam kết hỗ trợ trọn đời. <br />Thiết kế website theo yêu cầu chỉ từ <span style={{ color: '#50adff' }}>2.000.000đ / Page</span>. <br />Thuê website chỉ từ <span style={{ color: '#50adff' }}>10.000đ / 1 ngày</span> & <span style={{ color: '#50adff' }}>250.000đ / 1 tháng</span>
+                                    Tôi cung cấp dịch vụ thiết kế website với rất nhiều giá trị. Tôi tự tin rằng sẽ giúp các bạn mang lại nhiều đơn hàng bằng các giải pháp để có website dành cho cá nhân hoặc doanh nghiệp. Cam kết hỗ trợ trọn đời. <br />Thiết kế website theo yêu cầu chỉ từ <span style={{ color: '#50adff' }}>1.000.000 VND / Page</span>. <br />Thuê website chỉ từ <span style={{ color: '#50adff' }}>10.000đ / 1 ngày</span> & <span style={{ color: '#50adff' }}>250.000đ / 1 tháng</span>
                                 </div>
                                 <br />
                                 <div className='section-sell-website-banner-list play-regular'>

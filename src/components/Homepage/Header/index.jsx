@@ -152,14 +152,12 @@ const Index = () => {
                             <li className="dropdown" style={{ cursor: 'pointer' }}>
                                 <a href >Kho giao diện <span style={{ transform: 'scaleX(1.5)', display: 'inline-block' }}>&#8744;</span></a>
                                 <ul className='dropdown-menu deactivate-portfolio-false play-bold' >
-                                    <NavLink to='/category/portfolio-gioi-thieu' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                        Portfolio giới thiệu
-                                    </NavLink>
+                                    
                                     <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Landing Page
                                     </NavLink>
                                     <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                        Blog cá nhân
+                                        Blog & Portfolio cá nhân
                                     </NavLink>
                                     <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Website tổ chức sự kiện
@@ -219,8 +217,7 @@ const Index = () => {
                                 <NavLink to={'/category/landing-page'} ><li>Landing page</li></NavLink>
                                 <NavLink to={'/category/website-thuong-mai-dien-tu'} ><li>Website thương mại điện tử nhỏ</li></NavLink>
                                 <NavLink to={'/category/website-dashboard'} ><li>Website dashboard</li></NavLink>
-                                <NavLink to={'/category/portfolio-gioi-thieu'} ><li>Portfolio Giới Thiệu</li></NavLink>
-                                <NavLink to={'/category/blog-ca-nhan'} ><li>Blog Cá Nhân</li></NavLink>
+                                <NavLink to={'/category/blog-ca-nhan'} ><li>Blog & Portfolio Cá Nhân</li></NavLink>
                                 <NavLink to={'/category/website-to-chuc-su-kien'} ><li>Website Tổ Chức Sự Kiện</li></NavLink>
                                 <NavLink to={'/category/website-nha-hang-quan-ca-phe'} ><li>Website Nhà Hàng - Quán Cà Phê</li></NavLink>
                                 <NavLink to={'/category/website-giao-duc'} ><li>Website Giáo Dục</li></NavLink>

@@ -52,7 +52,9 @@ const Index = () => {
         { id: 4, avt: 'https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/testimonial-2-150x150.jpg', text: 'This is a life saver. I don’t have time or money for a college education. My goal is to become a freelance web developer and thanks to these courses, I’m really close.', name: 'Thomas Smith' },
         { id: 5, avt: 'https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/testimonial-1-150x150.jpg', text: 'This is a life saver. I don’t have time or money for a college education. My goal is to become a freelance web developer and thanks to these courses, I’m really close.', name: 'Stella Smith' },
     ];
-
+    const [barStyle, setBarStyle] = useState({ left: "0%", width: "16.6%" }); // Vị trí thanh trượt hiện tại
+    const [defaultBarStyle, setDefaultBarStyle] = useState({ left: "0%", width: "16.6%" }); // Vị trí mặc định
+    const [section_4, setSection_4] = useState(1)
     const itemsToShow2 = window.innerWidth > 768 ? 3 : 1;
 
     const nextSlide2 = () => {
@@ -81,6 +83,19 @@ const Index = () => {
         window.addEventListener('resize', handleResize2);
         return () => window.removeEventListener('resize', handleResize2);
     }, []);
+    const handleHover = (left, width) => {
+        setBarStyle({ left, width });
+    };
+
+    const handleLeave = () => {
+        setBarStyle(defaultBarStyle);
+    };
+
+    const handleClick = (left, width, section_4) => {
+        setDefaultBarStyle({ left, width });
+        setSection_4(section_4);
+    };
+
     return (
         <div className='homepage-kld1312'>
             <video
@@ -226,6 +241,118 @@ const Index = () => {
                 <div className='title'>Choose from over 3,000 online video courses with new additions published every month</div>
                 <div className='sub-title'>Learn from the best. Discover thousands of online courses from top universities around the world like MIT, Stanford and Harvard.</div>
             </div>
+            <div className='section-9'>
+                <div className='row tab-course'>
+                    <div className='tab-detail'
+
+                        onMouseEnter={() => handleHover("0%", "16.6%")} onMouseLeave={handleLeave}
+                        onClick={() => handleClick("0%", "16.6%", 1)}
+                    >backend
+                    </div>
+                    <div className='tab-detail'
+                        onMouseEnter={() => handleHover("16.6%", "16.6%")}
+                        onMouseLeave={handleLeave}
+                        onClick={() => handleClick("16.6%", "16.6%", 2)}
+                    >design</div>
+                    <div className='tab-detail'
+                        onMouseEnter={() => handleHover("33.2%", "16.6%")}
+                        onMouseLeave={handleLeave}
+                        onClick={() => handleClick("33.2%", "16.6%", 3)}
+                    >finance</div>
+                    <div className='tab-detail'
+                        onMouseEnter={() => handleHover("48.8%", "16.6%")}
+                        onMouseLeave={handleLeave}
+                        onClick={() => handleClick("49.8%", "16.6%", 4)}
+                    >frontend</div>
+                    <div className='tab-detail'
+                        onMouseEnter={() => handleHover("66.4%", "16.6%")}
+                        onMouseLeave={handleLeave}
+                        onClick={() => handleClick("66.4%", "16.6%", 5)}
+                    >it & software</div>
+                    <div className='tab-detail'
+                        onMouseEnter={() => handleHover("83.4%", "16.6%")}
+                        onMouseLeave={handleLeave}
+                        onClick={() => handleClick("83.4%", "16.6%", 6)}
+                    >marketing</div>
+                    <div className='bottom-slide-bar' style={{ left: barStyle.left, width: barStyle.width }}>
+                        <div className='bottom-slide-bar-border'></div>
+                    </div>
+                </div>
+            </div>
+            <div className='section-10'>
+                {section_4 === 1 && (
+                    <div className="row backend">
+                        <div className="col-md-6 left">
+                            <div className='title'>Learn programming languages</div>
+                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend'>All courses</button>
+                        </div>
+                        <div className="col-md-6 right">
+                            <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-8.jpg" alt="" />
+                        </div>
+                    </div>
+                )}
+                {section_4 === 2 && (
+                    <div className="row backend">
+                        <div className="col-md-6 left">
+                            <div className='title'>How to design like a pro</div>
+                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend'>All courses</button>
+                        </div>
+                        <div className="col-md-6 right">
+                            <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-3-1.jpg" alt="" />
+                        </div>
+                    </div>
+                )}
+                {section_4 === 3 && (
+                    <div className="row backend">
+                        <div className="col-md-6 left">
+                            <div className='title'>Learn how financial world works</div>
+                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend'>All courses</button>
+                        </div>
+                        <div className="col-md-6 right">
+                            <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-5-1.jpg" alt="" />
+                        </div>
+                    </div>
+                )}
+                {section_4 === 4 && (
+                    <div className="row backend">
+                        <div className="col-md-6 left">
+                            <div className='title'>Design UI/UX as professional</div>
+                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend'>All courses</button>
+                        </div>
+                        <div className="col-md-6 right">
+                            <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-4-2.jpg" alt="" />
+                        </div>
+                    </div>
+                )}
+                {section_4 === 5 && (
+                    <div className="row backend">
+                        <div className="col-md-6 left">
+                            <div className='title'>Learn python language</div>
+                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend'>All courses</button>
+                        </div>
+                        <div className="col-md-6 right">
+                            <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-2-1.jpg" alt="" />
+                        </div>
+                    </div>
+                )}
+                {section_4 === 6 && (
+                    <div className="row backend">
+                        <div className="col-md-6 left">
+                            <div className='title'>Market your products</div>
+                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend'>All courses</button>
+                        </div>
+                        <div className="col-md-6 right">
+                            <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-6-2.jpg" alt="" />
+                        </div>
+                    </div>
+                )}
+            </div>
             <div className='section-7'>
                 <div className='list-courses'>
                     <div className='sub-title'>Learn how you want, where you want</div>
@@ -305,7 +432,7 @@ const Index = () => {
                 </div>
                 <div className='latest-news'>Latest news</div>
             </div>
-            
+
         </div>
     );
 }
