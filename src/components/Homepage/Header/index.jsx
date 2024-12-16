@@ -11,7 +11,7 @@ import Library from 'assets/Homepage/images/library-icon.svg'
 import Blog from 'assets/Homepage/images/blog-icon.svg'
 import Service from 'assets/Homepage/images/service-icon.svg'
 import About from 'assets/Homepage/images/about-icon.svg'
-import Li from 'assets/Homepage/images/li-icon.svg'
+import LazyLoad from 'react-lazy-load';
 const Index = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const toggleMenu = () => {
@@ -85,11 +85,11 @@ const Index = () => {
         <>
             <div className={isIOS ? 'hotline-icon-one-ios' : isAndroid ? 'hotline-icon-one-android' : 'hotline-icon-one-pc'}>
                 <a href={zaloLink} target='blank'>
-                    <img src={Zalo} className='hotline-icon-svg' alt="Logo" />
+                <LazyLoad><img src={Zalo} className='hotline-icon-svg' alt="Logo" /></LazyLoad>
                 </a>
             </div>
             <div className='hotline-icon-two'>
-                <a href="tel:0379382992"><img src={Phone} className='hotline-icon-svg' alt="Logo" /></a>
+                <a href="tel:0379382992"><LazyLoad><img src={Phone} className='hotline-icon-svg' alt="Logo" /></LazyLoad></a>
             </div>
             <div ref={dpkCursorRef} className="dpkCursor " />
             <div className=''>
@@ -126,10 +126,10 @@ const Index = () => {
                     <nav className="navbar-sell-website play-bold">
                         <i className="hamburger-icon hamburger-btn fa-solid fa-bars" style={{ fontSize: 20 }} onClick={toggleMenu}></i>
                         <NavLink to='/' className="logo">
-                            <img src={signature} alt="logo" />
+                        <LazyLoad><img src={signature} alt="logo" /></LazyLoad>
                         </NavLink>
                         <NavLink to='/' className="logo-res">
-                            <img src={signature} alt="logo" />
+                        <LazyLoad><img src={signature} alt="logo" /></LazyLoad>
                         </NavLink>
                         <ul className={isMenuOpen ? "links show-menu" : "links"}>
                             <span className="close-btn material-symbols-rounded" onClick={toggleMenu}>x</span>
@@ -191,16 +191,16 @@ const Index = () => {
                             <div id="bar6" class="bars"></div>
                         </label>
                     </div>
-                    <div className='col-4 logo-mobile'><img src={Logo} alt='logo' /></div>
+                    <div className='col-4 logo-mobile'><LazyLoad><img src={Logo} alt='logo' /></LazyLoad></div>
                     <div className='col-4 hotline'><div className='ele'>Liên hệ</div></div>
                 </div>
                 <div className={isMenuOpen ? 'mobile-menu select-menu' : 'mobile-menu'}>
                     <div className='nav-mobile'>
-                        <NavLink to={'/'}><img src={Homepage} alt='' />Trang chủ</NavLink>
+                        <NavLink to={'/'}><LazyLoad><img src={Homepage} alt='' /></LazyLoad>Trang chủ</NavLink>
                         <div>
                             <div style={{ display: 'flex', justifyContent: 'space-between' }} onClick={() => setIsSelectService(!isSelectService)}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}><img style={{ width: 24 }} src={Service} alt='' />Dịch vụ</div>
-                                <div><img src={ArrowRight} alt='' className={isSelectService ? 'rotate-icon-menu' : 'rotate-icon-menu-reverse'} /></div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}><LazyLoad><img style={{ width: 24 }} src={Service} alt='' /></LazyLoad>Dịch vụ</div>
+                                <div><LazyLoad><img src={ArrowRight} alt='' className={isSelectService ? 'rotate-icon-menu' : 'rotate-icon-menu-reverse'} /></LazyLoad></div>
                             </div>
                             <ul className={isSelectService ? 'select-service' : 'back-select-service'}>
                                 <NavLink to={'/service/bao-tri-sua-chua-website'} ><li>Bảo trì/sửa chữa website</li></NavLink>
@@ -210,8 +210,8 @@ const Index = () => {
                         </div>
                         <div>
                             <div style={{ display: 'flex', justifyContent: 'space-between' }} onClick={() => setIsSelectLibrary(!isSelectLibrary)}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}><img style={{ width: 24 }} src={Library} alt='' />Kho giao diện</div>
-                                <div><img src={ArrowRight} alt='' className={isSelectLibrary ? 'rotate-icon-menu' : 'rotate-icon-menu-reverse'} /></div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}><LazyLoad><img style={{ width: 24 }} src={Library} alt='' /></LazyLoad>Kho giao diện</div>
+                                <div><LazyLoad><img src={ArrowRight} alt='' className={isSelectLibrary ? 'rotate-icon-menu' : 'rotate-icon-menu-reverse'} /></LazyLoad></div>
                             </div>
                             <ul className={isSelectLibrary ? 'select-library' : 'back-select-library'}>
                                 <NavLink to={'/category/landing-page'} ><li>Landing page</li></NavLink>
@@ -223,8 +223,8 @@ const Index = () => {
                                 <NavLink to={'/category/website-giao-duc'} ><li>Website Giáo Dục</li></NavLink>
                             </ul>
                         </div>
-                        <NavLink to={'/blog'}><img src={Blog} alt='' />Blogs</NavLink>
-                        <NavLink to={'/aboutMe'}><img src={About} alt='' />Về tôi</NavLink>
+                        <NavLink to={'/blog'}><LazyLoad><img src={Blog} alt='' /></LazyLoad>Blogs</NavLink>
+                        <NavLink to={'/aboutMe'}><LazyLoad><img src={About} alt='' /></LazyLoad>Về tôi</NavLink>
                     </div>
                 </div>
             </div>

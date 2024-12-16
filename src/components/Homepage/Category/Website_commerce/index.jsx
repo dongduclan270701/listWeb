@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import Loading from 'components/Homepage/About/Loading';
 import HeaderHomepage from 'components/Homepage/Header'
 import FooterHomepage from 'components/Homepage/Footer'
+import { Helmet } from 'react-helmet';
+import LazyLoad from 'react-lazy-load';
 const Index = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [product, setProduct] = useState([
@@ -51,12 +53,16 @@ const Index = () => {
                     <Loading />
                 </div>
                 :
-                <>
+                <><Helmet>
+                <title>Mẫu website E-commerce ( website Thương mại điện tử)</title>
+                <meta name="description" content="Website bán hàng online, website thương mại điện tử (TMĐT) chắc là không còn cần phải giới thiệu dài dòng nữa. Mẫu website bán hàng đẹp – TMĐT của DUC LAN WEBSITE Website cực kì phù hợp với nhu cầu của người Việt: Giao diện đẹp, phù hợp với gu thẫm mỹ của người Việt, sản phẩm hiển thị rõ ràng, hình ảnh kích thước hợp lý, sắc nét, không bị scale ( giãn ) hình." />
+                <meta name="keywords" content="website bán hàng online, website thương mại điện tử, mẫu website bán hàng đẹp, website TMĐT, thiết kế website bán hàng, website thương mại điện tử giá rẻ, website bán hàng chuẩn SEO, website bán hàng responsive, thiết kế website TMĐT, mẫu website thương mại điện tử, website bán hàng Việt Nam, thiết kế website thương mại điện tử, website bán hàng online dễ SEO, website bán hàng trên di động, website bán hàng với tốc độ load nhanh, website thanh toán online, tích hợp thanh toán offline, báo cáo doanh thu website, website bán hàng với khuyến mãi coupon, website bán hàng sản phẩm rõ ràng, website bán hàng tiện lợi cho khách hàng, website bán hàng đa nền tảng"/>
+            </Helmet>
                     <HeaderHomepage />
                     <div className='category-landing-page'>
                         <div className='row banner-image'>
                             <div className='col-md-7 image'>
-                                <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733751653/ecommerce11_nonhjp.png' alt='' />
+                                <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733751653/ecommerce11_nonhjp.png' alt='' /></LazyLoad>
                             </div>
                             <div className='col-md-5 content'>
                                 <div className='text'>
@@ -79,7 +85,7 @@ const Index = () => {
                                                         onMouseEnter={() => handleMouseEnter(index)}
                                                         onMouseLeave={() => handleMouseLeave(index)}
                                                     >
-                                                        <img
+                                                        <LazyLoad><img
                                                             ref={(el) => (imgRefs.current[index] = el)}
                                                             src={item.img}
                                                             alt={`Image ${index}`}
@@ -90,10 +96,10 @@ const Index = () => {
                                                                 position: "relative",
                                                                 transition: "top 2s ease",
                                                             }}
-                                                        />
+                                                        /></LazyLoad>
                                                     </div>
                                                     {/* <hr style={{ width: '100%', borderTop: '2px solid #68a7ff91;' }} /> */}
-                                                    <div className='product-name'>{item.name}</div>
+                                                    <p className='product-name'>{item.name}</p>
                                                     <div className='product-view'>{item.view} lượt xem</div>
                                                     <div className='product-price'>{item.price}</div>
                                                 </div>
@@ -105,9 +111,9 @@ const Index = () => {
                         </div>
                         <div className='row introduce-landing-page'>
                             <div className='col-md-6 text'>
-                                <div className='title'>Mẫu website E-commerce (Thương mại điện tử)</div>
+                                <h6 className='title'>Mẫu website E-commerce (Thương mại điện tử)</h6>
                                 <br></br>
-                                <div className='content'>Website bán hàng online, website thương mại điện tử (TMĐT) chắc là không còn cần phải giới thiệu dài dòng nữa. Mẫu website bán hàng đẹp – TMĐT của DUC LAN WEBSITE Website cực kì phù hợp với nhu cầu của người Việt:</div>
+                                <p className='content'>Website bán hàng online, website thương mại điện tử (TMĐT) chắc là không còn cần phải giới thiệu dài dòng nữa. Mẫu website bán hàng đẹp – TMĐT của DUC LAN WEBSITE Website cực kì phù hợp với nhu cầu của người Việt:</p>
                                 <br></br>
                                 <div className='content'>
                                     <ul>
@@ -122,63 +128,63 @@ const Index = () => {
                                     </ul>
                                 </div>
                                 <br></br>
-                                <div className='content'>Với mẫu website bán hàng trực tuyến đẹp bạn sẽ hoàn toàn làm chủ cuộc chơi thương trường của mình. Dễ dàng thực hiện các chiến lược kinh doanh, quảng bá và marketing cho sản phẩm. Với những mẫu bên dưới, DUC LAN WEBSITE hy vọng sẽ giúp bạn tìm được những mẫu ưng ý hoặc có thể nảy ra được ý tưởng cho trang web của bạn. Nếu bạn cần thiết kế website bán hàng theo yêu cầu, hãy liên hệ với DUC LAN WEBSITE theo hotline: 037 938 2992. Chúc bạn thành công!</div>
+                                <p className='content'>Với mẫu website bán hàng trực tuyến đẹp bạn sẽ hoàn toàn làm chủ cuộc chơi thương trường của mình. Dễ dàng thực hiện các chiến lược kinh doanh, quảng bá và marketing cho sản phẩm. Với những mẫu bên dưới, DUC LAN WEBSITE hy vọng sẽ giúp bạn tìm được những mẫu ưng ý hoặc có thể nảy ra được ý tưởng cho trang web của bạn. Nếu bạn cần thiết kế website bán hàng theo yêu cầu, hãy liên hệ với DUC LAN WEBSITE theo hotline: 037 938 2992. Chúc bạn thành công!</p>
                             </div>
                             <div className='col-md-6 image-intro'>
-                                <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733756969/11111_rcy8u6.png' alt='' />
+                            <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733756969/11111_rcy8u6.png' alt='' /></LazyLoad>
                             </div>
                         </div>
                         <div className='row type-website'>
-                                <div className='title'>Danh Mục</div>
-                                <div className='col-md-4 content'>
-                                    <ul>
-                                        <li>
-                                            <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Landing Page
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Blog & Portfolio Cá Nhân
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Website Tổ Chức Sự Kiện
-                                            </NavLink>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col-md-4 content'>
-                                    <ul>
-
-                                        <li>
-                                            <NavLink to='/category/website-thuong-mai-dien-tu' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Website Thương Mại Điện Tử Nhỏ
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to='/category/website-dashboard' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Website Dashboard
-                                            </NavLink>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='col-md-4 content'>
-                                    <ul>
-                                        <li>
-                                            <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Website Giáo Dục
-                                            </NavLink>
-                                        </li>
-                                        <li>
-                                            <NavLink to='/category/website-nha-hang-quan-ca-phe' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Website Nhà Hàng - Quán Cà Phê
-                                            </NavLink>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div className='title'>Danh Mục</div>
+                            <div className='col-md-4 content'>
+                                <ul>
+                                    <li>
+                                        <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            <p>Landing Page</p>
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            <p>Blog & Portfolio Cá Nhân</p>
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            <p>Website Tổ Chức Sự Kiện</p>
+                                        </NavLink>
+                                    </li>
+                                </ul>
                             </div>
+                            <div className='col-md-4 content'>
+                                <ul>
+
+                                    <li>
+                                        <NavLink to='/category/website-thuong-mai-dien-tu' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            <p>Website Thương Mại Điện Tử Nhỏ</p>
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='/category/website-dashboard' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            <p>Website Dashboard</p>
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='col-md-4 content'>
+                                <ul>
+                                    <li>
+                                        <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            <p>Website Giáo Dục</p>
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='/category/website-nha-hang-quan-ca-phe' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            <p>Website Nhà Hàng - Quán Cà Phê</p>
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <FooterHomepage />
                 </>

@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import Loading from 'components/Homepage/About/Loading';
 import HeaderHomepage from 'components/Homepage/Header'
 import FooterHomepage from 'components/Homepage/Footer'
+import { Helmet } from 'react-helmet';
+import LazyLoad from 'react-lazy-load';
 const Index = () => {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
@@ -53,18 +55,22 @@ const Index = () => {
                     <Loading />
                 </div>
                 :
-                <>
+                <><Helmet>
+                <title>Dịch vụ thiết kế website</title>
+                <meta name="description" content="Mẫu website nhà hàng – khách sạn – quán cà phê tại DUC LAN WEBSITE là những mẫu website được thiết kế với mục đích: giới thiệu nhà hàng – khách sạn, đặt phòng – đặt tiệc online, giúp khách sạn – nhà hàng xây dựng được hình ảnh thương hiệu của mình và tối ưu trong việc tiếp cận khách hàng tiềm năng. Tất cả mẫu website khách sạn – nhà hàng – quán cà phê tại DUC LAN WEBSITE được thiết kế một cách chuyên nghiệp và chau truốt đến từng chi tiết nhỏ nhất. Thêm vào đó là sự kiểm tra 2 lớp trước khi tung ra bản demo cho khách hàng trải nghiệm." />
+                <meta name="keywords" content="mẫu website event, thiết kế website sự kiện, website giới thiệu event, mẫu website quảng bá sự kiện, website tổ chức sự kiện, landing page sự kiện, website đăng ký sự kiện, website mua vé sự kiện, thiết kế website sự kiện online, website sự kiện offline, website tổ chức sự kiện chuyên nghiệp, website sự kiện đẹp, website sự kiện hiệu quả, mẫu website landing page sự kiện, website event chuẩn SEO, website sự kiện responsive, website event cho doanh nghiệp, website event cho công ty, thiết kế website event độc quyền"/>
+            </Helmet>
                     <HeaderHomepage />
                     <div className='category-landing-page'>
                         <div className='row banner-image'>
                             <div className='col-md-7 image'>
-                                <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733751652/landingpage_xu4ais.png' alt='' />
+                            <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733751652/landingpage_xu4ais.png' alt='' /></LazyLoad>
                             </div>
                             <div className='col-md-5 content' style={{ alignItems: 'center' }} >
-                                <div className='text'>
+                                <h6 className='text'>
                                     <div style={{ textAlign: 'center' }}>Website Nhà hàng - Quán Cà Phê</div>
                                     <div style={{ textAlign: 'end' }}></div>
-                                </div>
+                                </h6>
                                 <a href='tel:0379382992' className='tel' >Tư vấn thiết kế</a>
                             </div>
                         </div>
@@ -81,7 +87,7 @@ const Index = () => {
                                                         onMouseEnter={() => handleMouseEnter(index)}
                                                         onMouseLeave={() => handleMouseLeave(index)}
                                                     >
-                                                        <img
+                                                        <LazyLoad><img
                                                             ref={(el) => (imgRefs.current[index] = el)}
                                                             src={item.img}
                                                             alt={`Image ${index}`}
@@ -92,10 +98,10 @@ const Index = () => {
                                                                 position: "relative",
                                                                 transition: "top 2s ease",
                                                             }}
-                                                        />
+                                                        /></LazyLoad>
                                                     </div>
                                                     {/* <hr style={{ width: '100%', borderTop: '2px solid #68a7ff91;' }} /> */}
-                                                    <div className='product-name'>{item.name}</div>
+                                                    <p className='product-name'>{item.name}</p>
                                                     <div className='product-view'>{item.view} lượt xem</div>
                                                     <div className='product-price'>{item.price}</div>
                                                 </div>
@@ -107,13 +113,13 @@ const Index = () => {
                         </div>
                         <div className='row introduce-landing-page'>
                             <div className='col-md-6 text'>
-                                <div className='title'>Mẫu website nhà hàng - quán cà phê</div>
+                                <h6 className='title'>Mẫu website nhà hàng - quán cà phê</h6>
                                 <br></br>
-                                <div className='content'><span style={{ color: '#50adff' }}>Mẫu website nhà hàng – khách sạn – quán cà phê</span> tại <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> là những mẫu website được thiết kế với mục đích: giới thiệu nhà hàng – khách sạn, đặt phòng – đặt tiệc online, giúp khách sạn – nhà hàng xây dựng được hình ảnh thương hiệu của mình và tối ưu trong việc tiếp cận khách hàng tiềm năng.</div>
+                                <p className='content'><span style={{ color: '#50adff' }}>Mẫu website nhà hàng – khách sạn – quán cà phê</span> tại <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> là những mẫu website được thiết kế với mục đích: giới thiệu nhà hàng – khách sạn, đặt phòng – đặt tiệc online, giúp khách sạn – nhà hàng xây dựng được hình ảnh thương hiệu của mình và tối ưu trong việc tiếp cận khách hàng tiềm năng.</p>
                                 <br></br>
-                                <div className='content'>Tất cả <span style={{ color: '#50adff' }}>mẫu website khách sạn – nhà hàng – quán cà phê</span> tại <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> được thiết kế một cách chuyên nghiệp và chau truốt đến từng chi tiết nhỏ nhất. Thêm vào đó là sự kiểm tra 2 lớp trước khi tung ra bản demo cho khách hàng trải nghiệm.</div>
+                                <p className='content'>Tất cả <span style={{ color: '#50adff' }}>mẫu website khách sạn – nhà hàng – quán cà phê</span> tại <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> được thiết kế một cách chuyên nghiệp và chau truốt đến từng chi tiết nhỏ nhất. Thêm vào đó là sự kiểm tra 2 lớp trước khi tung ra bản demo cho khách hàng trải nghiệm.</p>
                                 <br></br>
-                                <div className='content'>Những tính năng vô cùng quan trọng và đặc biệt của <span style={{ color: '#50adff' }}>mẫu website nhà hàng – villa </span>mà ít nơi nào có được bao gồm:</div>
+                                <p className='content'>Những tính năng vô cùng quan trọng và đặc biệt của <span style={{ color: '#50adff' }}>mẫu website nhà hàng – villa </span>mà ít nơi nào có được bao gồm:</p>
                                 <br></br>
                                 <div className='content'>
                                     <ul>
@@ -124,10 +130,10 @@ const Index = () => {
                                     </ul>
                                 </div>
                                 <br></br>
-                                <div className='content'>Mời bạn tham khảo những mẫu <span style={{ color: '#50adff' }}>website khách sạn – nhà hàng – quán cà phê</span> đẹp nhất và chuyên nghiệp nhất của <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> bên dưới để có được sự lựa chọn hoặc ý tưởng độc đáo cho <span style={{ color: '#50adff' }}>thiết kế website nhà hàng</span> của mình! Chúc bạn thành công!</div>
+                                <p className='content'>Mời bạn tham khảo những mẫu <span style={{ color: '#50adff' }}>website khách sạn – nhà hàng – quán cà phê</span> đẹp nhất và chuyên nghiệp nhất của <span style={{ color: '#50adff' }}>DUC LAN WEBSITE</span> bên dưới để có được sự lựa chọn hoặc ý tưởng độc đáo cho <span style={{ color: '#50adff' }}>thiết kế website nhà hàng</span> của mình! Chúc bạn thành công!</p>
                             </div>
                             <div className='col-md-6 image-intro'>
-                                <img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733756969/11111_rcy8u6.png' alt='' />
+                            <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733756969/11111_rcy8u6.png' alt='' /></LazyLoad>
                             </div>
                         </div>
                         <div className='row type-website'>
@@ -136,17 +142,17 @@ const Index = () => {
                                     <ul>
                                         <li>
                                             <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Landing Page
+                                                <p>Landing Page</p>
                                             </NavLink>
                                         </li>
                                         <li>
                                             <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Blog & Portfolio Cá Nhân
+                                                <p>Blog & Portfolio Cá Nhân</p>
                                             </NavLink>
                                         </li>
                                         <li>
                                             <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Website Tổ Chức Sự Kiện
+                                                <p>Website Tổ Chức Sự Kiện</p>
                                             </NavLink>
                                         </li>
                                     </ul>
@@ -156,12 +162,12 @@ const Index = () => {
 
                                         <li>
                                             <NavLink to='/category/website-thuong-mai-dien-tu' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Website Thương Mại Điện Tử Nhỏ
+                                                <p>Website Thương Mại Điện Tử Nhỏ</p>
                                             </NavLink>
                                         </li>
                                         <li>
                                             <NavLink to='/category/website-dashboard' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Website Dashboard
+                                                <p>Website Dashboard</p>
                                             </NavLink>
                                         </li>
                                     </ul>
@@ -170,12 +176,12 @@ const Index = () => {
                                     <ul>
                                         <li>
                                             <NavLink to='/category/website-giao-duc' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Website Giáo Dục
+                                                <p>Website Giáo Dục</p>
                                             </NavLink>
                                         </li>
                                         <li>
                                             <NavLink to='/category/website-nha-hang-quan-ca-phe' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                                Website Nhà Hàng - Quán Cà Phê
+                                                <p>Website Nhà Hàng - Quán Cà Phê</p>
                                             </NavLink>
                                         </li>
                                     </ul>

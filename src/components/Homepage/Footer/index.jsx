@@ -1,12 +1,13 @@
 import React from 'react';
 import 'assets/Homepage/scss/footer.scss'
 import signature from 'assets/Homepage/images/logo3.svg'
+import LazyLoad from 'react-lazy-load';
 const Index = () => {
     return (
         <div className='footer-homepage'>
             <div className='row content'>
                 <div className='col-md-2' style={{paddingBottom:15}}>
-                    <img src={signature} alt='' />
+                    <LazyLoad><img src={signature} alt='' /></LazyLoad>
                 </div>
                 <div className='col-md-5 contact-footer' style={{paddingBottom:15}}>
                     <div><span style={{color:'#50adff'}}>HOTLINE:</span> 0379382992 - Lân ( Chủ sở hữu website )</div>
