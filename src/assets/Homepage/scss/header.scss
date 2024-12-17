@@ -1,6 +1,12 @@
-h1,h2,h3,h4,h5,h6,p{
-    padding:0;
-    margin:0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
 }
 .dpkCursor {
     height: 40px;
@@ -117,7 +123,7 @@ h1,h2,h3,h4,h5,h6,p{
             .dropdown {
                 position: relative;
                 .dropdown-menu {
-                    width:max-content;
+                    width: max-content;
                     cursor: default;
                     position: absolute;
                     background: unset;
@@ -286,9 +292,6 @@ h1,h2,h3,h4,h5,h6,p{
 .mobile-menu,
 .select-menu {
     display: none !important;
-    ul {
-        display: none;
-    }
 }
 /* Keyframes cho animation */
 @keyframes fade-in {
@@ -315,93 +318,129 @@ h1,h2,h3,h4,h5,h6,p{
     .header-sell-website {
         display: none;
     }
-    .select-library {
-        display: flex !important;
-        flex-direction: column;
-        gap: 30px;
-        justify-content: center;
-        li{
-            list-style: none;
-            padding:0 10px;
-        }
-        margin:0;
-        overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
-        animation: onClickIconDropMenuLi 0.5s forwards;
-    }
-    .select-service {
-        display: flex !important;
-        flex-direction: column;
-        gap: 30px;
-        justify-content: center;
-        li{
-            list-style: none;
-            padding:0 10px;
-        }
-        margin:0;
-        overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
-        animation: onClickIconDropMenuLiService 0.5s forwards;
-    }
+    // .select-library {
+    //     display: flex !important;
+    //     flex-direction: column;
+    //     gap: 30px;
+    //     justify-content: center;
+    //     li{
+    //         list-style: none;
+    //         padding:0 10px;
+    //     }
+    //     margin:0;
+    //     overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
+    //     animation: onClickIconDropMenuLi 0.5s forwards;
+    // }
+    // .select-service {
+    //     display: flex !important;
+    //     flex-direction: column;
+    //     gap: 30px;
+    //     justify-content: center;
+    //     li{
+    //         list-style: none;
+    //         padding:0 10px;
+    //     }
+    //     margin:0;
+    //     overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
+    //     animation: onClickIconDropMenuLiService 0.5s forwards;
+    // }
 
-    @keyframes onClickIconDropMenuLiService {
-        from {
-            height: 0;
-        }
-        to {
-            height: 200px; /* Đặt giá trị cố định */
-        }
-    }
-    @keyframes onClickIconDropMenuLi {
-        from {
-            height: 0;
-        }
-        to {
-            height: 500px; /* Đặt giá trị cố định */
-        }
-    }
+    // @keyframes onClickIconDropMenuLiService {
+    //     from {
+    //         height: 0;
+    //     }
+    //     to {
+    //         height: 200px; /* Đặt giá trị cố định */
+    //     }
+    // }
+    // @keyframes onClickIconDropMenuLi {
+    //     from {
+    //         height: 0;
+    //     }
+    //     to {
+    //         height: 500px; /* Đặt giá trị cố định */
+    //     }
+    // }
 
-    .back-select-service {
-        display: flex !important;
+    // .back-select-service {
+    //     display: flex !important;
+    //     flex-direction: column;
+    //     gap: 30px;
+    //     margin:0;
+    //     justify-content: center;
+    //     li{
+    //         list-style: none;
+    //         padding:0 10px;
+    //     }
+    //     overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
+    //     animation: onClickBackIconDropMenuLiService 0.2s forwards;
+    // }
+    // .back-select-library {
+    //     display: flex !important;
+    //     flex-direction: column;
+    //     gap: 30px;
+    //     justify-content: center;
+    //     li{
+    //         list-style: none;
+    //         padding:0 10px;
+    //     }
+    //     margin:0;
+    //     overflow: hidden;/* Ẩn nội dung vượt quá chiều cao */
+    //     animation: onClickBackIconDropMenuLi 0.2s forwards;
+    // }
+    // @keyframes onClickBackIconDropMenuLiService {
+    //     from {
+    //         height: 200px;
+    //     }
+    //     to {
+    //         height: 0; /* Đặt giá trị cố định */
+    //     }
+    // }
+    // @keyframes onClickBackIconDropMenuLi {
+    //     from {
+    //         height: 500px;
+    //     }
+    //     to {
+    //         height: 0; /* Đặt giá trị cố định */
+    //     }
+    // }
+    .sub-menu-homepage {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
         flex-direction: column;
-        gap: 30px;
-        margin:0;
-        justify-content: center;
-        li{
-            list-style: none;
-            padding:0 10px;
+        overflow: hidden;
+        opacity: 0;
+        max-height: 0; /* Giới hạn chiều cao ban đầu */
+        transition:
+            max-height 0.5s ease,
+            opacity 0.5s ease;
+        li {
+            list-style-type: none;
+            padding: 5px 17px;
+            font-weight: 600;
         }
-        overflow: hidden; /* Ẩn nội dung vượt quá chiều cao */
-        animation: onClickBackIconDropMenuLiService 0.2s forwards;
-    }
-    .back-select-library { 
-        display: flex !important;
-        flex-direction: column;
-        gap: 30px;
-        justify-content: center;
-        li{
-            list-style: none;
-            padding:0 10px;
-        }
-        margin:0;
-        overflow: hidden;/* Ẩn nội dung vượt quá chiều cao */
-        animation: onClickBackIconDropMenuLi 0.2s forwards;
-    }
-    @keyframes onClickBackIconDropMenuLiService {
-        from {
-            height: 200px;
-        }
-        to {
-            height: 0; /* Đặt giá trị cố định */
+        a {
+            text-decoration: none;
+            background-color: unset;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            font-weight: 600;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            &:hover {
+                color: #50adff;
+            }
         }
     }
-    @keyframes onClickBackIconDropMenuLi {
-        from {
-            height: 500px;
-        }
-        to {
-            height: 0; /* Đặt giá trị cố định */
-        }
+    .open-homepage {
+        opacity: 1; /* Hiển thị khi mở */
+        max-height: 500px; /* Chiều cao tối đa cho menu khi mở */
+        overflow-y: auto;
     }
-
     .select-menu {
         display: flex !important;
         z-index: 10;
@@ -414,37 +453,121 @@ h1,h2,h3,h4,h5,h6,p{
         animation: onClickMenu 0.5s forwards;
         @keyframes onClickMenu {
             from {
-                width: 0%;
+                transform: translateX(-100vh);
             }
             to {
-                width: 100%;
+                transform: translateX(0);
             }
         }
         .nav-mobile {
             width: 100%;
             padding: 20px;
             color: white;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             display: flex;
             flex-direction: column;
             gap: 20px;
 
             a {
-                display:flex;
+                display: flex;
                 align-items: center;
-                gap:20px;
-                img{
-                    width:24px;
+                gap: 20px;
+                &:hover {
+                    color: #50adff;
                 }
-                li{
-                    font-size:1.2rem
+                img {
+                    width: 20px;
+                }
+                li {
+                    font-size: 1rem;
                 }
                 text-decoration: none;
                 color: white;
             }
-            img {
-                width: 16px;
-                transition: all 0.5s;
+            .nav-ser,
+            .nav-lib {
+                cursor: pointer;
+                &:hover {
+                    color: #50adff;
+                }
+            }
+
+            .rotate-icon-menu {
+                animation: onClickIconDropMenu 0.5s forwards;
+            }
+
+            .rotate-icon-menu-reverse {
+                animation: onClickIconDropMenuReverse 0.5s forwards;
+            }
+
+            @keyframes onClickIconDropMenu {
+                from {
+                    rotate: 0deg;
+                }
+                to {
+                    rotate: 90deg;
+                }
+            }
+
+            @keyframes onClickIconDropMenuReverse {
+                from {
+                    rotate: 90deg;
+                }
+                to {
+                    rotate: 0deg;
+                }
+            }
+        }
+    }
+    .close-menu {
+        display: flex !important;
+        z-index: 10;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.929);
+        padding: 100px 20px;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.5s;
+        animation: onClickMenu1 0.5s forwards;
+        @keyframes onClickMenu1 {
+            from {
+                transform: translateX(0vh);
+            }
+            to {
+                transform: translateX(-100vh);
+            }
+        }
+        .nav-mobile {
+            width: 100%;
+            padding: 20px;
+            color: white;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                &:hover {
+                    color: #50adff;
+                }
+                img {
+                    width: 20px;
+                }
+                li {
+                    font-size: 1rem;
+                }
+                text-decoration: none;
+                color: white;
+            }
+            .nav-ser,
+            .nav-lib {
+                cursor: pointer;
+                &:hover {
+                    color: #50adff;
+                }
             }
 
             .rotate-icon-menu {
@@ -498,12 +621,12 @@ h1,h2,h3,h4,h5,h6,p{
         .logo-mobile {
             text-align: center;
             img {
-                width: 100px;
+                width: 80px;
             }
         }
         .icon-menu {
             width: 100px;
-            font-size: 2rem;
+            font-size: 1.5rem;
             // padding:0;
             #checkbox2 {
                 display: none;
@@ -566,10 +689,11 @@ h1,h2,h3,h4,h5,h6,p{
             padding: 0;
             .ele {
                 border: 1px solid #50adff;
-                width: 100px;
+                width: 80px;
                 border-radius: 15px;
-                padding: 10px 0;
+                padding: 5px 0;
                 text-align: center;
+                font-size: 13px;
             }
         }
     }
@@ -582,7 +706,7 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 10px;
     animation: pulse 1.5s infinite;
     .hotline-icon-svg {
-        width: 50px;
+        width: 35px;
         // animation: rotate 1.5s infinite;
     }
     position: fixed;
@@ -597,7 +721,7 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 10px;
     animation: pulse 1.5s infinite;
     .hotline-icon-svg {
-        width: 50px;
+        width: 35px;
         // animation: rotate 1.5s infinite;
     }
     position: fixed;
@@ -613,7 +737,7 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 10px;
     animation: pulse 1.5s infinite;
     .hotline-icon-svg {
-        width: 50px;
+        width: 35px;
         // animation: rotate 1.5s infinite;
     }
     position: fixed;
@@ -629,11 +753,11 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 10px;
     animation: pulse 1.5s infinite;
     .hotline-icon-svg {
-        width: 50px;
+        width: 35px;
         // animation: rotate 1.5s infinite;
     }
     position: fixed;
-    bottom: 150px;
+    bottom: 135px;
     right: 40px;
 }
 @keyframes pulse {

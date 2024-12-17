@@ -66,10 +66,10 @@ const Index = () => {
                             <div className='col-md-7 image'>
                             <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733751651/education_pwiqj4.png' alt='' /></LazyLoad>
                             </div>
-                            <div className='col-md-5 content'>
+                            <div className='col-md-5 content' style={{ alignItems: 'center' }} >
                                 <h6 className='text'>
-                                    <div>Website</div>
-                                    <div style={{textAlign:'end'}}>Tổ Chức Sự Kiện</div>
+                                    <div style={{ textAlign: 'center' }}>Website Tổ Chức Sự Kiện - Event</div>
+                                    <div style={{ textAlign: 'end' }}></div>
                                 </h6>
                                 <a href='tel:0379382992' className='tel' >Tư vấn thiết kế</a>
                             </div>

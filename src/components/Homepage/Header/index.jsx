@@ -5,12 +5,6 @@ import { NavLink } from 'react-router-dom'
 import Phone from 'assets/Homepage/images/phone-call-svgrepo-com.svg'
 import Zalo from 'assets/Homepage/images/zalo-svgrepo-com.svg'
 import Logo from 'assets/Homepage/images/logooo.svg'
-import ArrowRight from 'assets/Homepage/images/right-arrow-svgrepo-com.svg'
-import Homepage from 'assets/Homepage/images/homepage-icon.svg'
-import Library from 'assets/Homepage/images/library-icon.svg'
-import Blog from 'assets/Homepage/images/blog-icon.svg'
-import Service from 'assets/Homepage/images/service-icon.svg'
-import About from 'assets/Homepage/images/about-icon.svg'
 import LazyLoad from 'react-lazy-load';
 const Index = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -85,7 +79,7 @@ const Index = () => {
         <>
             <div className={isIOS ? 'hotline-icon-one-ios' : isAndroid ? 'hotline-icon-one-android' : 'hotline-icon-one-pc'}>
                 <a href={zaloLink} target='blank'>
-                <LazyLoad><img src={Zalo} className='hotline-icon-svg' alt="Logo" /></LazyLoad>
+                    <LazyLoad><img src={Zalo} className='hotline-icon-svg' alt="Logo" /></LazyLoad>
                 </a>
             </div>
             <div className='hotline-icon-two'>
@@ -103,6 +97,7 @@ const Index = () => {
               font-family: "Play", sans-serif;
           }
           body {
+            background-color:black;
               height: 100vh;
               width: 100%;
               font-size: 16px;
@@ -126,10 +121,7 @@ const Index = () => {
                     <nav className="navbar-sell-website play-bold">
                         <i className="hamburger-icon hamburger-btn fa-solid fa-bars" style={{ fontSize: 20 }} onClick={toggleMenu}></i>
                         <NavLink to='/' className="logo">
-                        <LazyLoad><img src={signature} alt="logo" /></LazyLoad>
-                        </NavLink>
-                        <NavLink to='/' className="logo-res">
-                        <LazyLoad><img src={signature} alt="logo" /></LazyLoad>
+                            <LazyLoad><img src={signature} alt="logo" /></LazyLoad>
                         </NavLink>
                         <ul className={isMenuOpen ? "links show-menu" : "links"}>
                             <span className="close-btn material-symbols-rounded" onClick={toggleMenu}>x</span>
@@ -152,7 +144,7 @@ const Index = () => {
                             <li className="dropdown" style={{ cursor: 'pointer' }}>
                                 <a href >Kho giao diện <span style={{ transform: 'scaleX(1.5)', display: 'inline-block' }}>&#8744;</span></a>
                                 <ul className='dropdown-menu deactivate-portfolio-false play-bold' >
-                                    
+
                                     <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Landing Page
                                     </NavLink>
@@ -192,39 +184,40 @@ const Index = () => {
                         </label>
                     </div>
                     <div className='col-4 logo-mobile'><LazyLoad><img src={Logo} alt='logo' /></LazyLoad></div>
-                    <div className='col-4 hotline'><div className='ele'>Liên hệ</div></div>
+                    <a href="tel:0379382992" className='col-4 hotline' style={{ color: 'white', textDecoration: 'none' }}><div className='ele'>Liên hệ</div></a>
                 </div>
-                <div className={isMenuOpen ? 'mobile-menu select-menu' : 'mobile-menu'}>
+                <div className={isMenuOpen ? 'mobile-menu select-menu' : 'mobile-menu close-menu'}>
                     <div className='nav-mobile'>
-                        <NavLink to={'/'}><LazyLoad><img src={Homepage} alt='' /></LazyLoad>Trang chủ</NavLink>
-                        <div>
-                            <div style={{ display: 'flex', justifyContent: 'space-between' }} onClick={() => setIsSelectService(!isSelectService)}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}><LazyLoad><img style={{ width: 24 }} src={Service} alt='' /></LazyLoad>Dịch vụ</div>
-                                <div><LazyLoad><img src={ArrowRight} alt='' className={isSelectService ? 'rotate-icon-menu' : 'rotate-icon-menu-reverse'} /></LazyLoad></div>
+                        <NavLink to={'/'}><i className='fa fa-home'></i> Trang chủ</NavLink>
+                        <div >
+                            <div className='nav-ser' style={{ display: 'flex', justifyContent: 'space-between' }} onClick={() => setIsSelectService(!isSelectService)}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}><i style={{ width: 24 }} className='fa fa-wrench' alt='' />Dịch vụ</div>
+                                <div><i alt='' className={isSelectService ? 'fa fa-chevron-right rotate-icon-menu' : 'fa fa-chevron-right rotate-icon-menu-reverse'} /></div>
                             </div>
-                            <ul className={isSelectService ? 'select-service' : 'back-select-service'}>
-                                <NavLink to={'/service/bao-tri-sua-chua-website'} ><li>Bảo trì/sửa chữa website</li></NavLink>
-                                <NavLink to={'/service/thiet-ke-website-rieng'} ><li>Tư vấn thiết kế website riêng</li></NavLink>
-                                <NavLink to={'/service/ten-mien-website-domain'} ><li>Tên miền website(Domain)</li></NavLink>
+                            <ul className={`sub-menu-homepage ${isSelectService ? 'open-homepage' : ''}`}>
+                                <li><NavLink to={'/service/bao-tri-sua-chua-website'} ><li>Bảo trì/sửa chữa website</li></NavLink></li>
+                                <li> <NavLink to={'/service/thiet-ke-website-rieng'} ><li>Tư vấn thiết kế website riêng</li></NavLink></li>
+                                <li><NavLink to={'/service/ten-mien-website-domain'} ><li>Tên miền website(Domain)</li></NavLink></li>
+
                             </ul>
                         </div>
                         <div>
-                            <div style={{ display: 'flex', justifyContent: 'space-between' }} onClick={() => setIsSelectLibrary(!isSelectLibrary)}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}><LazyLoad><img style={{ width: 24 }} src={Library} alt='' /></LazyLoad>Kho giao diện</div>
-                                <div><LazyLoad><img src={ArrowRight} alt='' className={isSelectLibrary ? 'rotate-icon-menu' : 'rotate-icon-menu-reverse'} /></LazyLoad></div>
+                            <div className='nav-lib' style={{ display: 'flex', justifyContent: 'space-between' }} onClick={() => setIsSelectLibrary(!isSelectLibrary)}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}><i style={{ width: 24 }} className='fa fa-layer-group' alt='' />Kho giao diện</div>
+                                <div><i alt='' className={isSelectLibrary ? 'fa fa-chevron-right rotate-icon-menu' : 'fa fa-chevron-right rotate-icon-menu-reverse'} /></div>
                             </div>
-                            <ul className={isSelectLibrary ? 'select-library' : 'back-select-library'}>
-                                <NavLink to={'/category/landing-page'} ><li>Landing page</li></NavLink>
-                                <NavLink to={'/category/website-thuong-mai-dien-tu'} ><li>Website thương mại điện tử nhỏ</li></NavLink>
-                                <NavLink to={'/category/website-dashboard'} ><li>Website dashboard</li></NavLink>
-                                <NavLink to={'/category/blog-ca-nhan'} ><li>Blog & Portfolio Cá Nhân</li></NavLink>
-                                <NavLink to={'/category/website-to-chuc-su-kien'} ><li>Website Tổ Chức Sự Kiện</li></NavLink>
-                                <NavLink to={'/category/website-nha-hang-quan-ca-phe'} ><li>Website Nhà Hàng - Quán Cà Phê</li></NavLink>
-                                <NavLink to={'/category/website-giao-duc'} ><li>Website Giáo Dục</li></NavLink>
+                            <ul className={`sub-menu-homepage ${isSelectLibrary ? 'open-homepage' : ''}`}>
+                                <li><NavLink to={'/category/landing-page'} ><li>Landing page</li></NavLink></li>
+                                <li><NavLink to={'/category/website-thuong-mai-dien-tu'} ><li>Website thương mại điện tử nhỏ</li></NavLink></li>
+                                <li><NavLink to={'/category/website-dashboard'} ><li>Website dashboard</li></NavLink></li>
+                                <li><NavLink to={'/category/blog-ca-nhan'} ><li>Blog & Portfolio Cá Nhân</li></NavLink></li>
+                                <li><NavLink to={'/category/website-to-chuc-su-kien'} ><li>Website Tổ Chức Sự Kiện</li></NavLink></li>
+                                <li><NavLink to={'/category/website-nha-hang-quan-ca-phe'} ><li>Website Nhà Hàng - Quán Cà Phê</li></NavLink></li>
+                                <li><NavLink to={'/category/website-giao-duc'} ><li>Website Giáo Dục</li></NavLink></li>
                             </ul>
                         </div>
-                        <NavLink to={'/blog'}><LazyLoad><img src={Blog} alt='' /></LazyLoad>Blogs</NavLink>
-                        <NavLink to={'/aboutMe'}><LazyLoad><img src={About} alt='' /></LazyLoad>Về tôi</NavLink>
+                        <NavLink to={'/blog'}><i className='fa fa-blog' alt='' />Blogs</NavLink>
+                        <NavLink to={'/aboutMe'}><i className='fa fa-address-card' alt='' />Về tôi</NavLink>
                     </div>
                 </div>
             </div>

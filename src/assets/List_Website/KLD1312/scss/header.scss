@@ -36,8 +36,8 @@
                 }
             }
             .dropdown {
-                position: relative; /* Định vị tương đối để submenu được định vị dựa trên dropdown */
-                display: inline-block; /* Đảm bảo dropdown hiển thị inline */
+                position: relative;
+                display: inline-block;
 
                 .dropdown-button {
                     display: flex;
@@ -62,8 +62,8 @@
                 }
 
                 .dropdown-menu {
-                    position: absolute; /* Định vị submenu tuyệt đối */
-                    top: 95%; /* Đặt ngay dưới nút */
+                    position: absolute;
+                    top: 95%;
                     left: -50px;
                     min-width: 250px;
                     background-color: rgb(19 55 95);
@@ -72,7 +72,7 @@
                         0 3px 6px rgba(0, 0, 0, 0.23);
                     border-radius: 4px;
                     border-top: 1px solid rgb(19 55 95);
-                    display: none; /* Ẩn submenu mặc định */
+                    display: none;
                     flex-direction: column;
                     z-index: 10;
 
@@ -94,17 +94,17 @@
                     }
 
                     .dropdown-submenu {
-                        position: relative; /* Định vị submenu con */
+                        position: relative;
 
                         &:hover > .dropdown-menu {
-                            display: block; /* Hiển thị submenu khi hover */
+                            display: block;
                         }
 
                         .dropdown-menu {
                             position: absolute;
                             top: 0;
-                            left: 100%; /* Đặt submenu ngay bên phải submenu cha */
-                            margin-left: 0; /* Loại bỏ khoảng cách giữa submenu cha và submenu con */
+                            left: 100%;
+                            margin-left: 0;
                             min-width: 250px;
                             background-color: rgb(19 55 95);
                             box-shadow:
@@ -112,7 +112,7 @@
                                 0 3px 6px rgba(0, 0, 0, 0.23);
                             border-radius: 4px;
 
-                            display: none; /* Ẩn submenu con mặc định */
+                            display: none;
                             flex-direction: column;
                             z-index: 10;
 
@@ -133,9 +133,229 @@
                 }
 
                 &:hover > .dropdown-menu {
-                    display: flex; /* Hiển thị menu chính khi hover vào dropdown */
+                    display: flex;
                 }
             }
         }
+    }
+    .mobile-list-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) {
+    .header-kld1312 {
+        .list-nav {
+            display: none;
+        }
+        .mobile-list-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            img {
+                width: 150px;
+            }
+            .button-list-nav {
+                gap: 20px;
+                display: flex;
+                #checkbox2 {
+                    display: none;
+                    &.checked + .toggle2 .bars {
+                        position: absolute;
+                        transition-duration: 0.5s;
+                    }
+                    &.checked + .toggle2 #bar5 {
+                        transform: scaleX(0);
+                        transition-duration: 0.5s;
+                    }
+                    &.checked + .toggle2 #bar4 {
+                        width: 100%;
+                        transform: rotate(45deg);
+                        transition-duration: 0.5s;
+                    }
+                    &.checked + .toggle2 #bar6 {
+                        width: 100%;
+                        transform: rotate(-45deg);
+                        transition-duration: 0.5s;
+                    }
+                    &.checked + .toggle2 {
+                        transition-duration: 0.5s;
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .toggle2 {
+                    position: relative;
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    transition-duration: 0.5s;
+                    margin: 0;
+                    .bars {
+                        width: 100%;
+                        height: 3px;
+                        background-color: white;
+                        border-radius: 6px;
+                    }
+
+                    #bar5 {
+                        transition-duration: 0.8s;
+                    }
+
+                    #bar4,
+                    #bar6 {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+    .nav-mobile-kld1312 {
+        padding-top: 90px !important;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        height: max-content;
+        background-color: rgb(19 55 95 / 91%);
+        opacity: 0;
+        transform: translateX(100vh);
+        color: white;
+        transition:
+            opacity 0.5s ease,
+            transform 0.5s ease;
+        .list-nav {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            .nav-item {
+                color: white;
+                text-decoration: none;
+                font-size: 1.1rem;
+                display: flex;
+                gap: 20px;
+                width: 100%;
+                font-weight: bold;
+                align-items: center;
+                padding: 10px;
+                &:hover {
+                    color: #50adff;
+                }
+                .active-fa-chevron-right {
+                    transition-duration: 0.2s;
+                    transform: rotate(90deg);
+                }
+                .deactivate-fa-chevron-right {
+                    transition-duration: 0.2s;
+                    transform: rotate(0deg);
+                }
+            }
+
+            .sub-menu-kld1312 {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                opacity: 0;
+                max-height: 0; /* Giới hạn chiều cao ban đầu */
+                transition:
+                    max-height 0.5s ease,
+                    opacity 0.5s ease;
+                .active-fa-chevron-right {
+                    transition-duration: 0.2s;
+                    transform: rotate(90deg);
+                }
+                .deactivate-fa-chevron-right {
+                    transition-duration: 0.2s;
+                    transform: rotate(0deg);
+                }
+                li {
+                    list-style-type: none;
+                    padding: 10px;
+                    font-weight: 600;
+                    .sub-sub-menu-kld1312 {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        overflow: hidden;
+                        opacity: 0;
+                        max-height: 0; /* Giới hạn chiều cao ban đầu */
+                        transition:
+                            max-height 0.5s ease,
+                            opacity 0.5s ease;
+                        li {
+                            list-style-type: none;
+                            padding: 10px;
+                            font-weight: 600;
+                        }
+                        a {
+                            text-decoration: none;
+                            background-color: unset;
+                            color: white;
+                            border: none;
+                            padding: 5px 10px;
+                            font-weight: 600;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            &:hover {
+                                color: #50adff;
+                            }
+                        }
+                    }
+                    .open-sub {
+                        opacity: 1; /* Hiển thị khi mở */
+                        max-height: 500px; /* Chiều cao tối đa cho menu khi mở */
+                        overflow-y: auto;
+                    }
+                }
+                button,
+                a {
+                    text-decoration: none;
+                    background-color: unset;
+                    color: white;
+                    border: none;
+                    padding: 5px 10px;
+                    font-weight: 600;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    &:hover {
+                        color: #50adff;
+                    }
+                }
+            }
+
+            .open {
+                opacity: 1; /* Hiển thị khi mở */
+                max-height: 550px; /* Chiều cao tối đa cho menu khi mở */
+                overflow-y: auto;
+            }
+
+            .sub-menu-kld1312 .sub-menu-kld1312 .course {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+    }
+
+    .menu-show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .menu-hide {
+        opacity: 0;
+        transform: translateY(-100vh);
     }
 }

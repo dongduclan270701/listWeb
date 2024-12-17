@@ -273,7 +273,7 @@ const Index = () => {
                                     </div>
                                     <div className='section-about-infor-number'>
                                         <div className='section-about-infor-number-title'>PROJECT</div>
-                                        <div className='section-about-infor-number-content'>7</div>
+                                        <div className='section-about-infor-number-content'>11</div>
                                     </div>
                                     <div className='section-about-infor-text'>
                                         <div className='section-about-infor-text-title'>Come to me if you need:</div>
