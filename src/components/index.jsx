@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Navigate
 } from 'react-router-dom'
 //Homepage routes
 import Homepage from 'components/Homepage/index'
@@ -83,6 +84,7 @@ function App() {
           return <Route key={index} path={item.path} element={<><HeaderKLD1312/><TagName1 /><FooterKLD1312/></>}
           />
         })}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       
     </Router>
