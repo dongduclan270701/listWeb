@@ -75,15 +75,15 @@ const Index = () => {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Đồng Đức Lân",
-        "url": "https://www.kassdev.com",
-        "logo": "https://www.kassdev.com/logooo.svg",
+        "url": "https://kassdev.com",
+        "logo": "https://kassdev.com/logooo.svg",
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+84-37-938-2992",
             "contactType": "Customer Service"
         },
         "sameAs": [
-            "https://www.facebook.com/kass277"
+            "https://facebook.com/kass277"
         ]
     };
     return (
