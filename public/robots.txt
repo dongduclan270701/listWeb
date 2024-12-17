@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Host: http://www.kassdev.com
 Sitemap: https://www.kassdev.com/sitemap.xml
