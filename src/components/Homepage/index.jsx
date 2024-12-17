@@ -69,6 +69,23 @@ const Index = () => {
         const timer = setTimeout(() => setIsLoading(false), 500);
         return () => clearTimeout(timer);
     }, []);
+
+
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Đồng Đức Lân",
+        "url": "https://www.kassdev.com",
+        "logo": "https://www.kassdev.com/logooo.svg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+84-37-938-2992",
+            "contactType": "Customer Service"
+        },
+        "sameAs": [
+            "https://www.facebook.com/kass277"
+        ]
+    };
     return (
         <>
             {isLoading ?
@@ -130,7 +147,7 @@ const Index = () => {
                                 </div>
                             </div>
                             <div className='col-md-5 section-sell-website-banner-anime3d'>
-                            <LazyLoad><img src={'https://res.cloudinary.com/dolydpat4/image/upload/v1734372010/anime-avatar_yofmky.png'} alt='' className="bounce-effect" /></LazyLoad>
+                                <LazyLoad><img src={'https://res.cloudinary.com/dolydpat4/image/upload/v1734372010/anime-avatar_yofmky.png'} alt='' className="bounce-effect" /></LazyLoad>
                             </div>
                         </div>
                         <div className='section-sell-website-question'>
@@ -410,21 +427,21 @@ const Index = () => {
                             <div className='row list-blog'>
                                 <NavLink to={'/service/bao-tri-sua-chua-website'} className='col-md-4 content'>
                                     <div className='part-blog'>
-                                    <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733664103/EDA59F29-826F-43B9-A780-42B28825EC03_1_201_a_lucwif.jpg' alt='' /></LazyLoad>
+                                        <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733664103/EDA59F29-826F-43B9-A780-42B28825EC03_1_201_a_lucwif.jpg' alt='' /></LazyLoad>
                                         <div className='time'>Martch 21, 2024</div>
                                         <h6 className='title'>Bảo trì website là gì? Có cần thiết không? Thủ tục các bước bảo trì website</h6>
                                     </div>
                                 </NavLink>
                                 <NavLink to={'/service/thiet-ke-website-rieng'} className='col-md-4 content'>
                                     <div className='part-blog'>
-                                    <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733655842/banner_hjzwnv.png' alt='' /></LazyLoad>
+                                        <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733655842/banner_hjzwnv.png' alt='' /></LazyLoad>
                                         <div className='time'>Martch 21, 2024</div>
                                         <h6 className='title'>Thiết kế website theo yêu cầu – độc quyền – chuyên nghiệp tại DUC LAN WEBSITE</h6>
                                     </div>
                                 </NavLink>
                                 <NavLink to={'/service/ten-mien-website-domain'} className='col-md-4 content'>
                                     <div className='part-blog'>
-                                    <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733658826/domain-la-gi-3_aizbuu.png' alt='' /></LazyLoad>
+                                        <LazyLoad><img src='https://res.cloudinary.com/dolydpat4/image/upload/v1733658826/domain-la-gi-3_aizbuu.png' alt='' /></LazyLoad>
                                         <div className='time'>Martch 21, 2024</div>
                                         <h6 className='title'>Domain là gì? Dịch vụ domain của KL Website</h6>
                                     </div>
@@ -434,8 +451,13 @@ const Index = () => {
                         </div>
 
                     </div>
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                    />
                     <FooterHomepage />
                 </>}
+
         </>
 
     );
