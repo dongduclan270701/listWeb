@@ -7,7 +7,7 @@ async function generateSitemap() {
         { url: '/service/bao-tri-sua-chua-website', changefreq: 'monthly', priority: 0.9 },
         { url: '/service/thiet-ke-website-rieng', changefreq: 'monthly', priority: 0.9 },
         { url: '/service/ten-mien-website-domain', changefreq: 'monthly', priority: 0.9 },
-        { url: '/category/category/blog-ca-nhan', changefreq: 'monthly', priority: 0.9 },
+        { url: '/category/blog-ca-nhan', changefreq: 'monthly', priority: 0.9 },
         { url: '/category/landing-page', changefreq: 'monthly', priority: 0.9 },
         { url: '/category/website-to-chuc-su-kien', changefreq: 'monthly', priority: 0.9 },
         { url: '/category/website-thuong-mai-dien-tu', changefreq: 'monthly', priority: 0.9 },
