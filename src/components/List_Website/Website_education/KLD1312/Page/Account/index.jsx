@@ -97,35 +97,38 @@ const Index = () => {
                                 </div>
                             </div>
                             <div className='row list-status-progress'>
-                                <div className={isMyCourse === 1 ? 'col-md-1 status-progress active' : 'col-md-1 status-progress'} onClick={() => setIsMyCourse(1)}>All</div>
-                                <div className={isMyCourse === 2 ? 'col-md-3 status-progress active' : 'col-md-3 status-progress'} onClick={() => setIsMyCourse(2)}>In Progress</div>
-                                <div className={isMyCourse === 3 ? 'col-md-3 status-progress active' : 'col-md-3 status-progress'} onClick={() => setIsMyCourse(3)}>Finished</div>
-                                <div className={isMyCourse === 4 ? 'col-md-3 status-progress active' : 'col-md-3 status-progress'} onClick={() => setIsMyCourse(4)}>Passed</div>
-                                <div className={isMyCourse === 5 ? 'col-md-2 status-progress active' : 'col-md-2 status-progress'} onClick={() => setIsMyCourse(5)}>Failed</div>
+                                <div className={isMyCourse === 1 ? 'col-1 status-progress active' : 'col-1 status-progress'} onClick={() => setIsMyCourse(1)}>All</div>
+                                <div className={isMyCourse === 2 ? 'col-3 status-progress active' : 'col-3 status-progress'} onClick={() => setIsMyCourse(2)}>In Progress</div>
+                                <div className={isMyCourse === 3 ? 'col-3 status-progress active' : 'col-3 status-progress'} onClick={() => setIsMyCourse(3)}>Finished</div>
+                                <div className={isMyCourse === 4 ? 'col-3 status-progress active' : 'col-3 status-progress'} onClick={() => setIsMyCourse(4)}>Passed</div>
+                                <div className={isMyCourse === 5 ? 'col-2 status-progress active' : 'col-2 status-progress'} onClick={() => setIsMyCourse(5)}>Failed</div>
                             </div>
                             {isMyCourse === 1 && <div className='title-course-progress'>
-                                <div className='row title'>
-                                    <div className='col-md-2'>Image</div>
-                                    <div className='col-md-3'>Name</div>
-                                    <div className='col-md-1'>Result</div>
-                                    <div className='col-md-3'>Expiration</div>
-                                    <div className='col-md-3'>End time</div>
+                                <div className='scroll-container'>
+                                    <div className='row title'>
+                                        <div className='col-2'>Image</div>
+                                        <div className='col-3'>Name</div>
+                                        <div className='col-1'>Result</div>
+                                        <div className='col-3'>Expiration</div>
+                                        <div className='col-3'>End time</div>
+                                    </div>
+                                    <div className='row course-detail'>
+                                        <img className='col-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
+                                        <div className='col-3'>Digital Marketing Masterclass</div>
+                                        <div className='col-1'>0%</div>
+                                        <div className='col-3'>December 16, 2024 3:18 am</div>
+                                        <div className='col-3'>December 16, 2024 3:18 am</div>
+                                    </div>
+                                    <div className='row course-detail'>
+                                        <img className='col-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
+                                        <div className='col-3'>Digital Marketing Masterclass</div>
+                                        <div className='col-1'>0%</div>
+                                        <div className='col-3'>December 16, 2024 3:18 am</div>
+                                        <div className='col-3'>December 16, 2024 3:18 am</div>
+                                    </div>
                                 </div>
-                                <div className='row course-detail'>
-                                    <img className='col-md-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                    <div className='col-md-3'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-1'>0%</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                </div>
-                                <div className='row course-detail'>
-                                    <img className='col-md-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                    <div className='col-md-3'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-1'>0%</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                </div>
-                            </div>}
+                            </div>
+                            }
                             {isMyCourse === 2 && <div className='title-course-progress'>
                                 <div className='row title'>
                                     <div className='col-md-2'>Image</div>
@@ -222,11 +225,11 @@ const Index = () => {
                         </>}
                         {isPage === 2 && <>
                             <div className='row list-status-progress'>
-                                <div className={isQuiz === 1 ? 'col-md-1 status-progress active' : 'col-md-1 status-progress'} onClick={() => setIsQuiz(1)}>All</div>
-                                <div className={isQuiz === 2 ? 'col-md-3 status-progress active' : 'col-md-3 status-progress'} onClick={() => setIsQuiz(2)}>In Progress</div>
-                                <div className={isQuiz === 3 ? 'col-md-3 status-progress active' : 'col-md-3 status-progress'} onClick={() => setIsQuiz(3)}>Finished</div>
-                                <div className={isQuiz === 4 ? 'col-md-3 status-progress active' : 'col-md-3 status-progress'} onClick={() => setIsQuiz(4)}>Passed</div>
-                                <div className={isQuiz === 5 ? 'col-md-2 status-progress active' : 'col-md-2 status-progress'} onClick={() => setIsQuiz(5)}>Failed</div>
+                                <div className={isQuiz === 1 ? 'col-1 status-progress active' : 'col-1 status-progress'} onClick={() => setIsQuiz(1)}>All</div>
+                                <div className={isQuiz === 2 ? 'col-3 status-progress active' : 'col-3 status-progress'} onClick={() => setIsQuiz(2)}>In Progress</div>
+                                <div className={isQuiz === 3 ? 'col-3 status-progress active' : 'col-3 status-progress'} onClick={() => setIsQuiz(3)}>Finished</div>
+                                <div className={isQuiz === 4 ? 'col-3 status-progress active' : 'col-3 status-progress'} onClick={() => setIsQuiz(4)}>Passed</div>
+                                <div className={isQuiz === 5 ? 'col-2 status-progress active' : 'col-2 status-progress'} onClick={() => setIsQuiz(5)}>Failed</div>
                             </div>
 
                         </>}
@@ -284,8 +287,8 @@ const Index = () => {
                         </>}
                         {isPage === 5 && <>
                             <div className='row list-status-progress'>
-                                <div className={isSetting === 1 ? 'col-md-6 status-progress active' : 'col-md-6 status-progress'} onClick={() => setIsSetting(1)}>General</div>
-                                <div className={isSetting === 2 ? 'col-md-6 status-progress active' : 'col-md-6 status-progress'} onClick={() => setIsSetting(2)}>Password</div>
+                                <div className={isSetting === 1 ? 'col-6 status-progress active' : 'col-6 status-progress'} onClick={() => setIsSetting(1)}>General</div>
+                                <div className={isSetting === 2 ? 'col-6 status-progress active' : 'col-6 status-progress'} onClick={() => setIsSetting(2)}>Password</div>
                             </div>
                             {isSetting === 1 && <div className='row title-course-progress'>
                                 <div className='col-md-12 name-general'>
@@ -319,7 +322,7 @@ const Index = () => {
                                 <button className='btn-general'>Submit</button>
                             </div>}
                             {isSetting === 2 && <div className='row title-course-progress'>
-                                
+
                                 <div className='col-md-12 name-general'>
                                     <div>Current password</div>
                                     <input type="password" placeholder='Current password' />

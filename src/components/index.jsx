@@ -59,7 +59,7 @@ function App() {
     { path: "/website/template/KLD1312/contact", location: ContactKLD1312 },
     { path: "/website/template/KLD1312/about", location: AboutKLD1312 },
     { path: "/website/template/KLD1312/blog", location: BlogKLD1312 },
-    { path: "/website/template/KLD1312/blog-detail", location: BlogDetailKLD1312 },
+    { path: "/website/template/KLD1312/blog/detail", location: BlogDetailKLD1312 },
     { path: "/website/template/KLD1312/course", location: CourseKLD1312 },
     { path: "/website/template/KLD1312/course/detail/:idCourse", location: CourseDetailKLD1312 },
     { path: "/website/template/KLD1312/payment", location: PaymentKLD1312 },

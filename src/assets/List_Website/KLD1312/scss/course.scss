@@ -88,13 +88,13 @@
                             display: flex;
                             gap: 10px;
                             align-items: center;
-                            color:grey
+                            color: grey;
                         }
                         .right {
                             display: flex;
                             gap: 10px;
                             align-items: center;
-                            color:grey
+                            color: grey;
                         }
                     }
                     .review {
@@ -110,7 +110,7 @@
                         font-size: 2rem;
                         font-weight: 600;
                         padding: 10px 0;
-                        color:black
+                        color: black;
                     }
                     .text-course {
                         color: grey;
@@ -124,6 +124,34 @@
             border-radius: 15px 15px 0 0;
             object-fit: cover;
             width: 100%;
+        }
+    }
+}
+@media (max-width: 950px) {
+    .course-kld1312 {
+        .section-1 {
+            padding: 90px 0 0 0;
+            .banner {
+                width: 100%;
+                height: 300px;
+                top: 90px;
+            }
+            .text-banner {
+                width: 100%;
+                height: 300px;
+                padding: 20px;
+                justify-content: center;
+                .title {
+                    font-size: 1.5rem;
+                }
+                .sub-title {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .section-2{
+            width: 100%;
+            padding:30px 10px;
         }
     }
 }

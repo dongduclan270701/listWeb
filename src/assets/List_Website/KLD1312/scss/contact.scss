@@ -14,7 +14,7 @@
             height: 500px;
             object-fit: cover;
             z-index: 1;
-            top:100px;
+            top: 100px;
         }
         .text-banner {
             background-color: rgba(0, 0, 0, 0.517);
@@ -94,28 +94,29 @@
             text-transform: uppercase;
             padding-bottom: 30px;
         }
-        .form-contact{
+        .form-contact {
             width: 600px;
             margin: 0 auto;
             justify-content: center;
-            .content-contact{
+            .content-contact {
                 display: flex;
                 flex-direction: column;
-                padding:10px 0;
-                input,textarea{
-                    padding:15px;
+                padding: 10px 0;
+                input,
+                textarea {
+                    padding: 15px;
                     border-radius: 15px;
-                    border: 1px solid rgb(220, 220, 220)
+                    border: 1px solid rgb(220, 220, 220);
                 }
-                .label-contact{
+                .label-contact {
                     padding: 0 15px;
                 }
             }
-            .button-contact{
+            .button-contact {
                 margin-top: 20px;
-                padding:20px;
+                padding: 20px;
                 width: 100%;
-                color:white;
+                color: white;
                 font-weight: 600;
                 text-transform: uppercase;
                 border-radius: 15px;
@@ -123,13 +124,63 @@
                 letter-spacing: 1px;
                 border: none;
                 transition: all 0.2s ease-in-out;
-                &:hover{
+                &:hover {
                     background-color: #50adff;
                 }
             }
         }
     }
-    .section-4{
+    .section-4 {
         width: 100%;
+    }
+}
+@media (max-width: 950px) {
+    .contact-kld1312 {
+        .section-1 {
+            padding: 90px 0 0 0;
+            .banner {
+                height: 300px;
+                object-fit: cover;
+                top: 90px;
+            }
+            .text-banner {
+                height: 300px;
+                .title {
+                    font-size: 1.5rem;
+                    width: 80%;
+                }
+                .sub-title {
+                    font-size: 16px;
+                }
+            }
+        }
+        .section-2{
+            padding: 10px;
+            width: 100%;
+            .content{
+                width: 100%;
+                .box{
+                    padding:30px 10px;
+                    i{
+                        font-size: 35px !important;
+                    }
+                }
+            }
+        }
+        .section-3{
+            padding:30px 10px;
+            width: 100%;
+            .title{
+                width: 100%;
+                font-size: 1.5rem ;
+            }
+            .sub-title{
+                width: 100%;
+                font-size: 1rem ;
+            }
+            .form-contact{
+                width: 100%;
+            }
+        }
     }
 }

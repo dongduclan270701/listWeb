@@ -620,7 +620,7 @@
                     font-size: 1.1rem;
                     color: grey;
                 }
-                .btn-backend{
+                .btn-backend {
                     padding: 20px;
                     border-radius: 15px;
                     border: none;
@@ -630,7 +630,7 @@
                     text-transform: uppercase;
                     font-weight: bold;
                     letter-spacing: 1px;
-                    &:hover{
+                    &:hover {
                         background-color: #50adff;
                     }
                 }
@@ -676,6 +676,170 @@
                             top: 0;
                             left: 0;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 950px) {
+    .homepage-kld1312 {
+        .banner {
+            height: 400px;
+        }
+        .text-banner {
+            background-color: rgba(0, 0, 0, 0.251);
+            height: 400px;
+            padding-top: 50px;
+            .title {
+                font-size: 1rem;
+                width: 80%;
+            }
+            .sub-title {
+                font-size: 16px;
+                width: 80%;
+                text-align: center;
+            }
+        }
+        .section-2 {
+            padding: 50px 10px;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .section-3 {
+            padding: 0px 10px 50px 10px;
+            height: 100%;
+            .list-courses {
+                width: 100%;
+                .title {
+                    text-align: center;
+                }
+            }
+            .section-3-image {
+                width: 100%;
+                img {
+                    height: 250px;
+                }
+            }
+        }
+        .section-4 {
+            padding: 50px 10px;
+            flex-direction: column;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+            .content {
+                .box {
+                    .box-content {
+                        .icon {
+                            img {
+                                width: 30px;
+                            }
+                        }
+                        .text {
+                            font-size: 1rem;
+                        }
+                    }
+                    .button-content {
+                        .text {
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .section-5 {
+            padding: 10px 10px;
+            width: 100%;
+            .content {
+                width: 100%;
+                .box {
+                    padding: 30px 10px;
+                }
+            }
+        }
+        .section-6 {
+            width: 100%;
+            padding: 50px 10px;
+            .color-title {
+                width: 100%;
+                font-size: 14px;
+            }
+            .title {
+                width: 100%;
+                font-size: 1.5rem;
+                padding: 20px 10px;
+            }
+            .sub-title {
+                width: 100%;
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+        .section-7 {
+            width: 100%;
+            padding: 50px 10px;
+            .list-courses {
+                width: 100%;
+                padding: 0;
+                .sub-title {
+                    font-size: 14px;
+                }
+                .title {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .section-8 {
+            width: 100%;
+            padding: 50px 10px;
+            .title {
+                width: 100%;
+                font-size: 1.3rem;
+            }
+            .latest-news {
+                padding: 10px;
+                font-size: 1rem;
+            }
+        }
+        .section-9 {
+            width: 100%;
+            padding: 10px;
+            .tab-course {
+                flex-wrap: wrap;
+                display: flex;
+                .tab-detail {
+                    width: max-content;
+                    font-size: 14px;
+                }
+                .bottom-slide-bar {
+                    left: 0% !important;
+                    width: 100% !important;
+                }
+            }
+        }
+        .section-10 {
+            width: 100%;
+            padding: 10px;
+            .backend {
+                .left {
+                    width: 100%;
+                    padding: 10px;
+                    text-align: center;
+                    .title {
+                        width: 100%;
+                        font-size: 1.3rem;
+                    }
+                    .text {
+                        width: 100%;
+                        font-size: 1rem;
+                    }
+                    .btn-backend {
+                        padding: 10px;
+                        font-size: 14px;
                     }
                 }
             }

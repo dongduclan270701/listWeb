@@ -398,10 +398,10 @@
                                     color: grey;
                                 }
                             }
-                            .preview{
+                            .preview {
                                 background-color: #375eef;
-                                color:white;
-                                padding:5px 10px;
+                                color: white;
+                                padding: 5px 10px;
                                 font-size: 13px;
                                 border-radius: 15px;
                             }
@@ -495,6 +495,101 @@
             border-radius: 15px 15px 0 0;
             object-fit: cover;
             width: 100%;
+        }
+    }
+}
+@media (max-width: 950px) {
+    .course-detail-kld1312 {
+        .section-1 {
+            padding: 90px 0 0 0;
+            .banner {
+                width: 100%;
+                height: 300px;
+                top: 90px;
+            }
+            .text-banner {
+                width: 100%;
+                height: 300px;
+                padding: 20px;
+                justify-content: center;
+                .title {
+                    font-size: 1.5rem;
+                }
+                .sub-title {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .section-2 {
+            width: 100%;
+            padding: 30px 10px;
+            .details {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .left {
+                    width: 100%;
+                    .e1st {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding:10px;
+                        .img-auth,
+                        .category,
+                        .review,
+                        .wishlist {
+
+                            width: 50%;
+                            border:none;
+                        }
+                    }
+                    .course-information{
+                        padding:30px;
+                    }
+                }
+                
+            }
+        }
+        .section-3 {
+            width: 100%;
+            padding: 10px;
+            .tab-course {
+                flex-wrap: wrap;
+                display: flex;
+                justify-content: center;
+                .tab-detail {
+                    width: max-content;
+                    font-size: 14px;
+                }
+                .bottom-slide-bar {
+                    left: 0% !important;
+                    width: 100% !important;
+                }
+            }
+        }
+        .section-4{
+            width: 100%;
+            .review, .introduce{
+                padding:30px;
+            }
+            .introduce{
+                width: 100%;
+                text-align: center;
+                gap:20px;
+                .left{
+                    width: 100%;
+                    
+                }
+                .right{
+                    width: 100%;
+                    .text{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .section-5{
+            width: 100%;
+            padding:10px;
         }
     }
 }

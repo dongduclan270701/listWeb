@@ -272,3 +272,42 @@
         }
     }
 }
+@media (max-width: 950px) {
+    .account-kld1312 {
+        .section-1 {
+            padding: 90px 0 0 0;
+            .banner {
+                width: 100%;
+                height: 300px;
+                top: 90px;
+            }
+            .text-banner {
+                width: 100%;
+                height: 300px;
+                padding: 20px;
+                justify-content: center;
+                .title {
+                    font-size: 1.5rem;
+                }
+                .sub-title {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .section-2 {
+            width: 100%;
+            padding: 20px;
+
+            .right {
+                margin: 0 auto;
+                width: 100%;
+                .title-course-progress {
+                    padding:10px;
+                    .name-general{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

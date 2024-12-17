@@ -115,3 +115,38 @@
         }
     }
 }
+@media (max-width: 950px) {
+    .blog-detail-kld1312 {
+        .section-1 {
+            padding: 90px 0 0 0;
+            .banner {
+                width: 100%;
+                height: 300px;
+                top: 90px;
+            }
+            .text-banner {
+                width: 100%;
+                height: 300px;
+                padding: 20px;
+                justify-content: center;
+                .title {
+                    font-size: 1.5rem;
+                }
+                .sub-title {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .section-2{
+            width: 100%;
+            padding:30px;
+        }
+        .section-3{
+            width: 100%;
+            padding: 30px;
+            hr{
+                width: 90%;
+            }
+        }
+    }
+}
