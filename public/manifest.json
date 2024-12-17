@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Đồng Đức Lân",
+  "name": "Chuyên Cho Thuê - Thiết Kế Website, Apps, Domain. Tôi cung cấp dịch vụ thiết kế website với rất nhiều giá trị. Tôi tự tin rằng sẽ giúp các bạn mang lại nhiều đơn hàng bằng các giải pháp để có website dành cho cá nhân hoặc doanh nghiệp. Cam kết hỗ trợ trọn đời.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://kassdev.com/logooo.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "https://kassdev.com/logooo.svg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "https://kassdev.com/logooo.svg",
       "type": "image/png",
       "sizes": "512x512"
     }
