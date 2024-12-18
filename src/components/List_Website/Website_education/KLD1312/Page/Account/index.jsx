@@ -104,122 +104,165 @@ const Index = () => {
                                 <div className={isMyCourse === 5 ? 'col-2 status-progress active' : 'col-2 status-progress'} onClick={() => setIsMyCourse(5)}>Failed</div>
                             </div>
                             {isMyCourse === 1 && <div className='title-course-progress'>
-                                <div className='scroll-container'>
-                                    <div className='row title'>
-                                        <div className='col-2'>Image</div>
-                                        <div className='col-3'>Name</div>
-                                        <div className='col-1'>Result</div>
-                                        <div className='col-3'>Expiration</div>
-                                        <div className='col-3'>End time</div>
-                                    </div>
-                                    <div className='row course-detail'>
-                                        <img className='col-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                        <div className='col-3'>Digital Marketing Masterclass</div>
-                                        <div className='col-1'>0%</div>
-                                        <div className='col-3'>December 16, 2024 3:18 am</div>
-                                        <div className='col-3'>December 16, 2024 3:18 am</div>
-                                    </div>
-                                    <div className='row course-detail'>
-                                        <img className='col-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                        <div className='col-3'>Digital Marketing Masterclass</div>
-                                        <div className='col-1'>0%</div>
-                                        <div className='col-3'>December 16, 2024 3:18 am</div>
-                                        <div className='col-3'>December 16, 2024 3:18 am</div>
-                                    </div>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="image" style={{borderRadius:'15px 0 0 0'}}>Image</th>
+                                                <th class="name">Name</th>
+                                                <th class="result">Result</th>
+                                                <th class="expiration">Expiration</th>
+                                                <th class="end-time" style={{borderRadius:'0 15px 0 0'}}>End time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Digital Marketing Masterclass</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Long Name That Should Overflow To Test Scrolling Behavior</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
+
                             </div>
                             }
                             {isMyCourse === 2 && <div className='title-course-progress'>
-                                <div className='row title'>
-                                    <div className='col-md-2'>Image</div>
-                                    <div className='col-md-3'>Name</div>
-                                    <div className='col-md-1'>Result</div>
-                                    <div className='col-md-3'>Expiration</div>
-                                    <div className='col-md-3'>End time</div>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="image">Image</th>
+                                                <th class="name">Name</th>
+                                                <th class="result">Result</th>
+                                                <th class="expiration">Expiration</th>
+                                                <th class="end-time">End time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Digital Marketing Masterclass</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Long Name That Should Overflow To Test Scrolling Behavior</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div className='row course-detail'>
-                                    <img className='col-md-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                    <div className='col-md-3'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-1'>0%</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                </div>
-                                <div className='row course-detail'>
-                                    <img className='col-md-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                    <div className='col-md-3'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-1'>0%</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                </div>
+
                             </div>}
                             {isMyCourse === 3 && <div className='title-course-progress'>
-                                <div className='row title'>
-                                    <div className='col-md-2'>Image</div>
-                                    <div className='col-md-3'>Name</div>
-                                    <div className='col-md-1'>Result</div>
-                                    <div className='col-md-3'>Expiration</div>
-                                    <div className='col-md-3'>End time</div>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="image">Image</th>
+                                                <th class="name">Name</th>
+                                                <th class="result">Result</th>
+                                                <th class="expiration">Expiration</th>
+                                                <th class="end-time">End time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Digital Marketing Masterclass</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Long Name That Should Overflow To Test Scrolling Behavior</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div className='row course-detail'>
-                                    <img className='col-md-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                    <div className='col-md-3'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-1'>0%</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                </div>
-                                <div className='row course-detail'>
-                                    <img className='col-md-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                    <div className='col-md-3'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-1'>0%</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                </div>
+
                             </div>}
                             {isMyCourse === 4 && <div className='title-course-progress'>
-                                <div className='row title'>
-                                    <div className='col-md-2'>Image</div>
-                                    <div className='col-md-3'>Name</div>
-                                    <div className='col-md-1'>Result</div>
-                                    <div className='col-md-3'>Expiration</div>
-                                    <div className='col-md-3'>End time</div>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="image">Image</th>
+                                                <th class="name">Name</th>
+                                                <th class="result">Result</th>
+                                                <th class="expiration">Expiration</th>
+                                                <th class="end-time">End time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Digital Marketing Masterclass</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Long Name That Should Overflow To Test Scrolling Behavior</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div className='row course-detail'>
-                                    <img className='col-md-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                    <div className='col-md-3'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-1'>0%</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                </div>
-                                <div className='row course-detail'>
-                                    <img className='col-md-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                    <div className='col-md-3'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-1'>0%</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                </div>
+
                             </div>}
                             {isMyCourse === 5 && <div className='title-course-progress'>
-                                <div className='row title'>
-                                    <div className='col-md-2'>Image</div>
-                                    <div className='col-md-3'>Name</div>
-                                    <div className='col-md-1'>Result</div>
-                                    <div className='col-md-3'>Expiration</div>
-                                    <div className='col-md-3'>End time</div>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="image">Image</th>
+                                                <th class="name">Name</th>
+                                                <th class="result">Result</th>
+                                                <th class="expiration">Expiration</th>
+                                                <th class="end-time">End time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Digital Marketing Masterclass</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Long Name That Should Overflow To Test Scrolling Behavior</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div className='row course-detail'>
-                                    <img className='col-md-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                    <div className='col-md-3'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-1'>0%</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                </div>
-                                <div className='row course-detail'>
-                                    <img className='col-md-2' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg' />
-                                    <div className='col-md-3'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-1'>0%</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                </div>
+
                             </div>}
 
                         </>}
@@ -231,50 +274,106 @@ const Index = () => {
                                 <div className={isQuiz === 4 ? 'col-3 status-progress active' : 'col-3 status-progress'} onClick={() => setIsQuiz(4)}>Passed</div>
                                 <div className={isQuiz === 5 ? 'col-2 status-progress active' : 'col-2 status-progress'} onClick={() => setIsQuiz(5)}>Failed</div>
                             </div>
+                            <div className='title-course-progress'>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="image" style={{borderRadius:'15px 0 0 0'}}>Image</th>
+                                                <th class="name">Name</th>
+                                                <th class="result">Result</th>
+                                                <th class="expiration">Expiration</th>
+                                                <th class="end-time" style={{borderRadius:'0 15px 0 0'}}>End time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Digital Marketing Masterclass</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="image"><img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/iStock-1156240802.jpg" alt="Image" /></td>
+                                                <td class="name">Long Name That Should Overflow To Test Scrolling Behavior</td>
+                                                <td class="result">0%</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
+                            </div>
                         </>}
                         {isPage === 3 && <>
                             <div style={{ textTransform: 'uppercase', fontWeight: 'bold', fontSize: '2rem', letterSpacing: '1px' }}>Your Wishlist</div>
+                            
                             <div className='title-course-progress'>
-                                <div className='row title'>
-                                    <div className='col-md-3'>Email</div>
-                                    <div className='col-md-4'>Question</div>
-                                    <div className='col-md-3'>Date</div>
-                                    <div className='col-md-2'>Status</div>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="expiration" style={{borderRadius:'15px 0 0 0'}}>Email</th>
+                                                <th class="name">Question</th>
+                                                <th class="expiration">Date</th>
+                                                <th class="end-time" style={{borderRadius:'0 15px 0 0'}}>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="expiration">dongduclan277@gmail.com</td>
+                                                <td class="name">Digital Marketing Masterclass</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">Spending</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="expiration">dongduclan277@gmail.com</td>
+                                                <td class="name">Long Name That Should Overflow To Test Scrolling Behavior</td>
+                                                <td class="expiration">December 16, 2024 3:18 am</td>
+                                                <td class="end-time">Successful</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div className='row course-detail' style={{ padding: 30 }}>
-                                    <div className='col-md-3'>dongduclan277gmail.com</div>
-                                    <div className='col-md-4'>Question Question Question Question Question</div>
-                                    <div className='col-md-3'>December 16, 2024 3:18 am</div>
-                                    <div className='col-md-2'>Spending</div>
-                                </div>
+
                             </div>
                         </>}
                         {isPage === 4 && <>
                             <div style={{ textTransform: 'uppercase', fontWeight: 'bold', fontSize: '2rem', letterSpacing: '1px' }}>Your Order</div>
                             <div className='title-course-progress'>
-                                <div className='row title'>
-                                    <div className='col-md-2'>Order Id</div>
-                                    <div className='col-md-4'>Order Id</div>
-                                    <div className='col-md-2'>total</div>
-                                    <div className='col-md-2'>status</div>
-                                    <div className='col-md-2'>date</div>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="image" style={{borderRadius:'15px 0 0 0'}}>Order Id</th>
+                                                <th class="name">Name</th>
+                                                <th class="result">Total</th>
+                                                <th class="expiration">Status</th>
+                                                <th class="end-time" style={{borderRadius:'0 15px 0 0'}}>Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="expiration">#0000007372</td>
+                                                <td class="name">Digital Marketing Masterclass</td>
+                                                <td class="result">$0.00</td>
+                                                <td class="expiration">Successful</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="image">#0000007373</td>
+                                                <td class="name">Digital Marketing Masterclass</td>
+                                                <td class="result">$100.00</td>
+                                                <td class="expiration">Spending</td>
+                                                <td class="end-time">December 16, 2024 3:18 am</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div className='row course-detail' style={{ padding: 30, color: 'grey' }}>Displaying 1 to 2 of 2 items.</div>
                                 </div>
-                                <div className='row course-detail' style={{ padding: 30 }}>
-                                    <div className='col-md-2'>#0000007372</div>
-                                    <div className='col-md-4'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-2'>$0.00</div>
-                                    <div className='col-md-2'>Spending</div>
-                                    <div className='col-md-2'>17 hours ago</div>
-                                </div>
-                                <div className='row course-detail' style={{ padding: 30 }}>
-                                    <div className='col-md-2'>#0000007373</div>
-                                    <div className='col-md-4'>Digital Marketing Masterclass</div>
-                                    <div className='col-md-2'>$0.00</div>
-                                    <div className='col-md-2'>Spending</div>
-                                    <div className='col-md-2'>17 hours ago</div>
-                                </div>
-                                <div className='row course-detail' style={{ padding: 30, color: 'grey' }}>Displaying 1 to 2 of 2 items.</div>
+
                             </div>
                             <div className='key-submit'>
                                 <div className='title-key'>If you have a valid order key, you can recover it here.</div>
