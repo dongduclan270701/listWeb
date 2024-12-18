@@ -19,7 +19,7 @@ async function generateSitemap() {
     ];
 
     // Tạo một stream để ghi file sitemap
-    const sitemap = new SitemapStream({ hostname: 'https://kassdev.com' });
+    const sitemap = new SitemapStream({ hostname: 'https://www.kassdev.com' });
     const writeStream = createWriteStream('./public/sitemap.xml');
 
     // Kết nối stream với file và xử lý

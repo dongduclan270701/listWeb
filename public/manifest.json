@@ -4,17 +4,17 @@
   "description":"Chuyên Cho Thuê - Thiết Kế Website, Apps, Domain. Tôi cung cấp dịch vụ thiết kế website với rất nhiều giá trị. Tôi tự tin rằng sẽ giúp các bạn mang lại nhiều đơn hàng bằng các giải pháp để có website dành cho cá nhân hoặc doanh nghiệp. Cam kết hỗ trợ trọn đời.",
   "icons": [
     {
-      "src": "https://kassdev.com/logooo.svg",
+      "src": "https://www.kassdev.com/logooo.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "https://kassdev.com/logooo.svg",
+      "src": "https://www.kassdev.com/logooo.svg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://kassdev.com/logooo.svg",
+      "src": "https://www.kassdev.com/logooo.svg",
       "type": "image/png",
       "sizes": "512x512"
     }

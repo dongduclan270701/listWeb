@@ -5,67 +5,67 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
     xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
-        <loc>https://kassdev.com/</loc>
+        <loc>https://www.kassdev.com/</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/service/bao-tri-sua-chua-website</loc>
+        <loc>https://www.kassdev.com/service/bao-tri-sua-chua-website</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/service/thiet-ke-website-rieng</loc>
+        <loc>https://www.kassdev.com/service/thiet-ke-website-rieng</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/service/ten-mien-website-domain</loc>
+        <loc>https://www.kassdev.com/service/ten-mien-website-domain</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/category/blog-ca-nhan</loc>
+        <loc>https://www.kassdev.com/category/blog-ca-nhan</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/category/landing-page</loc>
+        <loc>https://www.kassdev.com/category/landing-page</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/category/website-to-chuc-su-kien</loc>
+        <loc>https://www.kassdev.com/category/website-to-chuc-su-kien</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/category/website-thuong-mai-dien-tu</loc>
+        <loc>https://www.kassdev.com/category/website-thuong-mai-dien-tu</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/category/website-nha-hang-quan-ca-phe</loc>
+        <loc>https://www.kassdev.com/category/website-nha-hang-quan-ca-phe</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/category/website-giao-duc</loc>
+        <loc>https://www.kassdev.com/category/website-giao-duc</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/category/website-dashboard</loc>
+        <loc>https://www.kassdev.com/category/website-dashboard</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/aboutMe</loc>
+        <loc>https://www.kassdev.com/aboutMe</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kassdev.com/blog</loc>
+        <loc>https://www.kassdev.com/blog</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
