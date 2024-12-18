@@ -7,9 +7,9 @@
     position: fixed;
     width: 100%;
     z-index: 11;
-    background-color:white;
-    box-shadow: -1px -6px 20px 0px #888888;
-    .desktop {
+    background-color:#f6eee6;
+    // box-shadow: -1px -6px 20px 0px #888888;
+    .desktop-kld1812 {
         width: 1200px;
         margin: 0 auto;
         display: flex;
@@ -36,7 +36,7 @@
             }
         }
     }
-    .mobile {
+    .mobile-kld1812 {
         display: none;
     }
 }
@@ -45,10 +45,10 @@
 }
 @media (max-width: 950px) {
     .header-kld1813 {
-        .desktop {
+        .desktop-kld1812 {
             display: none;
         }
-        .mobile {
+        .mobile-kld1812 {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -118,7 +118,7 @@
         }
     }
     .nav-mobile-kld1812 {
-        background-color: #ffffff;
+        background-color:#f6eee6;
         display: block;
         position: absolute;
         width: 100%;
