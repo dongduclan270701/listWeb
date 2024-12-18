@@ -23,7 +23,7 @@ const Index = () => {
                                 <div className='title'>The Florida Project: Taking Action to Help Kids Like Moonee</div>
                                 <div className='time'>June 6, 2016 / ByJames Smith / Blog</div>
                                 <div className='text'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be...</div>
-                                <NavLink to={'/website/template/KLD1312/blog/detail'} className='button-blog' style={{textDecoration:'none'}} alt='' >Read More</NavLink>
+                                <NavLink to={'/website/template/KLD1312/blog/detail'} className='button-blog' style={{ textDecoration: 'none' }} alt='' >Read More</NavLink>
                             </div>
 
                         </div>
@@ -33,7 +33,7 @@ const Index = () => {
                                 <div className='title'>Professor Albert joint research on mobile money in Tanzania</div>
                                 <div className='time'>June 6, 2016 / ByJames Smith / Blog</div>
                                 <div className='text'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be...</div>
-                                <button className='button-blog' alt='' >Read More</button>
+                                <NavLink to={'/website/template/KLD1312/blog/detail'} className='button-blog' style={{ textDecoration: 'none' }} alt='' >Read More</NavLink>
                             </div>
 
                         </div>
@@ -43,7 +43,7 @@ const Index = () => {
                                 <div className='title'>A Global MBA for the next generation of business leaders</div>
                                 <div className='time'>June 6, 2016 / ByJames Smith / Blog</div>
                                 <div className='text'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be...</div>
-                                <button className='button-blog' alt='' >Read More</button>
+                                <NavLink to={'/website/template/KLD1312/blog/detail'} className='button-blog' style={{ textDecoration: 'none' }} alt='' >Read More</NavLink>
                             </div>
                         </div>
                         <div className='eblog'>
@@ -52,7 +52,7 @@ const Index = () => {
                                 <div className='title'>Professor Tom comments on voluntary recalls by snack brands</div>
                                 <div className='time'>June 6, 2016 / ByJames Smith / Blog</div>
                                 <div className='text'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be...</div>
-                                <button className='button-blog' alt='' >Read More</button>
+                                <NavLink to={'/website/template/KLD1312/blog/detail'} className='button-blog' style={{ textDecoration: 'none' }} alt='' >Read More</NavLink>
                             </div>
 
                         </div>

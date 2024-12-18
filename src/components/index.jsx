@@ -23,7 +23,7 @@ import WebsiteRestaurantCoffee from 'components/Homepage/Category/Website_restau
 // KLD0512's website
 import KLD0512 from 'components/List_Website/Landing_page/KLD0512/index'
 
-// KLD0512's website
+// KLD1312's website
 import KLD1312 from 'components/List_Website/Website_education/KLD1312/index'
 import HeaderKLD1312 from 'components/List_Website/Website_education/KLD1312/Header'
 import FooterKLD1312 from 'components/List_Website/Website_education/KLD1312/Footer'
@@ -35,6 +35,11 @@ import CourseKLD1312 from 'components/List_Website/Website_education/KLD1312/Pag
 import CourseDetailKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Course/Course_detail'
 import PaymentKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Payment'
 import AccountKLD1312 from 'components/List_Website/Website_education/KLD1312/Page/Account'
+
+// KLD1812's website
+import KLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812'
+import HeaderKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Header'
+import FooterKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Footer'
 
 function App() {
   const page = [
@@ -65,6 +70,9 @@ function App() {
     { path: "/website/template/KLD1312/payment", location: PaymentKLD1312 },
     { path: "/website/template/KLD1312/account", location: AccountKLD1312 }
   ]
+  const websiteKLD1812 = [
+    { path: "/website/template/KLD1812", location: KLD1812 },
+  ]
   return (
     <Router>
       <Routes>
@@ -82,6 +90,11 @@ function App() {
         {websiteKLD1312.map((item, index) => {
           const TagName1 = item.location
           return <Route key={index} path={item.path} element={<><HeaderKLD1312/><TagName1 /><FooterKLD1312/></>}
+          />
+        })}
+        {websiteKLD1812.map((item, index) => {
+          const TagName1 = item.location
+          return <Route key={index} path={item.path} element={<><HeaderKLD1812/><TagName1 /><FooterKLD1812/></>}
           />
         })}
         <Route path="*" element={<Navigate to="/" replace />} />
