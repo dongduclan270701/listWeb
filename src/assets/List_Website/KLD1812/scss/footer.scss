@@ -1,6 +1,6 @@
-.footer-kld1813 {
+.footer-kld1812 {
     width: 100%;
-    background-color: #f6eee6;
+    background-color: #ebc491;
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -37,10 +37,37 @@
             }
         }
     }
-    
+    .section-2-kld1812{
+        .section-2-1{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            padding:20px;
+            .col-md-4{
+                text-align: center;
+                padding:20px 0;
+                img{
+                    width: 200px;
+                }
+                .title{
+                    font-size: 1.1rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    color:black;
+                    padding: 10px;
+                }
+            }
+            .sub-title{
+                text-decoration: none;
+                font-size: 1.1rem;
+                color:#ca8126;
+            }
+        }
+    }
 }
 @media (max-width: 950px) {
-    .footer-kld1813 {
+    .footer-kld1812 {
         .section-1-kld1812 {
             width: 100%;
             flex-direction: column;
@@ -66,6 +93,13 @@
         }
         hr {
             width: 90% !important;
+        }
+        .section-2-kld1812{
+            width: 100%;
+            .section-2-1{
+                flex-direction: column;
+                width: 100%;
+            }
         }
     }
 }

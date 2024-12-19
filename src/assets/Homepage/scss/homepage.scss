@@ -129,9 +129,6 @@
             flex-direction: column;
             height: inherit;
             justify-content: center;
-            animation:
-                moveUp 0.5s ease-in-out,
-                fadeInOpacity 0.5s ease-in-out;
             .section-sell-website-banner-title {
                 color: white;
                 font-size: 2rem;
@@ -431,13 +428,12 @@
                     height: 100%;
                     // width: 100%;
                     z-index: 2;
-                    
+
                     color: #fff;
                     cursor: pointer;
                     font-size: 0.8rem;
                     font-weight: 700;
                     text-transform: uppercase;
-                    
 
                     a {
                         border-radius: 15px;
@@ -445,11 +441,11 @@
                         padding: 1em 1.3em;
                         background: #50adff;
                         transition:
-                        box-shadow 0.5s ease-in-out,
-                        color 0.5s ease-in-out;
-                    animation:
-                        moveUp 0.5s ease-in-out,
-                        fadeInOpacity 0.5s ease-in-out;
+                            box-shadow 0.5s ease-in-out,
+                            color 0.5s ease-in-out;
+                        animation:
+                            moveUp 0.5s ease-in-out,
+                            fadeInOpacity 0.5s ease-in-out;
                         &:hover {
                             box-shadow: inset 0 0 1.5em 1.5em #fff;
                             color: black !important;
@@ -621,6 +617,15 @@
         .section-sell-website-description {
         }
     }
+    .animate-kassdev {
+        opacity: 0; /* Hiện khi thêm class show */
+        transform: translateY(50px); /* Trở về vị trí ban đầu */
+        transition: all 0.5s ease; /* Thêm transition */
+    }
+    .animate-kassdev-show {
+        opacity: 1; /* Hiện khi thêm class show */
+        transform: translateY(0); /* Trở về vị trí ban đầu */
+    }
 }
 @media (max-width: 950px) {
     .section-sell-website-homepage {
@@ -698,7 +703,7 @@
         .section-sell-website-slide {
             .panel {
                 height: 300px;
-                width:100%;
+                width: 100%;
                 // height: 80vh;
                 &.active {
                     /* CSS cho panel khi active */
@@ -723,8 +728,8 @@
                         opacity: 1;
                     }
                     .panel-button {
-                        a{
-                            margin:0
+                        a {
+                            margin: 0;
                         }
                         padding: 1.3rem 0.5rem 1.3rem 3.5rem !important;
                     }

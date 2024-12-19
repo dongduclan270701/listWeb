@@ -163,6 +163,16 @@
             }
         }
     }
+    .animate-section {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.5s ease;
+    }
+
+    .animate-section.animate {
+        opacity: 1; 
+        transform: translateY(0);
+    }
 }
 @media (max-width: 950px) {
     .blog-kld1312 {

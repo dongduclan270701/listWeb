@@ -1,7 +1,7 @@
 .homepage-kld1812 {
     font-family: "Jost", sans-serif;
     .section-1-kld1812 {
-        padding: 250px 0 150px 0;
+        padding: 150px 0 150px 0;
         width: 1200px;
         margin: 0 auto;
         position: relative;
@@ -13,7 +13,7 @@
             height: 500px;
             object-fit: cover;
             z-index: 1;
-            top: 250px;
+            top: 150px;
             border-radius: 15px;
         }
         .text-banner {
@@ -77,7 +77,7 @@
             border-radius: 15px;
             height: 300px;
         }
-        .content-kld1813 {
+        .content-kld1812 {
             padding: 30px;
             .title {
                 font-size: 2rem;
@@ -103,7 +103,7 @@
             padding: 0 10px;
             .section-4-1-1 {
                 padding: 20px;
-                background-color: #c5a47b;
+                background-color: #dbb688;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -160,7 +160,7 @@
             padding: 0 10px;
             .section-4-2-1 {
                 padding: 20px;
-                background-color: #c5a47b;
+                background-color: #dbb688;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -216,7 +216,7 @@
             padding: 0 10px;
             .section-4-3-1 {
                 padding: 20px;
-                background-color: #c5a47b;
+                background-color: #dbb688;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -270,23 +270,16 @@
     }
 
     .animate-section {
-        opacity: 0; /* Ẩn mặc định */
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.5s ease;
     }
 
     .animate-section.animate {
-        animation: fadeInUp 0.8s ease forwards; /* Gọi animation khi có class animate */
+        opacity: 1; 
+        transform: translateY(0);
     }
 
-    @keyframes fadeInUp {
-        0% {
-            opacity: 0;
-            transform: translateY(100px); /* Bắt đầu từ vị trí di chuyển */
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0); /* Trở về vị trí ban đầu */
-        }
-    }
 }
 @media (max-width: 950px) {
     .homepage-kld1812 {
@@ -323,7 +316,7 @@
             img {
                 margin: 20px;
             }
-            .content-kld1813 {
+            .content-kld1812 {
                 padding: 0;
                 text-align: center;
                 .title {
@@ -336,11 +329,11 @@
         }
         .section-4-kld1812 {
             width: 100%;
-            padding: 0 15px; /* Giảm padding */
+            padding: 0 15px; 
             .section-4-1,
             .section-4-2,
             .section-4-3 {
-                flex-direction: column; /* Xếp dọc các phần tử */
+                flex-direction: column; 
                 .section-4-1-1,
                 .section-4-1-2 {
                     border-radius: 0;
@@ -350,7 +343,7 @@
             }
             .section-4-1 {
                 padding: 0;
-                background-color: #c5a47b;
+                background-color: #dbb688;
                 .section-4-1-1 {
                     order: 2;
                     padding: 0 10px 50px 10px;
@@ -371,7 +364,7 @@
             }
             .section-4-2 {
                 padding: 0;
-                background-color: #c5a47b;
+                background-color: #dbb688;
                 .section-4-2-1 {
                     order: 2;
                     padding: 0 10px 50px 10px;
@@ -392,7 +385,7 @@
             }
             .section-4-3 {
                 padding: 0;
-                background-color: #c5a47b;
+                background-color: #dbb688;
                 .section-4-3-1 {
                     order: 2;
                     padding: 0 10px 50px 10px;

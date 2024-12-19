@@ -40,6 +40,12 @@ import AccountKLD1312 from 'components/List_Website/Website_education/KLD1312/Pa
 import KLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812'
 import HeaderKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Header'
 import FooterKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Footer'
+import FirstLayoutKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Page/First_layout'
+import SecondLayoutKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Page/Second_layout'
+import ThirdLayoutKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Page/Third_layout'
+import FourthLayoutKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Page/Fourth_layout'
+import FifthLayoutKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Page/Fifth_layout'
+import SixthLayoutKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Page/Sixth_layout'
 
 function App() {
   const page = [
@@ -72,6 +78,12 @@ function App() {
   ]
   const websiteKLD1812 = [
     { path: "/website/template/KLD1812", location: KLD1812 },
+    { path: "/website/template/KLD1812/cafe-kass", location: FirstLayoutKLD1812 },
+    { path: "/website/template/KLD1812/do-chay", location: SecondLayoutKLD1812 },
+    { path: "/website/template/KLD1812/ngoi-nha-banh", location: ThirdLayoutKLD1812 },
+    { path: "/website/template/KLD1812/ky-nghi", location: FourthLayoutKLD1812 },
+    { path: "/website/template/KLD1812/tiec-rieng-tu", location: FifthLayoutKLD1812 },
+    { path: "/website/template/KLD1812/ve-chung-toi", location: SixthLayoutKLD1812 },
   ]
   return (
     <Router>

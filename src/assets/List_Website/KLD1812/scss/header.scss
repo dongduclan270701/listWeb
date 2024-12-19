@@ -1,4 +1,4 @@
-.header-kld1813 {
+.header-kld1812 {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -33,6 +33,9 @@
                 &:hover {
                     color: #ca8126;
                 }
+                &.active{
+                    color: #ca8126;
+                }
             }
         }
     }
@@ -44,7 +47,7 @@
     display: none;
 }
 @media (max-width: 950px) {
-    .header-kld1813 {
+    .header-kld1812 {
         .desktop-kld1812 {
             display: none;
         }

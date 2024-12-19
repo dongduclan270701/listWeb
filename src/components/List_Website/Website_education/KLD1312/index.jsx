@@ -95,7 +95,28 @@ const Index = () => {
         setDefaultBarStyle({ left, width });
         setSection_4(section_4);
     };
+    useEffect(() => {
+        const sections = document.querySelectorAll(".animate-section");
 
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate");
+                    }
+                });
+            },
+            {
+                threshold: 0.2,
+            }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+        return () => {
+            sections.forEach((section) => observer.unobserve(section));
+        };
+
+    }, []);
     return (
         <div className='homepage-kld1312'>
             <video
@@ -109,45 +130,45 @@ const Index = () => {
 
             </video>
             <div className='text-banner'>
-                <div className='title'>Offering access to high-quality education for everyone. </div>
-                <div className='sub-title'>Access 2500+ Online Courses from 140 Top Institutions. Start Today! </div>
+                <div className='title animate-section'>Offering access to high-quality education for everyone. </div>
+                <div className='sub-title animate-section'>Access 2500+ Online Courses from 140 Top Institutions. Start Today! </div>
             </div>
             <div className='row section-2'>
                 <div className='col-md-5 content'>
                     <div className='box'>
-                        <div className='sub-title'>Learn how you want, where you want</div>
-                        <div className='title'>The world’s largest selection of online courses</div>
-                        <div className='text'>Millions of people have used Kingster to decide which online course to take. We aggregate courses from many universities to help you find the best courses on almost any subject, wherever they exist. Our goal is to make online education work for everyone.</div>
+                        <div className='sub-title animate-section'>Learn how you want, where you want</div>
+                        <div className='title animate-section'>The world’s largest selection of online courses</div>
+                        <div className='text animate-section'>Millions of people have used Kingster to decide which online course to take. We aggregate courses from many universities to help you find the best courses on almost any subject, wherever they exist. Our goal is to make online education work for everyone.</div>
                         <div className='row box-icon'>
-                            <div className='col-md-6 box-content'>
+                            <div className='col-md-6 box-content animate-section'>
                                 <div className='icon'><img src={'https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-list-1.png'} alt='' /></div>
                                 <div className='text'>Private Classes</div>
                             </div>
-                            <div className='col-md-6 box-content'>
+                            <div className='col-md-6 box-content animate-section'>
                                 <div className='icon'><img src={'https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-list-2.png'} alt='' /></div>
                                 <div className='text'>Small Groups</div>
                             </div>
-                            <div className='col-md-6 box-content'>
+                            <div className='col-md-6 box-content animate-section'>
                                 <div className='icon'><img src={'https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-list-3.png'} alt='' /></div>
                                 <div className='text'>Lifetime Access</div>
                             </div>
-                            <div className='col-md-6 box-content'>
+                            <div className='col-md-6 box-content animate-section'>
                                 <div className='icon'><img src={'https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-list-4.png'} alt='' /></div>
                                 <div className='text'>Online Tutoring</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='col-md-7'>
+                <div className='col-md-7 animate-section'>
                     <img src={'https://res.cloudinary.com/dolydpat4/image/upload/v1734048152/hp-about-right_wvqtjh.png'} alt='' />
                 </div>
             </div>
             <div className='section-3'>
                 <div className='list-courses'>
-                    <div className='title'>What do you want to learn today?</div>
+                    <div className='title animate-section'>What do you want to learn today?</div>
                     <div className='content'>
-                        <div className='view-all'>view all courses &gt;</div>
-                        <div className='courses'>
+                        <div className='view-all animate-section'>view all courses &gt;</div>
+                        <div className='courses animate-section'>
                             <div className="slider-wrapper">
                                 <button className="slider-button prev" onClick={prevSlide}>&#8249;</button>
                                 <div className="slider-container">
@@ -173,33 +194,33 @@ const Index = () => {
                         </div>
                     </div>
                 </div>
-                <div className='section-3-image'>
+                <div className='section-3-image animate-section'>
                     <img src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/cta-bg.jpg' alt='' />
                 </div>
             </div>
             <div className='section-4'>
-                <div className='col-md-7 image'>
+                <div className='col-md-7 image animate-section'>
                     <img src={'https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/about-left-img.jpg'} alt='' />
                 </div>
                 <div className='col-md-5 content'>
                     <div className='box'>
-                        <div className='sub-title'>New additions published every month</div>
-                        <div className='title'>Choose from over 100,000 online video courses</div>
+                        <div className='sub-title animate-section'>New additions published every month</div>
+                        <div className='title animate-section'>Choose from over 100,000 online video courses</div>
 
                         <div className='row box-icon'>
-                            <div className='col-12 box-content'>
+                            <div className='col-12 box-content animate-section'>
                                 <div className='icon'><img src={'https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-list-5.png'} alt='' /></div>
                                 <div className='text'>Private Classes</div>
                             </div>
-                            <div className='col-12 box-content'>
+                            <div className='col-12 box-content animate-section'>
                                 <div className='icon'><img src={'https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-list-6-1.png'} alt='' /></div>
                                 <div className='text'>Small Groups</div>
                             </div>
-                            <div className='col-12 box-content'>
+                            <div className='col-12 box-content animate-section'>
                                 <div className='icon'><img src={'https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-list-7-1.png'} alt='' /></div>
                                 <div className='text'>Lifetime Access</div>
                             </div>
-                            <div className='col-12 button-content'>
+                            <div className='col-12 button-content animate-section'>
 
                                 <div className='text'>Online Tutoring</div>
                             </div>
@@ -211,70 +232,70 @@ const Index = () => {
             <div className='section-5'>
                 <div className='row content'>
                     <div className='col-md-3 box'>
-                        <img src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-col-service-1.png' alt='' />
-                        <div className='title'>Online Courses</div>
-                        <div className='sub-title'>Millions of people have used Kingster to decide which online course to take.</div>
-                        <NavLink to=''>Learn more ›</NavLink>
+                        <img className=' animate-section' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-col-service-1.png' alt='' />
+                        <div className='title animate-section'>Online Courses</div>
+                        <div className='sub-title animate-section'>Millions of people have used Kingster to decide which online course to take.</div>
+                        <NavLink className=' animate-section' to=''>Learn more ›</NavLink>
                     </div>
                     <div className='col-md-3 box'>
-                        <img src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-col-service-2.png' alt='' />
-                        <div className='title'>Teaching Material</div>
-                        <div className='sub-title'>Millions of people have used Kingster to decide which online course to take.</div>
-                        <NavLink to=''>Learn more ›</NavLink>
+                        <img className=' animate-section' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-col-service-2.png' alt='' />
+                        <div className='title animate-section'>Teaching Material</div>
+                        <div className='sub-title animate-section'>Millions of people have used Kingster to decide which online course to take.</div>
+                        <NavLink className=' animate-section' to=''>Learn more ›</NavLink>
                     </div>
                     <div className='col-md-3 box'>
-                        <img src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-col-service-3.png' alt='' />
-                        <div className='title'>University Life</div>
-                        <div className='sub-title'>Millions of people have used Kingster to decide which online course to take.</div>
-                        <NavLink to=''>Learn more ›</NavLink>
+                        <img className=' animate-section' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-col-service-3.png' alt='' />
+                        <div className='title animate-section'>University Life</div>
+                        <div className='sub-title animate-section'>Millions of people have used Kingster to decide which online course to take.</div>
+                        <NavLink className=' animate-section' to=''>Learn more ›</NavLink>
                     </div>
                     <div className='col-md-3 box'>
-                        <img src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-col-service-4.png' alt='' />
-                        <div className='title'>Academic Programs</div>
-                        <div className='sub-title'>Millions of people have used Kingster to decide which online course to take.</div>
-                        <NavLink to=''>Learn more ›</NavLink>
+                        <img className=' animate-section' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/icon-col-service-4.png' alt='' />
+                        <div className='title animate-section'>Academic Programs</div>
+                        <div className='sub-title animate-section'>Millions of people have used Kingster to decide which online course to take.</div>
+                        <NavLink className=' animate-section' to=''>Learn more ›</NavLink>
                     </div>
                 </div>
             </div>
             <div className='section-6'>
-                <div className='color-title'>Learn on your schedule. Anywhere, anytime</div>
-                <div className='title'>Choose from over 3,000 online video courses with new additions published every month</div>
-                <div className='sub-title'>Learn from the best. Discover thousands of online courses from top universities around the world like MIT, Stanford and Harvard.</div>
+                <div className='color-title animate-section'>Learn on your schedule. Anywhere, anytime</div>
+                <div className='title animate-section'>Choose from over 3,000 online video courses with new additions published every month</div>
+                <div className='sub-title animate-section'>Learn from the best. Discover thousands of online courses from top universities around the world like MIT, Stanford and Harvard.</div>
             </div>
             <div className='section-9'>
                 <div className='row tab-course'>
-                    <div className='tab-detail'
+                    <div className='tab-detail animate-section'
 
                         onMouseEnter={() => handleHover("0%", "16.6%")} onMouseLeave={handleLeave}
                         onClick={() => handleClick("0%", "16.6%", 1)}
                     >backend
                     </div>
-                    <div className='tab-detail'
+                    <div className='tab-detail animate-section'
                         onMouseEnter={() => handleHover("16.6%", "16.6%")}
                         onMouseLeave={handleLeave}
                         onClick={() => handleClick("16.6%", "16.6%", 2)}
                     >design</div>
-                    <div className='tab-detail'
+                    <div className='tab-detail animate-section'
                         onMouseEnter={() => handleHover("33.2%", "16.6%")}
                         onMouseLeave={handleLeave}
                         onClick={() => handleClick("33.2%", "16.6%", 3)}
                     >finance</div>
-                    <div className='tab-detail'
+                    <div className='tab-detail animate-section'
                         onMouseEnter={() => handleHover("48.8%", "16.6%")}
                         onMouseLeave={handleLeave}
                         onClick={() => handleClick("49.8%", "16.6%", 4)}
                     >frontend</div>
-                    <div className='tab-detail'
+                    <div className='tab-detail animate-section'
                         onMouseEnter={() => handleHover("66.4%", "16.6%")}
                         onMouseLeave={handleLeave}
                         onClick={() => handleClick("66.4%", "16.6%", 5)}
                     >it & software</div>
-                    <div className='tab-detail'
+                    <div className='tab-detail animate-section'
                         onMouseEnter={() => handleHover("83.4%", "16.6%")}
                         onMouseLeave={handleLeave}
                         onClick={() => handleClick("83.4%", "16.6%", 6)}
                     >marketing</div>
-                    <div className='bottom-slide-bar' style={{ left: barStyle.left, width: barStyle.width }}>
+                    <div className='bottom-slide-bar animate-section' style={{ left: barStyle.left, width: barStyle.width }}>
                         <div className='bottom-slide-bar-border'></div>
                     </div>
                 </div>
@@ -283,11 +304,11 @@ const Index = () => {
                 {section_4 === 1 && (
                     <div className="row backend">
                         <div className="col-md-6 left">
-                            <div className='title'>Learn programming languages</div>
-                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <div className='title animate-section'>Learn programming languages</div>
+                            <div className='text animate-section'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
                             <button className='btn-backend'>All courses</button>
                         </div>
-                        <div className="col-md-6 right">
+                        <div className="col-md-6 right animate-section">
                             <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-8.jpg" alt="" />
                         </div>
                     </div>
@@ -295,11 +316,11 @@ const Index = () => {
                 {section_4 === 2 && (
                     <div className="row backend">
                         <div className="col-md-6 left">
-                            <div className='title'>How to design like a pro</div>
-                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
-                            <button className='btn-backend'>All courses</button>
+                            <div className='title animate-section'>How to design like a pro</div>
+                            <div className='text animate-section'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend animate-section'>All courses</button>
                         </div>
-                        <div className="col-md-6 right">
+                        <div className="col-md-6 right animate-section">
                             <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-3-1.jpg" alt="" />
                         </div>
                     </div>
@@ -307,11 +328,11 @@ const Index = () => {
                 {section_4 === 3 && (
                     <div className="row backend">
                         <div className="col-md-6 left">
-                            <div className='title'>Learn how financial world works</div>
-                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
-                            <button className='btn-backend'>All courses</button>
+                            <div className='title animate-section'>Learn how financial world works</div>
+                            <div className='text animate-section'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend animate-section'>All courses</button>
                         </div>
-                        <div className="col-md-6 right">
+                        <div className="col-md-6 right animate-section">
                             <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-5-1.jpg" alt="" />
                         </div>
                     </div>
@@ -319,11 +340,11 @@ const Index = () => {
                 {section_4 === 4 && (
                     <div className="row backend">
                         <div className="col-md-6 left">
-                            <div className='title'>Design UI/UX as professional</div>
-                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
-                            <button className='btn-backend'>All courses</button>
+                            <div className='title animate-section'>Design UI/UX as professional</div>
+                            <div className='text animate-section'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend animate-section'>All courses</button>
                         </div>
-                        <div className="col-md-6 right">
+                        <div className="col-md-6 right animate-section">
                             <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-4-2.jpg" alt="" />
                         </div>
                     </div>
@@ -331,11 +352,11 @@ const Index = () => {
                 {section_4 === 5 && (
                     <div className="row backend">
                         <div className="col-md-6 left">
-                            <div className='title'>Learn python language</div>
-                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
-                            <button className='btn-backend'>All courses</button>
+                            <div className='title animate-section'>Learn python language</div>
+                            <div className='text animate-section'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend animate-section'>All courses</button>
                         </div>
-                        <div className="col-md-6 right">
+                        <div className="col-md-6 right animate-section">
                             <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-2-1.jpg" alt="" />
                         </div>
                     </div>
@@ -343,11 +364,11 @@ const Index = () => {
                 {section_4 === 6 && (
                     <div className="row backend">
                         <div className="col-md-6 left">
-                            <div className='title'>Market your products</div>
-                            <div className='text'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
-                            <button className='btn-backend'>All courses</button>
+                            <div className='title animate-section'>Market your products</div>
+                            <div className='text animate-section'>We offer online courses and MOOCs from University of Michigan, Vanderbilt University, Rice University, The Hong Kong University of Science and Technology and other top universities around the world. Read reviews to decide if a class is right for you. Discover thousands of online courses from top universities.</div>
+                            <button className='btn-backend animate-section'>All courses</button>
                         </div>
-                        <div className="col-md-6 right">
+                        <div className="col-md-6 right animate-section">
                             <img src="https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2020/06/tab-image-6-2.jpg" alt="" />
                         </div>
                     </div>
@@ -355,9 +376,9 @@ const Index = () => {
             </div>
             <div className='section-7'>
                 <div className='list-courses'>
-                    <div className='sub-title'>Learn how you want, where you want</div>
-                    <div className='title'>Tens of thousands of reviews written by our users help you pick</div>
-                    <div className='content'>
+                    <div className='sub-title animate-section'>Learn how you want, where you want</div>
+                    <div className='title animate-section'>Tens of thousands of reviews written by our users help you pick</div>
+                    <div className='content animate-section'>
                         <div className='courses'>
                             <div className="slider-wrapper">
                                 <button className="slider-button prev" onClick={prevSlide2}>&#8249;</button>
@@ -391,46 +412,46 @@ const Index = () => {
                 </div>
             </div>
             <div className='section-8'>
-                <div className='title'>Find out the latest education news</div>
+                <div className='title animate-section'>Find out the latest education news</div>
                 <div className='row content'>
                     <div className='col-md-4'>
                         <div className='item-content'>
-                            <img src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2016/06/shutterstock_135948689-400x257.jpg' alt='' />
-                            <div className='time-name'>
+                            <img className=' animate-section' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2016/06/shutterstock_135948689-400x257.jpg' alt='' />
+                            <div className='time-name animate-section'>
                                 <div className='time'>June 6, 2016</div>
                                 <div className='name'>Admission, Student</div>
                             </div>
-                            <div className='title-content'>Professor Albert joint research on mobile money in Tanzania</div>
-                            <div className='text-content'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm...</div>
-                            <div className='read-more-content'>Read more</div>
+                            <div className='title-content animate-section'>Professor Albert joint research on mobile money in Tanzania</div>
+                            <div className='text-content animate-section'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm...</div>
+                            <div className='read-more-content animate-section'>Read more</div>
                         </div>
                     </div>
                     <div className='col-md-4'>
                         <div className='item-content'>
-                            <img src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2016/06/shutterstock_135948689-400x257.jpg' alt='' />
-                            <div className='time-name'>
+                            <img className=' animate-section' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2016/06/shutterstock_135948689-400x257.jpg' alt='' />
+                            <div className='time-name animate-section'>
                                 <div className='time'>June 6, 2016</div>
                                 <div className='name'>Admission, Student</div>
                             </div>
-                            <div className='title-content'>Professor Albert joint research on mobile money in Tanzania</div>
-                            <div className='text-content'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm...</div>
-                            <div className='read-more-content'>Read more</div>
+                            <div className='title-content animate-section'>Professor Albert joint research on mobile money in Tanzania</div>
+                            <div className='text-content animate-section'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm...</div>
+                            <div className='read-more-content animate-section'>Read more</div>
                         </div>
                     </div>
                     <div className='col-md-4'>
                         <div className='item-content'>
-                            <img src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2016/06/shutterstock_135948689-400x257.jpg' alt='' />
-                            <div className='time-name'>
+                            <img className=' animate-section' src='https://demo.goodlayers.com/kingster/homepages/onlineacademy/wp-content/uploads/sites/4/2016/06/shutterstock_135948689-400x257.jpg' alt='' />
+                            <div className='time-name animate-section'>
                                 <div className='time'>June 6, 2016</div>
                                 <div className='name'>Admission, Student</div>
                             </div>
-                            <div className='title-content'>Professor Albert joint research on mobile money in Tanzania</div>
-                            <div className='text-content'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm...</div>
-                            <div className='read-more-content'>Read more</div>
+                            <div className='title-content animate-section'>Professor Albert joint research on mobile money in Tanzania</div>
+                            <div className='text-content animate-section'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm...</div>
+                            <div className='read-more-content animate-section'>Read more</div>
                         </div>
                     </div>
                 </div>
-                <div className='latest-news'>Latest news</div>
+                <div className='latest-news animate-section'>Latest news</div>
             </div>
 
         </div>
