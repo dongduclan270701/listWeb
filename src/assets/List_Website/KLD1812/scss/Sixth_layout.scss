@@ -1,0 +1,293 @@
+.sixth-layout-kld1812 {
+    font-family: "Jost", sans-serif;
+    .section-1-kld1812 {
+        padding: 150px 0 150px 0;
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        .right {
+            order:1;
+            padding: 0;
+            img {
+                border-radius: 15px;
+                width: 100%;
+                object-fit: cover;
+                height: 900px;
+            }
+        }
+        .left {
+            padding: 0 20px;
+            // background-color: #dbb688;
+            order:2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                object-fit: cover;
+                height: 200px;
+            }
+            .title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                padding: 10px 20px;
+                text-align: start;
+            }
+            .sub-title {
+                font-size: 1.3rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                text-align: start;
+                padding: 0px 20px;
+            }
+            .text {
+                font-size: 1rem;
+                letter-spacing: 1px;
+                text-align: start;
+                padding: 10px 20px;
+            }
+        }
+    }
+    .section-2-kld1812 {
+        padding: 75px 0 75px 0;
+        .section-2-1 {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            .right {
+                order:2;
+                padding: 0;
+                img {
+                    border-radius: 15px;
+                    width: 100%;
+                    object-fit: cover;
+                    height: 450px;
+                }
+            }
+            .left {
+                order:1;
+                padding: 10px 20px;
+                display: flex;
+                flex-direction: column;
+                img {
+                    object-fit: cover;
+                    height: 200px;
+                }
+                .title {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    padding: 20px;
+                }
+                .text {
+                    padding: 15px 20px;
+                    font-size: 1.1rem;
+                    letter-spacing: 1px;
+                }
+                .sub-title {
+                    padding: 15px 20px;
+                    font-size: 1.3rem;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .section-4-kld1812 {
+        padding: 75px 0 75px 0;
+        .section-4-1 {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            .right {
+                padding: 0;
+                img {
+                    border-radius: 15px;
+                    width: 100%;
+                    object-fit: cover;
+                    height: 450px;
+                }
+            }
+            .left {
+                padding: 10px 20px;
+                display: flex;
+                flex-direction: column;
+                img {
+                    object-fit: cover;
+                    height: 200px;
+                }
+                .title {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    padding: 20px;
+                }
+                .text {
+                    padding: 15px 20px;
+                    font-size: 1.1rem;
+                    letter-spacing: 1px;
+                }
+                .sub-title {
+                    padding: 15px 20px;
+                    font-size: 1.3rem;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .section-5-kld1812 {
+        padding: 75px 0 75px 0;
+        .section-5-1 {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            .right {
+                order:1;
+                padding: 0;
+                img {
+                    border-radius: 15px;
+                    width: 100%;
+                    object-fit: cover;
+                    height: 500px;
+                }
+            }
+            .left {
+                padding: 10px 20px;
+                display: flex;
+                flex-direction: column;
+                img {
+                    object-fit: cover;
+                    height: 200px;
+                }
+                .title {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    padding: 0 20px;
+                }
+                .text {
+                    padding: 15px 20px;
+                    font-size: 1.1rem;
+                    letter-spacing: 1px;
+                }
+                .sub-title {
+                    padding: 15px 20px;
+                    font-size: 1.3rem;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+    .animate-section {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.5s ease;
+    }
+
+    .animate-section.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 950px) {
+    .sixth-layout-kld1812 {
+        .section-1-kld1812 {
+            padding: 120px 0 0 0;
+            width: 100%;
+            flex-direction: column;
+            .right {
+                order: 1;
+                padding: 30px 40px 0 40px;
+                img {
+                    border-radius: 15px;
+                    height: 400px;
+                }
+            }
+            .left {
+                border-radius: 0;
+                order: 2;
+                padding-bottom: 50px;
+            }
+        }
+        .section-2-kld1812 {
+            width: 100%;
+            padding: 0 10px 50px 10px;
+            .section-2-1 {
+                flex-direction: column;
+                width: 100%;
+                .left {
+                    order:2;
+                    padding: 30px 10px 0 10px;
+                    img {
+                        border-radius: 15px;
+                        height: 400px;
+                    }
+                }
+                .right {
+                    order:1;
+                    padding: 20px;
+                    border-radius: 0;
+                    img {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+        .section-4-kld1812 {
+            width: 100%;
+            padding: 0 10px 50px 10px;
+            .section-4-1 {
+                flex-direction: column;
+                width: 100%;
+                .left {
+                    order:2;
+                    padding: 30px 10px 0 10px;
+                    img {
+                        border-radius: 15px;
+                        height: 400px;
+                    }
+                }
+                .right {
+                    order:1;
+                    padding: 20px;
+                    border-radius: 0;
+                    img {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+        .section-5-kld1812 {
+            width: 100%;
+            padding: 0 10px 50px 10px;
+            .section-5-1 {
+                flex-direction: column;
+                width: 100%;
+                .left {
+                    order:1;
+                    padding: 30px 10px 0 10px;
+                    img {
+                        border-radius: 15px;
+                        height: 400px;
+                    }
+                }
+                .right {
+                    padding: 20px;
+                    border-radius: 0;
+                    img {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}

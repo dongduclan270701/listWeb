@@ -13,14 +13,14 @@ const Index = () => {
         return () => clearTimeout(timer);
     }, []);
     const [product, setProduct] = useState([
-        // {
-        //     id: 0,
-        //     img: 'https://res.cloudinary.com/dolydpat4/image/upload/v1733569072/screencapture-xeghepbacgiangbacninhhanoi-net-2024-12-07-17_54_53_1.png',
-        //     src: 'https://www.xeghepbacgiangbacninhhanoi.net',
-        //     name: 'mẫu landing page xe ghép',
-        //     view: 6,
-        //     price: '3.000.000 VNĐ'
-        // },
+        {
+            id: 0,
+            img: 'https://res.cloudinary.com/dolydpat4/image/upload/v1734675473/screencapture-localhost-3000-website-template-KLD1812-2024-12-20-13_12_46_1_hwtshf.png',
+            src: '/website/template/KLD1812',
+            name: 'mẫu website coffee - tiệm bánh',
+            view: 6,
+            price: '4.000.000 VNĐ'
+        },
 
     ]);
 
