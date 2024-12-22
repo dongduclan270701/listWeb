@@ -13,14 +13,14 @@ const Index = () => {
         return () => clearTimeout(timer);
     }, []);
     const [product, setProduct] = useState([
-        // {
-        //     id: 0,
-        //     img: 'https://res.cloudinary.com/dolydpat4/image/upload/v1733569072/screencapture-xeghepbacgiangbacninhhanoi-net-2024-12-07-17_54_53_1.png',
-        //     src: 'https://www.xeghepbacgiangbacninhhanoi.net',
-        //     name: 'mẫu landing page xe ghép',
-        //     view: 6,
-        //     price: '3.000.000 VNĐ'
-        // },
+        {
+            id: 0,
+            img: 'https://res.cloudinary.com/dolydpat4/image/upload/v1734872865/screencapture-localhost-3000-website-template-KLD2112-2024-12-22-20_04_12_1_dsr36g.png',
+            src: '/website/template/KLD2112/',
+            name: 'mẫu bất động sản KLD2112',
+            view: 0,
+            price: '10.000.000 VNĐ'
+        },
 
     ]);
 

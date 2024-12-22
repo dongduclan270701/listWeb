@@ -13,9 +13,9 @@ const Index = () => {
             id: 0,
             img: 'https://res.cloudinary.com/dolydpat4/image/upload/v1733583375/screencapture-ktech-uw1a-onrender-2024-12-07-21_53_19_1_abimgk.png',
             src: 'https://ktech-uw1a.onrender.com/',
-            name: 'mẫu website thương mai điện tử',
+            name: 'mẫu website thương mai điện tử - KLD0001',
             view: 6,
-            price: '5.000.000 VNĐ'
+            price: '10.000.000 VNĐ'
         },
     ]);
 

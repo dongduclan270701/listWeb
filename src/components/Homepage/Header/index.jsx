@@ -148,11 +148,11 @@ const Index = () => {
                                     <NavLink to='/category/landing-page' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Landing Page
                                     </NavLink>
-                                    <NavLink to='/category/blog-ca-nhan' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                        Blog & Portfolio cá nhân
+                                    <NavLink to='/category/studio-chup-anh-cuoi' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Studio - Chụp ảnh cưới
                                     </NavLink>
-                                    <NavLink to='/category/website-to-chuc-su-kien' style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                        Website tổ chức sự kiện
+                                    <NavLink to='/category/website-bat-dong-san' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        Website bất động sản
                                     </NavLink>
                                     <NavLink to='/category/website-thuong-mai-dien-tu' style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         Website thương mại điện tử nhỏ
@@ -210,8 +210,8 @@ const Index = () => {
                                 <li><NavLink to={'/category/landing-page'} ><li>Landing page</li></NavLink></li>
                                 <li><NavLink to={'/category/website-thuong-mai-dien-tu'} ><li>Website thương mại điện tử nhỏ</li></NavLink></li>
                                 <li><NavLink to={'/category/website-dashboard'} ><li>Website dashboard</li></NavLink></li>
-                                <li><NavLink to={'/category/blog-ca-nhan'} ><li>Blog & Portfolio Cá Nhân</li></NavLink></li>
-                                <li><NavLink to={'/category/website-to-chuc-su-kien'} ><li>Website Tổ Chức Sự Kiện</li></NavLink></li>
+                                <li><NavLink to={'/category/studio-chup-anh-cuoi'} ><li>Studio - Chụp ảnh cưới</li></NavLink></li>
+                                <li><NavLink to={'/category/website-bat-dong-san'} ><li>Website bất động sản</li></NavLink></li>
                                 <li><NavLink to={'/category/website-nha-hang-quan-ca-phe'} ><li>Website Nhà Hàng - Quán Cà Phê</li></NavLink></li>
                                 <li><NavLink to={'/category/website-giao-duc'} ><li>Website Giáo Dục</li></NavLink></li>
                             </ul>

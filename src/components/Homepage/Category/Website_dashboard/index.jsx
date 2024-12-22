@@ -13,9 +13,9 @@ const Index = () => {
             id: 0,
             img: 'https://res.cloudinary.com/dolydpat4/image/upload/v1733583022/screencapture-ktech-dashboard-onrender-v2-2024-12-07-21_47_52_lf19ym.png',
             src: 'https://ktech-dashboard.onrender.com/v2/',
-            name: 'mẫu dashboard',
+            name: 'mẫu dashboard - KLD0002',
             view: 6,
-            price: '5.000.000 VNĐ'
+            price: '10.000.000 VNĐ'
         },
     ]);
 

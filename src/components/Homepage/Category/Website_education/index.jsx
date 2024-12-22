@@ -17,9 +17,9 @@ const Index = () => {
             id: 0,
             img: 'https://res.cloudinary.com/dolydpat4/image/upload/v1734353124/screencapture-localhost-3000-website-template-KLD1312-2024-12-16-19_43_31_1_elarsn.png',
             src: '/website/template/KLD1312',
-            name: 'mẫu website trường học & bán khoá học',
-            view: 6,
-            price: '10.000.000 VNĐ - Có thương lượng'
+            name: 'mẫu website trường học & bán khoá học - KLD1312',
+            view: 0,
+            price: '10.000.000 VNĐ'
         },
 
     ]);

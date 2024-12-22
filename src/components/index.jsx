@@ -13,15 +13,12 @@ import Domain from 'components/Homepage/Service/Domain'
 import AboutHomepage from 'components/Homepage/About'
 import BlogHomepage from 'components/Homepage/Blog'
 import LandingPage from 'components/Homepage/Category/Landing_page'
-import WebsiteBlog from 'components/Homepage/Category/Website_blog_portfolio'
+import WebsiteStudioWedding from 'components/Homepage/Category/Website_studio-wedding'
 import WebsiteCommerce from 'components/Homepage/Category/Website_commerce'
 import WebsiteEducation from 'components/Homepage/Category/Website_education'
-import WebsiteEvent from 'components/Homepage/Category/Website_event'
+import WebsiteProperty from 'components/Homepage/Category/Website_property'
 import WebsiteDashboard from 'components/Homepage/Category/Website_dashboard'
 import WebsiteRestaurantCoffee from 'components/Homepage/Category/Website_restaurant_coffee'
-
-// KLD0512's website
-import KLD0512 from 'components/List_Website/Landing_page/KLD0512/index'
 
 // KLD1312's website
 import KLD1312 from 'components/List_Website/Website_education/KLD1312/index'
@@ -47,12 +44,17 @@ import FourthLayoutKLD1812 from 'components/List_Website/Website_restaurant_coff
 import FifthLayoutKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Page/Fifth_layout'
 import SixthLayoutKLD1812 from 'components/List_Website/Website_restaurant_coffee/KLD1812/Page/Sixth_layout'
 
+// KLD2112's website
+import KLD2112 from 'components/List_Website/Website_property/KLD2112'
+import HeaderKLD2112 from 'components/List_Website/Website_property/KLD2112/Header'
+import FooterKLD2112 from 'components/List_Website/Website_property/KLD2112/Footer'
+
 function App() {
   const page = [
     { path: "/", location: Homepage },
     { path: "/category/landing-page", location: LandingPage },
-    { path: "/category/blog-ca-nhan", location: WebsiteBlog },
-    { path: "/category/website-to-chuc-su-kien", location: WebsiteEvent },
+    { path: "/category/studio-chup-anh-cuoi", location: WebsiteStudioWedding },
+    { path: "/category/website-bat-dong-san", location: WebsiteProperty },
     { path: "/category/website-thuong-mai-dien-tu", location: WebsiteCommerce },
     { path: "/category/website-nha-hang-quan-ca-phe", location: WebsiteRestaurantCoffee },
     { path: "/category/website-giao-duc", location: WebsiteEducation },
@@ -61,9 +63,6 @@ function App() {
     { path: "/service/ten-mien-website-domain", location: Domain },
     { path: "/service/bao-tri-sua-chua-website", location: MaintainWebsite },
     { path: "/blog", location: BlogHomepage },
-  ]
-  const websiteKLD0512 = [
-    { path: "/website/template/KLD0512", location: KLD0512 },
   ]
   const websiteKLD1312 = [
     { path: "/website/template/KLD1312", location: KLD1312 },
@@ -85,6 +84,10 @@ function App() {
     { path: "/website/template/KLD1812/tiec-rieng-tu", location: FifthLayoutKLD1812 },
     { path: "/website/template/KLD1812/ve-chung-toi", location: SixthLayoutKLD1812 },
   ]
+
+  const websiteKLD2112 = [
+    { path: "/website/template/KLD2112", location: KLD2112 },
+  ]
   return (
     <Router>
       <Routes>
@@ -94,11 +97,7 @@ function App() {
           />
         })}
         <Route path={'/aboutMe'} element={<><AboutHomepage/></>}/>
-        {websiteKLD0512.map((item, index) => {
-          const TagName1 = item.location
-          return <Route key={index} path={item.path} element={<><TagName1 /></>}
-          />
-        })}
+        
         {websiteKLD1312.map((item, index) => {
           const TagName1 = item.location
           return <Route key={index} path={item.path} element={<><HeaderKLD1312/><TagName1 /><FooterKLD1312/></>}
@@ -107,6 +106,11 @@ function App() {
         {websiteKLD1812.map((item, index) => {
           const TagName1 = item.location
           return <Route key={index} path={item.path} element={<><HeaderKLD1812/><TagName1 /><FooterKLD1812/></>}
+          />
+        })}
+        {websiteKLD2112.map((item, index) => {
+          const TagName1 = item.location
+          return <Route key={index} path={item.path} element={<><HeaderKLD2112/><TagName1 /><FooterKLD2112/></>}
           />
         })}
         <Route path="*" element={<Navigate to="/" replace />} />

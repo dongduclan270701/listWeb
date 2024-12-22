@@ -17,9 +17,9 @@ const Index = () => {
             id: 0,
             img: 'https://res.cloudinary.com/dolydpat4/image/upload/v1733569072/screencapture-xeghepbacgiangbacninhhanoi-net-2024-12-07-17_54_53_1.png',
             src: 'https://www.xeghepbacgiangbacninhhanoi.net',
-            name: 'mẫu landing page xe ghép',
+            name: 'mẫu landing page xe ghép - KLD0003',
             view: 6,
-            price: '3.000.000 VNĐ'
+            price: '2.000.000 VNĐ'
         },
 
     ]);
