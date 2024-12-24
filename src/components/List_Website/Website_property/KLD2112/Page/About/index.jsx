@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import 'assets/List_Website/KLD2112/scss/homepage.scss'
+import 'assets/List_Website/KLD2112/scss/about.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
+import Logo from 'assets/List_Website/KLD2112/images/logo-property.svg'
+import { NavLink } from 'react-router-dom';
 const Index = () => {
     const NextArrow = ({ onClick }) => {
         return (
@@ -52,20 +53,6 @@ const Index = () => {
                 <i className='fa fa-chevron-left' style={{ color: '#af8647' }}></i>
             </div>
         );
-    };
-
-    const settings = {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 0,
-        speed: 6000,
-        cssEase: "linear",
-        infinite: true,
-        pauseOnHover: false,
-        arrows: false,
-        dots: false,
-
     };
     const settings2 = {
         slidesToShow: 2,
@@ -119,52 +106,48 @@ const Index = () => {
 
     }, []);
     return (
-        <div className='homepage-kld2112'>
+        <div className='about-me-kld2112'>
             <div className="section-1-kld2112">
-                <video src="https://res.cloudinary.com/dolydpat4/video/upload/v1734777862/website-reel-50-central-park-s-manhattan-new-york-10019-f5hwet-reel-no-sound-1920x1080_gknoir.mp4" autoPlay loop muted></video>
+                <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1735032131/portfolio-1_zg3vgz.webp"></img>
                 <div className='introduce'>
-                    <div className='title animate-section'>Bất Động Sản</div>
-                    <div className="sub-title animate-section">Nhà môi giới Manhattan sang trọng hàng đầu mang lại kết quả đặc biệt với dịch vụ tiếp thị đẳng cấp thế giới và dịch vụ trợ giúp đặc biệt.</div>
-                    <div className="btn-intro animate-section">
-                        <div className="btn-ele animate-section">Tìm kiếm nhà</div>
-                        <div className="btn-ele animate-section">Về tôi</div>
+                    <div className='title animate-section'>Về tôi</div>
+                    <div className="sub-title animate-section">Dưới đây là 1 số thông tin của tôi
                     </div>
                 </div>
             </div>
             <div className="section-2-kld2112">
-                <div className="title animate-section">Hợp tác với</div>
-                <Slider {...settings} className="test animate-section">
-                    <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734810905/1200px-fox_business_logosvg_snfatd.webp" alt="" />
-                    <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734810905/lb-logo2018-1_smp8qc.webp" alt="" />
-                    <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734810905/rr_logo_chrondeck-1_u4fxns.webp" alt="" />
-                    <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734810905/wsj-social-share-2-1_blxodp.webp" alt="" />
-                    <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734810905/download-2-1_pvi34q.webp" alt="" />
-                    <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734810905/trd-ny-logo_sbkmzp.webp" alt="" />
-                    <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734810905/new-york-post-logo-vector-1_twhd0i.webp" alt="" />
-                    <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734810905/lre-og-logo-1_vczyfh.webp" alt="" />
-                    <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734810904/cheddarnews_primary_hor_hqex4u.webp" alt="" />
-                </Slider>
+                <img src={Logo} className="title animate-section" />
+                <div className="sub-title animate-section">“Carol Staab có một công ty bất động sản hạng sang sáng tạo cung cấp dịch vụ trợ giúp khách hàng đẳng cấp thông qua tiếp thị đẳng cấp thế giới vô song và phương pháp kinh doanh thực tế. Sứ mệnh của cô là mang đến cho khách hàng trải nghiệm đặc biệt đồng thời giúp họ đạt được kết quả tốt nhất có thể.”</div>
             </div>
             <div className="section-3-kld2112">
-                <div className="title animate-section">Mọi giao dịch thành công đều cần có kế hoạch và hướng dẫn</div>
-                <div className="section-3-1">
-                    <div className="col-md-4 animate-section">
-                        <img className='animate-section' src="https://res.cloudinary.com/dolydpat4/image/upload/v1734809443/marketing-expertise_c0mye1.webp" alt="" />
-                        <div className="title animate-section">Chuyên môn tiếp thị</div>
-                        <div className="sub-title animate-section">Tìm kiếm câu chuyện về một ngôi nhà, nêu bật những đặc điểm độc đáo, tốt nhất của ngôi nhà và tạo hoạt động tiếp thị trực quan để tiếp cận đúng người mua.</div>
-                        <button className='btn-link animate-section'>Bán hàng thành công</button>
+                <div className='title animate-section'>Tìm hiểu về tôi</div>
+                <div className="sub-title animate-section">Nhà tiên phong về bất động sản hạng sang của Manhattan</div>
+                <p className=' animate-section'>Nổi tiếng và luôn được lựa chọn trong giới bất động sản hạng sang của Manhattan, Carol Staab vượt trội hơn hẳn những người cùng thời. Với thứ hạng cao trong top 1,5% các nhà môi giới trên toàn quốc, hơn 25 năm kinh nghiệm của Carol trong lĩnh vực bất động sản hạng sang tại Manhattan nhấn mạnh sự kết hợp giữa cam kết không lay chuyển và sự nhạy bén sâu sắc về thị trường.</p>
+                <p className=' animate-section'>Hoạt động kinh doanh nhà ở theo yêu cầu của Carol đảm bảo rằng khách hàng nhận được dịch vụ được cá nhân hóa ở mức độ chuyên nghiệp. Cô không chỉ được công nhận trong lĩnh vực bất động sản mà còn được giới thiệu là chuyên gia bất động sản cao cấp trên các kênh truyền hình như Fox, CBS và Newsmax. Những trích dẫn thường xuyên của Carol trên các phương tiện truyền thông uy tín như WSJ, New York Times và New York Post càng củng cố thêm uy tín của cô trong lĩnh vực này. Hơn nữa, với tư cách là đồng tác giả của "Luxury Home Selling Mastery" và phần tiếp theo, cô là tiếng nói có uy tín trong giới truyền thông bất động sản cao cấp. Carol cũng là tác giả của tờ Pulse hàng tuần, một báo cáo về thị trường bất động sản cao cấp của Manhattan và sản xuất nhiều video tư vấn bất động sản. </p>
+                <div className="sub-text animate-section">Lời chứng thực từ khách hàng hài lòng đã vẽ nên một bức tranh sống động về năng lực vô song:</div>
+                <ul>
+                    <li className=' animate-section'><b style={{ color: '#af8647' }}>Manhattan Real Estate Insight</b>: "Khi tôi mạo hiểm bước vào thị trường hợp tác xã tại 555 Park Avenue, kiến ​​thức chuyên môn sâu rộng của Carol Staab về các tòa nhà dân cư cao cấp tại Manhattan đã thực sự tỏa sáng. Sự hiểu biết sâu sắc và hiểu biết của bà vô cùng có giá trị đối với hành trình mua nhà của tôi."</li>
+                    <li className=' animate-section'><b style={{ color: '#af8647' }}>Tiếp thị xa xỉ vô song</b>: "Chiến lược tiếp thị mang tính đột phá của Carol cho căn hộ SOHO của chúng tôi đã mang về cho chúng tôi mức giá kỷ lục chỉ trong 70 ngày, làm nổi bật cách tiếp cận sáng tạo của cô ấy trong việc tận dụng hoạt động tiếp cận kỹ thuật số và các công cụ tiếp thị đẳng cấp thế giới."</li>
+                    <li className=' animate-section'><b style={{ color: '#af8647' }}>Chiến lược bán hàng mẫu mực</b>: “Ngay cả trong bối cảnh thị trường bất động sản xa xỉ tại Manhattan đang có nhiều thách thức, các chiến lược của Carol vẫn đảm bảo căn hộ chung cư của chúng tôi tại số 1049 Đại lộ số 5 không chỉ được bán nhanh chóng mà còn ở mức giá vượt quá mong đợi."</li>
+                </ul>
+                <p className=' animate-section'>Sống tại Fifth Avenue ở Upper East của Manhattan trong hơn 25 năm, Carol có kinh nghiệm trực tiếp về thị trường nhà ở cao cấp của thành phố. Việc phục vụ trong ban quản lý chung cư của cô trong một thập kỷ cho thấy cam kết của cô đối với cộng đồng. Ngoài cuộc sống nghề nghiệp, những đóng góp của Carol cho các tổ chức từ thiện như Central Park Conservancy và Ronald McDonald House cho thấy sự cống hiến của cô cho các mục đích có ý nghĩa. Carol là thành viên của Core, một câu lạc bộ tư nhân danh giá ở Manhattan. Cô cũng có một ngôi nhà thứ hai ở Southampton.</p>
+                <p className=' animate-section'>Tóm lại, dù là vai trò của cô ấy là "bác sĩ bất động sản" cho những bất động sản không bán được hay sự tận tâm vô song của cô ấy đối với người mua và người bán. Khám phá những đại diện bất động sản hạng sang tốt nhất của Manhattan. Hãy chọn Carol Staab để có được sự thành thạo thị trường vô song, cơ hội mua hàng đặc biệt và kết quả vô song."</p>
+                <div className='section-3-1'>
+                    <div className='col-md-5 left animate-section'>
+                        <img src="https://www.kassdev.com/static/media/avatar.120472ac7c0f500a270a.jpeg" alt="" />
                     </div>
-                    <div className="col-md-4 animate-section">
-                        <img className=' animate-section' src="https://res.cloudinary.com/dolydpat4/image/upload/v1734809442/xtra-1-1_pzhwgg.webp" alt="" />
-                        <div className="title animate-section">Kiến thức thị trường sâu xa</div>
-                        <div className="sub-title animate-section">một mạng lưới các thị trường vi mô. Sử dụng thông tin của tôi về bất động sản, các dự án phát triển mới, hoàn thiện và vật liệu, hợp tác xã, v.v. để yên tâm mua hàng.</div>
-                        <button className='btn-link animate-section'>Nhân kiến thức mới</button>
-                    </div>
-                    <div className="col-md-4 animate-section">
-                        <img className=' animate-section' src="https://res.cloudinary.com/dolydpat4/image/upload/v1734809441/concierge-2_bpns6a.webp" alt="" />
-                        <div className="title animate-section">Dịch vụ chiến lược & tùy chỉnh</div>
-                        <div className="sub-title animate-section">Cùng nhau, chúng ta sẽ vận dụng hơn 25 năm hiểu biết sâu sắc, kinh nghiệm và khả năng đọc thị trường của tôi để tạo ra chiến lược thành công nhất cho bạn. Với tư cách là khách hàng, bạn sẽ có quyền truy cập vào toàn bộ hồ sơ của tôi...</div>
-                        <button className='btn-link animate-section'>Kết nôi với tôi</button>
+                    <div className='col-md-7 right'>
+                        <div className="title-section-3-1 animate-section">Kass D. Dong</div>
+                        <div className="sub-title-section-3-1 animate-section">Thiết kế website - web apps - thiết kết theo mẫu</div>
+                        <div className="text-section-3-1 animate-section">Hotline: (+84) 37 938 2992</div>
+                        <div className="text-section-3-1 animate-section">Gmail: dongduclan277@gmail.com</div>
+                        
+                        <div className='link-section-3-1'>
+                            <NavLink to={'https://www.facebook.com/kass277'}><i className="fa-brands fa-facebook-f"></i></NavLink>
+                            <NavLink to={'https://m.me/466756929862397'}><i className="fa-brands fa-facebook-messenger"></i></NavLink>
+                            <NavLink to={'https://www.kassdev.com'}><i className="fa fa-link"></i></NavLink>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

@@ -20,9 +20,9 @@ const Index = () => {
         <>
             <div className='header-kld2112'>
                 <div className='list-nav'>
-                    <div className='logo'>
+                    <NavLink to={'/website/template/KLD2112'} className='logo'>
                         <img src={Logo} alt='Logo' />
-                    </div>
+                    </NavLink>
                     <div className='nav'>
                         
                         <div class="dropdown">
@@ -56,7 +56,7 @@ const Index = () => {
                                 <NavLink to={'/website/template/KLD2112/tin-tuc'}>Tin tức</NavLink>
                             </div>
                         </div>
-                        <NavLink to={''} className='nav-item'>Về tôi</NavLink>
+                        <NavLink to={'/website/template/KLD2112/ve-toi'} className='nav-item'>Về tôi</NavLink>
                     </div>
                     <NavLink to={''} className='logo'><i className='fa fa-user' style={{ color: 'white', fontSize: 24, cursor: 'pointer' }}></i></NavLink>
 

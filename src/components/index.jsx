@@ -53,8 +53,12 @@ import FourthLayoutKLD2112 from 'components/List_Website/Website_property/KLD211
 import FourthFirstLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Fourth_layout/Fourth_first'
 import BlogDetailKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Blog/Blog_detail'
 import BlogKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Blog'
-import ThirdFirstLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Third_layout'
-import SecondFirstLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Second_layout'
+import ThirdLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Third_layout'
+import ThirdFirstLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Third_layout/Third_first'
+import SecondLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Second_layout'
+import SecondFirstLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Second_layout/Second_first'
+import AboutMeLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/About'
+
 
 
 function App() {
@@ -99,10 +103,13 @@ function App() {
     { path: "/website/template/KLD2112/xu-huong", location: FourthFirstLayoutKLD2112 },
     { path: "/website/template/KLD2112/blog-detail", location: BlogDetailKLD2112 },
     { path: "/website/template/KLD2112/tin-tuc", location: BlogKLD2112 },
-    { path: "/website/template/KLD2112/quy-trinh-mua-nha", location: ThirdFirstLayoutKLD2112 },
-    { path: "/website/template/KLD2112/danh-sach-hien-tai", location: BlogKLD2112 },
-    { path: "/website/template/KLD2112/quy-trinh-ban-nha", location: SecondFirstLayoutKLD2112 },
-    { path: "/website/template/KLD2112/giao-dich-da-ban", location: BlogKLD2112 },
+    { path: "/website/template/KLD2112/quy-trinh-mua-nha", location: ThirdLayoutKLD2112 },
+    { path: "/website/template/KLD2112/danh-sach-hien-tai", location: ThirdFirstLayoutKLD2112 },
+    { path: "/website/template/KLD2112/quy-trinh-ban-nha", location: SecondLayoutKLD2112 },
+    { path: "/website/template/KLD2112/giao-dich-da-ban", location: SecondFirstLayoutKLD2112 },
+    { path: "/website/template/KLD2112/ve-toi", location: AboutMeLayoutKLD2112 },
+    // { path: "/website/template/KLD2112/danh-sach-nha", location: HouseListLayoutKLD2112 },
+    // { path: "/website/template/KLD2112/detail-house", location: DetailHouseLayoutKLD2112 },
   ]
   return (
     <Router>
