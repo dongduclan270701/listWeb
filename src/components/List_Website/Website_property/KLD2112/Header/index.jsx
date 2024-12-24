@@ -28,10 +28,10 @@ const Index = () => {
                         <div class="dropdown">
                             <button class="dropbtn">Tìm kiếm nhà <i className='fa fa-chevron-right'></i></button>
                             <div class="dropdown-content">
-                                <NavLink to={''}>Phía Đông</NavLink>
-                                <NavLink to={''}>Phía Tây</NavLink>
-                                <NavLink to={''}>Quảng Trường</NavLink>
-                                <NavLink to={''}>Trung Tâm</NavLink>
+                                <NavLink to={'/website/template/KLD2112/danh-sach-nha'}>Phía Đông</NavLink>
+                                <NavLink to={'/website/template/KLD2112/danh-sach-nha'}>Phía Tây</NavLink>
+                                <NavLink to={'/website/template/KLD2112/danh-sach-nha'}>Quảng Trường</NavLink>
+                                <NavLink to={'/website/template/KLD2112/danh-sach-nha'}>Trung Tâm</NavLink>
                             </div>
                         </div>
                         <div class="dropdown">

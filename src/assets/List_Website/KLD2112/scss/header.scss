@@ -47,7 +47,7 @@
                 border: none;
                 padding: 20px 0;
                 .fa-chevron-right {
-                    transition: all 2s ease;
+                    transition: all 0.22s ease;
                     transform: rotate(00deg);
                 }
             }
@@ -93,7 +93,7 @@
                     }
                     .dropbtn {
                         .fa-chevron-right {
-                            transition: all 2s ease;
+                            transition: all 0.2s ease;
                             transform: rotate(90deg);
                         }
                     }

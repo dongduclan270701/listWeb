@@ -58,7 +58,7 @@ import ThirdFirstLayoutKLD2112 from 'components/List_Website/Website_property/KL
 import SecondLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Second_layout'
 import SecondFirstLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Second_layout/Second_first'
 import AboutMeLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/About'
-
+import FirstLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/First_layout'
 
 
 function App() {
@@ -108,7 +108,7 @@ function App() {
     { path: "/website/template/KLD2112/quy-trinh-ban-nha", location: SecondLayoutKLD2112 },
     { path: "/website/template/KLD2112/giao-dich-da-ban", location: SecondFirstLayoutKLD2112 },
     { path: "/website/template/KLD2112/ve-toi", location: AboutMeLayoutKLD2112 },
-    // { path: "/website/template/KLD2112/danh-sach-nha", location: HouseListLayoutKLD2112 },
+    { path: "/website/template/KLD2112/danh-sach-nha", location: FirstLayoutKLD2112 },
     // { path: "/website/template/KLD2112/detail-house", location: DetailHouseLayoutKLD2112 },
   ]
   return (

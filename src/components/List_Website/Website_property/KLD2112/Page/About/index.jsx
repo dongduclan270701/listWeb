@@ -142,7 +142,7 @@ const Index = () => {
                         <div className="text-section-3-1 animate-section">Hotline: (+84) 37 938 2992</div>
                         <div className="text-section-3-1 animate-section">Gmail: dongduclan277@gmail.com</div>
                         
-                        <div className='link-section-3-1'>
+                        <div className='link-section-3-1 animate-section'>
                             <NavLink to={'https://www.facebook.com/kass277'}><i className="fa-brands fa-facebook-f"></i></NavLink>
                             <NavLink to={'https://m.me/466756929862397'}><i className="fa-brands fa-facebook-messenger"></i></NavLink>
                             <NavLink to={'https://www.kassdev.com'}><i className="fa fa-link"></i></NavLink>

@@ -371,40 +371,38 @@
                     font-weight: bold;
                     letter-spacing: 1px;
                 }
-                .collapse-show {
-                    .card-body123 {
-                        padding: 20px;
+                .card-body123 {
+                    padding: 20px;
 
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    a {
+                        width: 100%;
                         display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                        a {
-                            width: 100%;
-                            display: flex;
-                            justify-content: space-between;
-                            text-decoration: none;
-                            color: black;
-                            padding: 0 10px;
-                            border: 1px solid rgb(235, 235, 235);
-                            border-left: none;
-                            border-right: none;
-                            border-top: none;
-                            align-items: center;
-                            span {
-                                .name {
-                                    font-size: 1.1rem;
-                                }
-                                .time {
-                                    color: grey;
-                                }
+                        justify-content: space-between;
+                        text-decoration: none;
+                        color: black;
+                        padding: 0 10px;
+                        border: 1px solid rgb(235, 235, 235);
+                        border-left: none;
+                        border-right: none;
+                        border-top: none;
+                        align-items: center;
+                        span {
+                            .name {
+                                font-size: 1.1rem;
                             }
-                            .preview {
-                                background-color: #375eef;
-                                color: white;
-                                padding: 5px 10px;
-                                font-size: 13px;
-                                border-radius: 15px;
+                            .time {
+                                color: grey;
                             }
+                        }
+                        .preview {
+                            background-color: #375eef;
+                            color: white;
+                            padding: 5px 10px;
+                            font-size: 13px;
+                            border-radius: 15px;
                         }
                     }
                 }
@@ -504,7 +502,7 @@
     }
 
     .animate-section.animate {
-        opacity: 1; 
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -542,21 +540,19 @@
                     .e1st {
                         display: flex;
                         flex-wrap: wrap;
-                        padding:10px;
+                        padding: 10px;
                         .img-auth,
                         .category,
                         .review,
                         .wishlist {
-
                             width: 50%;
-                            border:none;
+                            border: none;
                         }
                     }
-                    .course-information{
-                        padding:30px;
+                    .course-information {
+                        padding: 30px;
                     }
                 }
-                
             }
         }
         .section-3 {
@@ -576,30 +572,30 @@
                 }
             }
         }
-        .section-4{
+        .section-4 {
             width: 100%;
-            .review, .introduce{
-                padding:30px;
+            .review,
+            .introduce {
+                padding: 30px;
             }
-            .introduce{
+            .introduce {
                 width: 100%;
                 text-align: center;
-                gap:20px;
-                .left{
+                gap: 20px;
+                .left {
                     width: 100%;
-                    
                 }
-                .right{
+                .right {
                     width: 100%;
-                    .text{
+                    .text {
                         width: 100%;
                     }
                 }
             }
         }
-        .section-5{
+        .section-5 {
             width: 100%;
-            padding:10px;
+            padding: 10px;
         }
     }
 }

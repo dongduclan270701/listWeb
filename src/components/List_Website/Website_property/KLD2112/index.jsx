@@ -3,8 +3,8 @@ import 'assets/List_Website/KLD2112/scss/homepage.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
 const Index = () => {
+    
     const NextArrow = ({ onClick }) => {
         return (
             <div

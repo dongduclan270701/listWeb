@@ -246,89 +246,94 @@ const Index = () => {
                 )}
                 {section_4 === 1 && (
                     <div className="row list-curriculum animate-section">
-                        <div className='curriculum'>
-                            <button data-toggle="collapse" href="#section1ContentId">
-                                <span>Introduction</span>
-                                <span>+</span>
-                            </button>
-                            <div id="section1ContentId" class="collapse in collapse-show" role="tabpanel" aria-labelledby="section1HeaderId">
-                                <div class="card-body123">
-                                    <NavLink to=''>
-                                        <span><div className='name'>Financial Markets Introduction</div><div className='time'>7 minutes</div></span>
-                                        <span className='preview'>Preview</span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>S&P 500</div><div className='time'>9 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>Health Insurance</div><div className='time'>6 minutes</div></span>
-                                        <span className='preview'>Preview</span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>Short Sales</div><div className='time'>8 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
+                        <div className="accordion accordion-flush" id="accordionFlushExample">
+                            <div className="curriculum">
+                                <h2 className="accordion-header">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Introduction
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div className="card-body123">
+                                        <NavLink to=''>
+                                            <span><div className='name'>Financial Markets Introduction</div><div className='time'>7 minutes</div></span>
+                                            <span className='preview'>Preview</span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>S&P 500</div><div className='time'>9 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>Health Insurance</div><div className='time'>6 minutes</div></span>
+                                            <span className='preview'>Preview</span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>Short Sales</div><div className='time'>8 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='curriculum'>
-                            <button data-toggle="collapse" href="#section2ContentId">
-                                <span>The Three Main Statements in Financial Accounting</span>
-                                <span>+</span>
-                            </button>
-                            <div id="section2ContentId" class="collapse in collapse-show" role="tabpanel" aria-labelledby="section2HeaderId">
-                                <div class="card-body123">
-                                    <NavLink to=''>
-                                        <span><div className='name'>P&L, Balance Sheet and Cash Flow</div><div className='time'>9 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>Income Statement Items</div><div className='time'>6 minutes</div></span>
-                                        <span className='preview'>Preview</span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>Depreciation and amortization</div><div className='time'>11 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>Balance sheet items</div><div className='time'>8 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>Assets & Liabilities</div><div className='time'>10 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>Financial Statement Quiz</div><div className='time'>8 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
+                            <div className="curriculum">
+                                <h2 className="accordion-header">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        The Three Main Statements in Financial Accounting
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div className="card-body123">
+                                        <NavLink to=''>
+                                            <span><div className='name'>P&L, Balance Sheet and Cash Flow</div><div className='time'>9 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>Income Statement Items</div><div className='time'>6 minutes</div></span>
+                                            <span className='preview'>Preview</span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>Depreciation and amortization</div><div className='time'>11 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>Balance sheet items</div><div className='time'>8 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>Assets & Liabilities</div><div className='time'>10 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>Financial Statement Quiz</div><div className='time'>8 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='curriculum'>
-                            <button data-toggle="collapse" href="#section3ContentId">
-                                <span>Stock, Bond and Financial Tools</span>
-                                <span>+</span>
-                            </button>
-                            <div id="section3ContentId" class="collapse in collapse-show" role="tabpanel" aria-labelledby="section3HeaderId">
-                                <div class="card-body123">
-                                    <NavLink to=''>
-                                        <span><div className='name'>Compound Interest</div><div className='time'>7 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>Discount Bonds</div><div className='time'>7 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>Leverage</div><div className='time'>8 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
-                                    <NavLink to=''>
-                                        <span><div className='name'>Share Repurchase</div><div className='time'>8 minutes</div></span>
-                                        <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
-                                    </NavLink>
+                            <div className="curriculum">
+                                <h2 className="accordion-header">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Stock, Bond and Financial Tools
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div className="card-body123">
+                                        <NavLink to=''>
+                                            <span><div className='name'>Compound Interest</div><div className='time'>7 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>Discount Bonds</div><div className='time'>7 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>Leverage</div><div className='time'>8 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                        <NavLink to=''>
+                                            <span><div className='name'>Share Repurchase</div><div className='time'>8 minutes</div></span>
+                                            <span><i className='fa fa-lock' style={{ color: 'grey' }}></i></span>
+                                        </NavLink>
+                                    </div>
                                 </div>
                             </div>
                         </div>
