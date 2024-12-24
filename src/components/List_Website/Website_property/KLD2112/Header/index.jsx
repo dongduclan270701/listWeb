@@ -24,33 +24,39 @@ const Index = () => {
                         <img src={Logo} alt='Logo' />
                     </div>
                     <div className='nav'>
-                        <NavLink to={''} className='nav-item'>Về tôi</NavLink>
+                        
                         <div class="dropdown">
                             <button class="dropbtn">Tìm kiếm nhà <i className='fa fa-chevron-right'></i></button>
                             <div class="dropdown-content">
-                                <a href="#">Phía Đông</a>
-                                <a href="#">Phía Tây</a>
-                                <a href="#">Quảng Trường</a>
-                                <a href="#">Trung Tâm</a>
+                                <NavLink to={''}>Phía Đông</NavLink>
+                                <NavLink to={''}>Phía Tây</NavLink>
+                                <NavLink to={''}>Quảng Trường</NavLink>
+                                <NavLink to={''}>Trung Tâm</NavLink>
                             </div>
                         </div>
                         <div class="dropdown">
                             <button class="dropbtn">Người bán <i className='fa fa-chevron-right'></i></button>
                             <div class="dropdown-content">
-                                <a href="#">Quá trình bán hàng</a>
-                                <a href="#">Giao dịch đã bán</a>
-                                <a href="#">Đánh giá nhà</a>
+                                <NavLink to={'/website/template/KLD2112/quy-trinh-ban-nha'}>Quá trình bán nhà</NavLink>
+                                <NavLink to={'/website/template/KLD2112/giao-dich-da-ban'}>Giao dịch đã bán</NavLink>
                             </div>
                         </div>
                         <div class="dropdown">
                             <button class="dropbtn">Người mua <i className='fa fa-chevron-right'></i></button>
                             <div class="dropdown-content">
-                                <a href="#">Quy trình mua nhà</a>
-                                <a href="#">Danh sách hiện tại</a>
+                                <NavLink to={'/website/template/KLD2112/quy-trinh-mua-nha'}>Quy trình mua nhà</NavLink>
+                                <NavLink to={'/website/template/KLD2112/danh-sach-hien-tai'}>Danh sách hiện tại</NavLink>
                             </div>
                         </div>
-                        <NavLink to={''} className='nav-item'>Báo cáo thị trường</NavLink>
-                        <NavLink to={''} className='nav-item'>Kết nối</NavLink>
+                        <div class="dropdown">
+                            <button class="dropbtn">Thị trường <i className='fa fa-chevron-right'></i></button>
+                            <div class="dropdown-content">
+                                <NavLink to={'/website/template/KLD2112/bao-cao-thi-truong'}>Báo cáo thị trường</NavLink>
+                                <NavLink to={'/website/template/KLD2112/xu-huong'}>Xu hướng thị trường</NavLink>
+                                <NavLink to={'/website/template/KLD2112/tin-tuc'}>Tin tức</NavLink>
+                            </div>
+                        </div>
+                        <NavLink to={''} className='nav-item'>Về tôi</NavLink>
                     </div>
                     <NavLink to={''} className='logo'><i className='fa fa-user' style={{ color: 'white', fontSize: 24, cursor: 'pointer' }}></i></NavLink>
 

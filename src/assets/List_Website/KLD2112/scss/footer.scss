@@ -66,10 +66,70 @@
             }
         }
     }
-    .section-4-kld2112{
+    .section-4-kld2112 {
         width: 1300px;
         margin: 0 auto;
-        color:white;
+        color: white;
+    }
+    .section-6-kld2112 {
+        img {
+            width: 100%;
+            height: 700px;
+            position: absolute;
+        }
+        .section-6-1 {
+            position: relative;
+            height: 700px;
+            background-color: rgba(0, 0, 0, 0.39);
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+            .title {
+                width: 800px;
+                margin: 0 auto;
+                font-size: 3rem;
+            }
+            .text {
+                width: 800px;
+                margin: 0 auto;
+            }
+            .btn-link {
+                margin: 0 auto;
+                width: 300px;
+                background-color: unset;
+                font-size: 1rem;
+                color: white;
+                text-decoration: none;
+                border: 2px solid white;
+                transition:
+                    box-shadow 0.2s ease-in-out,
+                    color 0.5s ease-in-out;
+                text-align: center;
+                padding: 15px;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: 600;
+                &:hover {
+                    color: #af8647;
+                    box-shadow: inset 0 0 1.5em 1.5em #fff;
+                }
+            }
+        }
+    }
+    .animate-section {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 2s ease;
+    }
+
+    .animate-section.animate {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 @media (max-width: 950px) {

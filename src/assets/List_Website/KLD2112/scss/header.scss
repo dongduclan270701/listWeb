@@ -47,7 +47,7 @@
                 border: none;
                 padding: 20px 0;
                 .fa-chevron-right {
-                    transition: all 0.2s ease;
+                    transition: all 2s ease;
                     transform: rotate(00deg);
                 }
             }
@@ -93,7 +93,7 @@
                     }
                     .dropbtn {
                         .fa-chevron-right {
-                            transition: all 0.2s ease;
+                            transition: all 2s ease;
                             transform: rotate(90deg);
                         }
                     }
@@ -128,24 +128,24 @@
                     display: none;
                     &.checked + .toggle2 .bars {
                         position: absolute;
-                        transition-duration: 0.5s;
+                        transition-duration: 2s;
                     }
                     &.checked + .toggle2 #bar5 {
                         transform: scaleX(0);
-                        transition-duration: 0.5s;
+                        transition-duration: 2s;
                     }
                     &.checked + .toggle2 #bar4 {
                         width: 100%;
                         transform: rotate(45deg);
-                        transition-duration: 0.5s;
+                        transition-duration: 2s;
                     }
                     &.checked + .toggle2 #bar6 {
                         width: 100%;
                         transform: rotate(-45deg);
-                        transition-duration: 0.5s;
+                        transition-duration: 2s;
                     }
                     &.checked + .toggle2 {
-                        transition-duration: 0.5s;
+                        transition-duration: 2s;
                         transform: rotate(180deg);
                     }
                 }
@@ -160,7 +160,7 @@
                     align-items: center;
                     justify-content: center;
                     gap: 5px;
-                    transition-duration: 0.5s;
+                    transition-duration: 2s;
                     margin: 0;
                     .bars {
                         width: 100%;
@@ -193,8 +193,8 @@
         transform: translateX(100vh);
         color: white;
         transition:
-            opacity 0.5s ease,
-            transform 0.5s ease;
+            opacity 2s ease,
+            transform 2s ease;
         .list-nav {
             display: flex;
             flex-direction: column;
@@ -213,11 +213,11 @@
                     color: #50adff;
                 }
                 .active-fa-chevron-right {
-                    transition-duration: 0.2s;
+                    transition-duration: 2s;
                     transform: rotate(90deg);
                 }
                 .deactivate-fa-chevron-right {
-                    transition-duration: 0.2s;
+                    transition-duration: 2s;
                     transform: rotate(0deg);
                 }
             }
@@ -232,14 +232,14 @@
                 opacity: 0;
                 max-height: 0; /* Giới hạn chiều cao ban đầu */
                 transition:
-                    max-height 0.5s ease,
-                    opacity 0.5s ease;
+                    max-height 2s ease,
+                    opacity 2s ease;
                 .active-fa-chevron-right {
-                    transition-duration: 0.2s;
+                    transition-duration: 2s;
                     transform: rotate(90deg);
                 }
                 .deactivate-fa-chevron-right {
-                    transition-duration: 0.2s;
+                    transition-duration: 2s;
                     transform: rotate(0deg);
                 }
                 li {
@@ -256,8 +256,8 @@
                         opacity: 0;
                         max-height: 0; /* Giới hạn chiều cao ban đầu */
                         transition:
-                            max-height 0.5s ease,
-                            opacity 0.5s ease;
+                            max-height 2s ease,
+                            opacity 2s ease;
                         li {
                             list-style-type: none;
                             padding: 10px;

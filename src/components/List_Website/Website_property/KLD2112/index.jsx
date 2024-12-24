@@ -148,29 +148,60 @@ const Index = () => {
             <div className="section-3-kld2112">
                 <div className="title animate-section">Mọi giao dịch thành công đều cần có kế hoạch và hướng dẫn</div>
                 <div className="section-3-1">
-                    <div className="col-md-4">
+                    <div className="col-md-4 animate-section">
                         <img className='animate-section' src="https://res.cloudinary.com/dolydpat4/image/upload/v1734809443/marketing-expertise_c0mye1.webp" alt="" />
                         <div className="title animate-section">Chuyên môn tiếp thị</div>
                         <div className="sub-title animate-section">Tìm kiếm câu chuyện về một ngôi nhà, nêu bật những đặc điểm độc đáo, tốt nhất của ngôi nhà và tạo hoạt động tiếp thị trực quan để tiếp cận đúng người mua.</div>
                         <button className='btn-link animate-section'>Bán hàng thành công</button>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 animate-section">
                         <img className=' animate-section' src="https://res.cloudinary.com/dolydpat4/image/upload/v1734809442/xtra-1-1_pzhwgg.webp" alt="" />
                         <div className="title animate-section">Kiến thức thị trường sâu xa</div>
                         <div className="sub-title animate-section">một mạng lưới các thị trường vi mô. Sử dụng thông tin của tôi về bất động sản, các dự án phát triển mới, hoàn thiện và vật liệu, hợp tác xã, v.v. để yên tâm mua hàng.</div>
                         <button className='btn-link animate-section'>Nhân kiến thức mới</button>
                     </div>
-                    <div className="col-md-4">
-                        <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734809441/concierge-2_bpns6a.webp" alt="" />
+                    <div className="col-md-4 animate-section">
+                        <img className=' animate-section' src="https://res.cloudinary.com/dolydpat4/image/upload/v1734809441/concierge-2_bpns6a.webp" alt="" />
                         <div className="title animate-section">Dịch vụ chiến lược & tùy chỉnh</div>
                         <div className="sub-title animate-section">Cùng nhau, chúng ta sẽ vận dụng hơn 25 năm hiểu biết sâu sắc, kinh nghiệm và khả năng đọc thị trường của tôi để tạo ra chiến lược thành công nhất cho bạn. Với tư cách là khách hàng, bạn sẽ có quyền truy cập vào toàn bộ hồ sơ của tôi...</div>
                         <button className='btn-link animate-section'>Kết nôi với tôi</button>
                     </div>
                 </div>
             </div>
+            <div className="section-5-kld2112">
+                <div className="testimonials-section">
+                    <div className="col-md-3 animate-section"><svg width="221" height="221" viewBox="0 0 221 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="110" cy="110" r="110" fill="white" fill-opacity="1"></circle>
+                        <path d="M93.0909 108.726C87.4545 108.726 83.697 112.274 82.0061 115.822C82.0061 106.485 86.8909 96.029 100.982 89.8672L100.418 88C86.8909 93.4149 79 104.058 79 117.129C79 127.772 85.9515 133 93.0909 133C99.8545 133 105.303 127.398 105.303 120.863C105.303 114.141 99.8545 108.726 93.0909 108.726ZM128.788 108.726C123.152 108.726 119.394 112.274 117.703 115.822C117.703 106.485 122.588 96.029 136.679 89.8672L136.115 88C122.588 93.4149 114.697 104.058 114.697 117.129C114.697 127.772 121.648 133 128.788 133C135.552 133 141 127.398 141 120.863C141 114.141 135.552 108.726 128.788 108.726Z" fill="#af8647" fill-opacity="1"></path>
+                    </svg></div>
+
+                    <div className="col-md-9 animate-section">
+                        <Slider {...settings3}>
+                            <div style={{ transition: 'all 0.5s' }}>
+                                <div className="title">KHÁCH HÀNG CỦA TÔI NÓI GÌ</div>
+                                <div className="text">''Kinh nghiệm, kỹ năng đàm phán và tính cách tuyệt vời của bạn đã giúp chúng tôi đạt được mức giá bán cao hơn mong đợi của chúng tôi trong vòng chưa đầy 60 ngày.</div>
+                                <div className="text">Chúng tôi rất ấn tượng khi bạn có thể đạt được mức giá bán hoàn toàn bằng tiền mặt là 1,05 mm, đây là mức giá kỷ lục trên foot vuông cho tòa nhà và cao hơn 100.000 USD so với cùng một kiểu căn hộ, nhưng ở tầng cao hơn, được bán với giá chỉ một vài tuần trước đó. Vâng...''</div>
+                                <div className="sub-title">— Michael P - CFO of Ariel Re</div>
+                            </div>
+                            <div>
+                                <div className="title">KHÁCH HÀNG CỦA TÔI NÓI GÌ</div>
+                                <div className="text">''Nhà môi giới bất động sản chuyên nghiệp bậc nhất. Khả năng phát triển thông điệp phù hợp, tài sản thế chấp và sự hiện diện xã hội để bán tài sản của chủ sở hữu ở NYC là tốt nhất.</div>
+                                <div className="text">Chúng tôi đã bán thành công một bất động sản với sự giúp đỡ của Carol và sự siêng năng cũng như dịch vụ của cô ấy trong toàn bộ quá trình là hạng nhất. Một khách hàng hài lòng rất vui khi đưa ra khuyến nghị 5 sao mạnh mẽ!''</div>
+                                <div className="sub-title">— Ed Kopko - Seller of 418 50th Street Penthouse A - author - Project Bold Life</div>
+                            </div>
+                            <div>
+                                <div className="title">KHÁCH HÀNG CỦA TÔI NÓI GÌ</div>
+                                <div className="text">''Đang tìm kiếm một nhà môi giới bất động sản hạng sang ở Manhattan cho cả mua và bán? Tôi là chuyên gia hàng đầu của bạn với kiến ​​thức tuyệt vời về thị trường NYC.</div>
+                                <div className="text">Tận dụng mạng lưới rộng lớn gồm các chuyên gia hàng đầu của Carol cho các vấn đề bất động sản phức tạp như quyền sử dụng không khí và tư vấn pháp lý, đồng thời tận hưởng chi phí phụ trợ vừa phải. Chuyên về đàm phán chiến lược, Tôi thành thạo bảo vệ và bán các...''</div>
+                                <div className="sub-title">— Michael Watson - chairman of Canopius & Laurie Banez- Head of Casualty at Canopius</div>
+                            </div>
+                        </Slider>
+                    </div>
+                </div>
+            </div>
             <div className="section-4-kld2112" style={{ color: 'white' }}>
                 <div className="title-section animate-section">Bất động sản nổi bật</div>
-                <Slider {...settings2} className='slider-section-4'>
+                <Slider {...settings2} className='slider-section-4 animate-section'>
                     <div className="section-4-1">
                         <div className='image'>
                             <img src="https://res.cloudinary.com/dolydpat4/image/upload/v1734863565/kjfvo2tkapgiaqwehdyx_wtl8jo.avif" alt="" />
@@ -217,46 +248,9 @@ const Index = () => {
 
 
             </div>
-            <div className="section-5-kld2112">
-                <div className="testimonials-section">
-                    <div className="col-md-3"><svg width="221" height="221" viewBox="0 0 221 221" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="110" cy="110" r="110" fill="white" fill-opacity="1"></circle>
-                        <path d="M93.0909 108.726C87.4545 108.726 83.697 112.274 82.0061 115.822C82.0061 106.485 86.8909 96.029 100.982 89.8672L100.418 88C86.8909 93.4149 79 104.058 79 117.129C79 127.772 85.9515 133 93.0909 133C99.8545 133 105.303 127.398 105.303 120.863C105.303 114.141 99.8545 108.726 93.0909 108.726ZM128.788 108.726C123.152 108.726 119.394 112.274 117.703 115.822C117.703 106.485 122.588 96.029 136.679 89.8672L136.115 88C122.588 93.4149 114.697 104.058 114.697 117.129C114.697 127.772 121.648 133 128.788 133C135.552 133 141 127.398 141 120.863C141 114.141 135.552 108.726 128.788 108.726Z" fill="#af8647" fill-opacity="1"></path>
-                    </svg></div>
+            
 
-                    <div className="col-md-9">
-                        <Slider {...settings3}>
-                            <div style={{ transition: 'all 0.5s' }}>
-                                <div className="title">KHÁCH HÀNG CỦA TÔI NÓI GÌ</div>
-                                <div className="text">''Kinh nghiệm, kỹ năng đàm phán và tính cách tuyệt vời của bạn đã giúp chúng tôi đạt được mức giá bán cao hơn mong đợi của chúng tôi trong vòng chưa đầy 60 ngày.</div>
-                                <div className="text">Chúng tôi rất ấn tượng khi bạn có thể đạt được mức giá bán hoàn toàn bằng tiền mặt là 1,05 mm, đây là mức giá kỷ lục trên foot vuông cho tòa nhà và cao hơn 100.000 USD so với cùng một kiểu căn hộ, nhưng ở tầng cao hơn, được bán với giá chỉ một vài tuần trước đó. Vâng...''</div>
-                                <div className="sub-title">— Michael P - CFO of Ariel Re</div>
-                            </div>
-                            <div>
-                                <div className="title">KHÁCH HÀNG CỦA TÔI NÓI GÌ</div>
-                                <div className="text">''Nhà môi giới bất động sản chuyên nghiệp bậc nhất. Khả năng phát triển thông điệp phù hợp, tài sản thế chấp và sự hiện diện xã hội để bán tài sản của chủ sở hữu ở NYC là tốt nhất.</div>
-                                <div className="text">Chúng tôi đã bán thành công một bất động sản với sự giúp đỡ của Carol và sự siêng năng cũng như dịch vụ của cô ấy trong toàn bộ quá trình là hạng nhất. Một khách hàng hài lòng rất vui khi đưa ra khuyến nghị 5 sao mạnh mẽ!''</div>
-                                <div className="sub-title">— Ed Kopko - Seller of 418 50th Street Penthouse A - author - Project Bold Life</div>
-                            </div>
-                            <div>
-                                <div className="title">KHÁCH HÀNG CỦA TÔI NÓI GÌ</div>
-                                <div className="text">''Đang tìm kiếm một nhà môi giới bất động sản hạng sang ở Manhattan cho cả mua và bán? Tôi là chuyên gia hàng đầu của bạn với kiến ​​thức tuyệt vời về thị trường NYC.</div>
-                                <div className="text">Tận dụng mạng lưới rộng lớn gồm các chuyên gia hàng đầu của Carol cho các vấn đề bất động sản phức tạp như quyền sử dụng không khí và tư vấn pháp lý, đồng thời tận hưởng chi phí phụ trợ vừa phải. Chuyên về đàm phán chiến lược, Tôi thành thạo bảo vệ và bán các...''</div>
-                                <div className="sub-title">— Michael Watson - chairman of Canopius & Laurie Banez- Head of Casualty at Canopius</div>
-                            </div>
-                        </Slider>
-                    </div>
-                </div>
-            </div>
-
-            <div className="section-6-kld2112">
-                <img className=' animate-section' src="https://res.cloudinary.com/dolydpat4/image/upload/v1734809235/manhattan-new-york-skyline-neighborhoods_jfrpcm.jpg" alt="" />
-                <div className='section-6-1'>
-                    <div className="title animate-section">Làm việc với tôi</div>
-                    <div className="text animate-section">Một hoạt động kinh doanh bất động sản sang trọng đầy sáng tạo, cung cấp dịch vụ trợ giúp đặc biệt ở mức độ ưu tú thông qua hoạt động tiếp thị đẳng cấp thế giới chưa từng có và phương pháp kinh doanh thực tế. Sứ mệnh của cô là mang đến cho khách hàng trải nghiệm đặc biệt đồng thời giúp họ đạt được kết quả tốt nhất có thể.</div>
-                    <button className='btn-link animate-section'>Liên hệ với tôi</button>
-                </div>
-            </div>
+            
         </div>
     );
 }

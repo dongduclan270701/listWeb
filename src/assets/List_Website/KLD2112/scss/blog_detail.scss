@@ -1,0 +1,114 @@
+.blog-detail-kld2112 {
+    font-family: "Montserrat", serif;
+    background-color: black;
+    .section-1-kld2112 {
+        background-image: none;
+        transition: all 0.5s;
+        clip-path: polygon(0px -2px, 100% -2px, 100% 102%, 0% 102%);
+        .testimonials-section {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1300px;
+            height: 700px;
+            margin: 0 auto;
+            padding: 150px 0;
+            gap: 30px;
+            transition: max-height 0.5s;
+            .title {
+                font-family: "Playfair Display", serif !important;
+                background: -webkit-linear-gradient(#eb9d29, #cbcad6);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 3rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding-bottom: 30px;
+                letter-spacing: 3px;
+                transition: all 0.5s;
+            }
+        }
+    }
+    .section-2-kld2112 {
+        width: 1300px;
+        color: white;
+        margin: 0 auto;
+        padding: 50px 0 20px 0;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        .share-link {
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .share-link-btn {
+            padding: 12px 20px;
+            border: 2px solid #eb9d29;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.2s;
+            &:hover {
+                background-color: #eb9d29;
+                .fa-facebook-f,
+                .fa-linkedin-in,
+                .fa-share,
+                .fa-facebook-messenger {
+                    color: white !important;
+                }
+            }
+            .fa-facebook-f,
+            .fa-linkedin-in,
+            .fa-share,
+            .fa-facebook-messenger {
+                color: #eb9d29;
+            }
+        }
+    }
+    .section-3-kld2112 {
+        width: 1300px;
+        color: white;
+        margin: 0 auto;
+        padding: 50px 0 50px 0;
+        p {
+            padding: 10px 0;
+            letter-spacing: 1px;
+        }
+        .title {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            padding: 20px 0;
+        }
+        .sub-title {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            padding: 20px 0;
+        }
+        ul {
+            li {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        img{
+            width: 100%;
+            padding:10px 0;
+        }
+    }
+    hr {
+        width: 1300px;
+        margin: 0 auto;
+        border: 1px solid white;
+    }
+    .animate-section {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.5s ease;
+    }
+
+    .animate-section.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

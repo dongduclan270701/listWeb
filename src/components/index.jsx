@@ -49,6 +49,14 @@ import KLD2112 from 'components/List_Website/Website_property/KLD2112'
 import HeaderKLD2112 from 'components/List_Website/Website_property/KLD2112/Header'
 import FooterKLD2112 from 'components/List_Website/Website_property/KLD2112/Footer'
 
+import FourthLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Fourth_layout'
+import FourthFirstLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Fourth_layout/Fourth_first'
+import BlogDetailKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Blog/Blog_detail'
+import BlogKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Blog'
+import ThirdFirstLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Third_layout'
+import SecondFirstLayoutKLD2112 from 'components/List_Website/Website_property/KLD2112/Page/Second_layout'
+
+
 function App() {
   const page = [
     { path: "/", location: Homepage },
@@ -87,6 +95,14 @@ function App() {
 
   const websiteKLD2112 = [
     { path: "/website/template/KLD2112", location: KLD2112 },
+    { path: "/website/template/KLD2112/bao-cao-thi-truong", location: FourthLayoutKLD2112 },
+    { path: "/website/template/KLD2112/xu-huong", location: FourthFirstLayoutKLD2112 },
+    { path: "/website/template/KLD2112/blog-detail", location: BlogDetailKLD2112 },
+    { path: "/website/template/KLD2112/tin-tuc", location: BlogKLD2112 },
+    { path: "/website/template/KLD2112/quy-trinh-mua-nha", location: ThirdFirstLayoutKLD2112 },
+    { path: "/website/template/KLD2112/danh-sach-hien-tai", location: BlogKLD2112 },
+    { path: "/website/template/KLD2112/quy-trinh-ban-nha", location: SecondFirstLayoutKLD2112 },
+    { path: "/website/template/KLD2112/giao-dich-da-ban", location: BlogKLD2112 },
   ]
   return (
     <Router>
